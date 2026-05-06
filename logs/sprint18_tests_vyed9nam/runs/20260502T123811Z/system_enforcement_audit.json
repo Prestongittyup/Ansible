@@ -1,0 +1,2383 @@
+{
+  "adapter_states": {
+    "AnsibleAdapter": {
+      "execute_playbook": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      },
+      "fetch_validated_inventory": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      }
+    },
+    "LogicMonitorAdapter": {},
+    "NautobotAdapter": {},
+    "PostgresAdapter": {
+      "write_canonical_inventory": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      }
+    }
+  },
+  "adapters_active": [
+    "AnsibleAdapter",
+    "PostgresAdapter"
+  ],
+  "data_stats": {
+    "adapter_activation_registry": {
+      "active": {
+        "AnsibleAdapter": true,
+        "LogicMonitorAdapter": false,
+        "NautobotAdapter": false,
+        "PostgresAdapter": true
+      },
+      "mode": "MOCK",
+      "phase": "PHASE_1",
+      "rules": {
+        "AnsibleAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": true,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "LogicMonitorAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "NautobotAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "PostgresAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": true
+        }
+      },
+      "source": "mock",
+      "target": "mock"
+    },
+    "adapter_states": {
+      "AnsibleAdapter": {
+        "execute_playbook": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        },
+        "fetch_validated_inventory": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        }
+      },
+      "LogicMonitorAdapter": {},
+      "NautobotAdapter": {},
+      "PostgresAdapter": {
+        "write_canonical_inventory": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        }
+      }
+    },
+    "adapters_active": [
+      "AnsibleAdapter",
+      "PostgresAdapter"
+    ],
+    "command_model": {
+      "emit_audit": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\sprint18_tests_vyed9nam\\runs\\20260502T123811Z",
+      "parity_window": "30d",
+      "source": "mock",
+      "target": "mock"
+    },
+    "contract_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "deterministic_signature": "d7fcecc2d22242db92d61019300c246e30c98ab9f17b99dd17e58d087378dc4c",
+    "drift_percentage": 0.0,
+    "execution_mode": "READ_ONLY",
+    "execution_status": "PASS",
+    "execution_timeline": [
+      {
+        "command": "run",
+        "component": "execution_model",
+        "debug": false,
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "cli.run_input",
+        "parity_window": "30d",
+        "phase": "PHASE_1",
+        "run_id": "system-boot-8373d50785b4",
+        "source": "mock",
+        "span_id": "",
+        "status": "START",
+        "target": "mock",
+        "timestamp": "2026-05-02T12:38:12.302163+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "system_kernel.run",
+        "phase": "PHASE_1",
+        "run_id": "system-boot-8373d50785b4",
+        "source": "mock",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "target": "mock",
+        "timestamp": "2026-05-02T12:38:12.302689+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "command_model_start",
+        "parity_window_days": 30,
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "source": "mock",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "target": "mock",
+        "timestamp": "2026-05-02T12:38:12.302689+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "mode_phase_resolution",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "sst_owner": "LOGICMONITOR",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:12.303236+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "active_adapters": [
+          "AnsibleAdapter",
+          "PostgresAdapter"
+        ],
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "adapter_activation",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:12.303786+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "gate_order": [
+          "SCI",
+          "EMV",
+          "CI",
+          "AUTH",
+          "GOVERNANCE",
+          "API",
+          "QUERY",
+          "PERSISTENCE",
+          "OBSERVABILITY",
+          "EXPORT",
+          "DRIFT",
+          "PARITY"
+        ],
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "gate_sequence",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:12.303786+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "SCI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:12.304321+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 1,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "SCI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:12.305392+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "checked_files": [
+            "SYSTEM_CONTRACT_INDEX.md",
+            "EXECUTION_PRECEDENCE_CONTRACT.md",
+            "LAYER_MAP.md"
+          ]
+        },
+        "duration_ms": 1,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "SCI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:12.305930+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+        ],
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "EMV",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:12.306473+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 316,
+        "error": null,
+        "exit_code": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "EMV",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:12.622741+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+        "violation_count": 0
+      },
+      {
+        "component": "gate",
+        "details": {
+          "command": [
+            "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+          ],
+          "exit_code": 0,
+          "status": "PASS",
+          "status_field": "emv_status",
+          "stderr_excerpt": "",
+          "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+          "violation_count": 0
+        },
+        "duration_ms": 316,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "EMV",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:12.622741+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+        ],
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "CI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:12.623253+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 2085,
+        "error": null,
+        "exit_code": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "CI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.708137+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+        "violation_count": 0
+      },
+      {
+        "component": "gate",
+        "details": {
+          "command": [
+            "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+          ],
+          "exit_code": 0,
+          "status": "PASS",
+          "status_field": "ci_status",
+          "stderr_excerpt": "",
+          "stdout_excerpt": "{\n  \"ci_status\": \"PASS\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T12:38:12.861269+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": []\n      },\n      \"violation_count\": 0\n    },\n    {\n      \"name\": \"Import Boundary Enforcement\",\n      \"rule_id\": \"SCI-002\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/import_guard.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T12:38:13.599830+00:00\",\n        \"validator\": \"import_guard\",\n        \"v",
+          "violation_count": 0
+        },
+        "duration_ms": 2085,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "CI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.708137+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "AUTH",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.708137+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "AUTH",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.708137+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "phase": "PHASE_1",
+          "sst_source": "LOGICMONITOR",
+          "writable_systems": [
+            "LOGICMONITOR"
+          ]
+        },
+        "duration_ms": 0,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "AUTH",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.708137+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "GOVERNANCE",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "GOVERNANCE",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "execution_mode": "READ_ONLY",
+          "governance_approved": false,
+          "phase": "PHASE_1"
+        },
+        "duration_ms": 0,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "GOVERNANCE",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 2405,
+        "gates_executed": [
+          "SCI",
+          "EMV",
+          "CI",
+          "AUTH",
+          "GOVERNANCE"
+        ],
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "gate_sequence",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "source_target_collection",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "source": "mock",
+        "span_id": "03982fedfa1d28f5",
+        "status": "START",
+        "target": "mock",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "source_target_collection",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "source": "mock",
+        "span_id": "03982fedfa1d28f5",
+        "status": "SUCCESS",
+        "target": "mock",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "source_records": 3,
+          "source_selector": "mock",
+          "target_records": 3,
+          "target_selector": "mock"
+        },
+        "duration_ms": 0,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "API",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "query_normalization",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "source_records": 3,
+        "span_id": "caae9d6f00b06b02",
+        "status": "START",
+        "target_records": 3,
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "query_normalization",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "source_records": 3,
+        "span_id": "caae9d6f00b06b02",
+        "status": "SUCCESS",
+        "target_records": 3,
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "source_records": 3,
+          "target_records": 3
+        },
+        "duration_ms": 0,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "QUERY",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "ansible_validation_execution",
+        "phase": "PHASE_1",
+        "records": 3,
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "a16a4504b61a1352",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "adapter": "AnsibleAdapter",
+        "adapter_mode": "MOCK",
+        "component": "adapter",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "execute_playbook",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "a16a4504b61a1352",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "adapter": "AnsibleAdapter",
+        "adapter_mode": "MOCK",
+        "component": "adapter",
+        "duration_ms": 0,
+        "fallback": false,
+        "level": "INFO",
+        "mode": "MOCK",
+        "mode_used": "MOCK",
+        "operation": "execute_playbook",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "a16a4504b61a1352",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "ansible_validation_execution",
+        "phase": "PHASE_1",
+        "records": 3,
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "a16a4504b61a1352",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.709143+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "adapter": "PostgresAdapter",
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "validated_inventory_persistence",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "9b30064bd2187343",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.710135+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "adapter": "AnsibleAdapter",
+        "adapter_mode": "MOCK",
+        "component": "adapter",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "fetch_validated_inventory",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "9b30064bd2187343",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.710135+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "adapter": "AnsibleAdapter",
+        "adapter_mode": "MOCK",
+        "component": "adapter",
+        "duration_ms": 0,
+        "fallback": false,
+        "level": "INFO",
+        "mode": "MOCK",
+        "mode_used": "MOCK",
+        "operation": "fetch_validated_inventory",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "9b30064bd2187343",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.710135+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "adapter": "PostgresAdapter",
+        "adapter_mode": "MOCK",
+        "component": "adapter",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "write_canonical_inventory",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "9b30064bd2187343",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.710135+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "adapter": "PostgresAdapter",
+        "adapter_mode": "MOCK",
+        "component": "adapter",
+        "duration_ms": 0,
+        "fallback": false,
+        "level": "INFO",
+        "mode": "MOCK",
+        "mode_used": "MOCK",
+        "operation": "write_canonical_inventory",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "9b30064bd2187343",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.710135+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "adapter": "PostgresAdapter",
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "validated_inventory_persistence",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "9b30064bd2187343",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.710135+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "ansible_execution": {
+            "execution_mode": "MOCK",
+            "operation": "READ_ONLY_VALIDATE",
+            "records_processed": 3,
+            "status": "PASS"
+          },
+          "postgres_write": {
+            "records_inserted": 3,
+            "records_updated": 0,
+            "records_written": 3,
+            "status": "PASS",
+            "storage": "in_memory_emulation",
+            "write_fingerprint": "38deed38e6c2c5c6dfc8040d4d13160186bcdb0085641dad6a054b5c96d2a902",
+            "written_at": "2026-05-02T12:38:14.710135+00:00"
+          }
+        },
+        "duration_ms": 0,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "PERSISTENCE",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.710135+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "adapter_states": {
+            "AnsibleAdapter": {
+              "execute_playbook": {
+                "details": {
+                  "fallback": false
+                },
+                "mode_used": "MOCK",
+                "status": "PASS"
+              },
+              "fetch_validated_inventory": {
+                "details": {
+                  "fallback": false
+                },
+                "mode_used": "MOCK",
+                "status": "PASS"
+              }
+            },
+            "LogicMonitorAdapter": {},
+            "NautobotAdapter": {},
+            "PostgresAdapter": {
+              "write_canonical_inventory": {
+                "details": {
+                  "fallback": false
+                },
+                "mode_used": "MOCK",
+                "status": "PASS"
+              }
+            }
+          }
+        },
+        "duration_ms": 0,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "OBSERVABILITY",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.710135+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "runtime_inputs": {
+            "identity_events": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\identity_events.json",
+            "source": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\source_records.json",
+            "target": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\target_records.json"
+          }
+        },
+        "duration_ms": 0,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "EXPORT",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.713659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "parity",
+        "duration_ms": 0,
+        "level": "INFO",
+        "max_global_drift": 5.0,
+        "mode": "MOCK",
+        "operation": "calculate_parity",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "82c08eec2e43ffa1",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "parity",
+        "duration_ms": 0,
+        "level": "INFO",
+        "max_global_drift": 5.0,
+        "mode": "MOCK",
+        "operation": "CALCULATE_PARITY",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "source_records": 3,
+        "span_id": "82c08eec2e43ffa1",
+        "status": "START",
+        "target_records": 3,
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "compared_records_total": 3,
+        "component": "parity",
+        "drifted_records_total": 0,
+        "duration_ms": 0,
+        "global_drift_pct": 0.0,
+        "hard_drift_count": 0,
+        "identity_conflicts_total": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "CALCULATE_PARITY",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "soft_drift_count": 0,
+        "span_id": "82c08eec2e43ffa1",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "parity",
+        "duration_ms": 0,
+        "level": "INFO",
+        "max_global_drift": 5.0,
+        "mode": "MOCK",
+        "operation": "calculate_parity",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "82c08eec2e43ffa1",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "parity",
+        "drift_count": 0,
+        "drift_pct": 0.0,
+        "duration_ms": 0,
+        "identity_conflicts": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "parity_metrics",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "total_records": 3,
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "DRIFT",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "global_drift_pct": 0.0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "DRIFT",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "global_drift_pct": 0.0,
+          "max_global_drift": 5.0
+        },
+        "duration_ms": 0,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "DRIFT",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "PARITY",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "DRIFT",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "global_drift_pct": 0.0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "DRIFT",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "global_drift_pct": 0.0,
+        "identity_conflicts_total": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "PARITY",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.714659+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "critical_events_180d": 0,
+          "global_drift_pct": 0.0,
+          "identity_conflicts_total": 0,
+          "tracker": {
+            "consecutive_passes": 1,
+            "considered_runs": 1,
+            "history": [
+              {
+                "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+                "parity_pass": true,
+                "timestamp": "2026-05-02T12:38:12.302689+00:00"
+              }
+            ],
+            "pass": true,
+            "required_consecutive_passes": 1,
+            "window_days": 30
+          }
+        },
+        "duration_ms": 0,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "PARITY",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-3d07d28c4772",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:38:14.715656+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      }
+    ],
+    "external_failures": [],
+    "fail_closed_triggered": false,
+    "failure_point": "",
+    "identity_conflicts": [],
+    "kernel_mode": "MOCK",
+    "parity_result": {
+      "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+      "reason": "PARITY_GATES_PASSED",
+      "status": "PASS"
+    },
+    "runtime_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "runtime_inputs": {
+      "identity_events": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\identity_events.json",
+      "source": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\source_records.json",
+      "target": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\target_records.json"
+    },
+    "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+  },
+  "decision_reason": "EXECUTION_COMMAND_MODEL_PASS",
+  "deterministic_signature": "d7fcecc2d22242db92d61019300c246e30c98ab9f17b99dd17e58d087378dc4c",
+  "drift_metrics": {
+    "compared_records_total": 3,
+    "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+    "drifted_records_total": 0,
+    "global_drift_pct": 0.0,
+    "hard_drift_count": 0,
+    "soft_drift_count": 0
+  },
+  "drift_percentage": 0.0,
+  "errors": [],
+  "execution_status": "PASS",
+  "execution_timeline": [
+    {
+      "command": "run",
+      "component": "execution_model",
+      "debug": false,
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "cli.run_input",
+      "parity_window": "30d",
+      "phase": "PHASE_1",
+      "run_id": "system-boot-8373d50785b4",
+      "source": "mock",
+      "span_id": "",
+      "status": "START",
+      "target": "mock",
+      "timestamp": "2026-05-02T12:38:12.302163+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "system_kernel.run",
+      "phase": "PHASE_1",
+      "run_id": "system-boot-8373d50785b4",
+      "source": "mock",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "target": "mock",
+      "timestamp": "2026-05-02T12:38:12.302689+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "command_model_start",
+      "parity_window_days": 30,
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "source": "mock",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "target": "mock",
+      "timestamp": "2026-05-02T12:38:12.302689+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "mode_phase_resolution",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "sst_owner": "LOGICMONITOR",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:12.303236+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "active_adapters": [
+        "AnsibleAdapter",
+        "PostgresAdapter"
+      ],
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "adapter_activation",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:12.303786+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "gate_order": [
+        "SCI",
+        "EMV",
+        "CI",
+        "AUTH",
+        "GOVERNANCE",
+        "API",
+        "QUERY",
+        "PERSISTENCE",
+        "OBSERVABILITY",
+        "EXPORT",
+        "DRIFT",
+        "PARITY"
+      ],
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "gate_sequence",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:12.303786+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "SCI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:12.304321+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 1,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "SCI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:12.305392+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "checked_files": [
+          "SYSTEM_CONTRACT_INDEX.md",
+          "EXECUTION_PRECEDENCE_CONTRACT.md",
+          "LAYER_MAP.md"
+        ]
+      },
+      "duration_ms": 1,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "SCI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:12.305930+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "command": [
+        "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+      ],
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "EMV",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:12.306473+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 316,
+      "error": null,
+      "exit_code": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "EMV",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:12.622741+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+      "violation_count": 0
+    },
+    {
+      "component": "gate",
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "emv_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+        "violation_count": 0
+      },
+      "duration_ms": 316,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "EMV",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:12.622741+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "command": [
+        "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+      ],
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "CI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:12.623253+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 2085,
+      "error": null,
+      "exit_code": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "CI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.708137+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+      "violation_count": 0
+    },
+    {
+      "component": "gate",
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "ci_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"ci_status\": \"PASS\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T12:38:12.861269+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": []\n      },\n      \"violation_count\": 0\n    },\n    {\n      \"name\": \"Import Boundary Enforcement\",\n      \"rule_id\": \"SCI-002\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/import_guard.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T12:38:13.599830+00:00\",\n        \"validator\": \"import_guard\",\n        \"v",
+        "violation_count": 0
+      },
+      "duration_ms": 2085,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "CI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.708137+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "AUTH",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.708137+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "AUTH",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.708137+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "phase": "PHASE_1",
+        "sst_source": "LOGICMONITOR",
+        "writable_systems": [
+          "LOGICMONITOR"
+        ]
+      },
+      "duration_ms": 0,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "AUTH",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.708137+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "GOVERNANCE",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "GOVERNANCE",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "execution_mode": "READ_ONLY",
+        "governance_approved": false,
+        "phase": "PHASE_1"
+      },
+      "duration_ms": 0,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "GOVERNANCE",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 2405,
+      "gates_executed": [
+        "SCI",
+        "EMV",
+        "CI",
+        "AUTH",
+        "GOVERNANCE"
+      ],
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "gate_sequence",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "source_target_collection",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "source": "mock",
+      "span_id": "03982fedfa1d28f5",
+      "status": "START",
+      "target": "mock",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "source_target_collection",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "source": "mock",
+      "span_id": "03982fedfa1d28f5",
+      "status": "SUCCESS",
+      "target": "mock",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "source_records": 3,
+        "source_selector": "mock",
+        "target_records": 3,
+        "target_selector": "mock"
+      },
+      "duration_ms": 0,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "API",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "query_normalization",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "source_records": 3,
+      "span_id": "caae9d6f00b06b02",
+      "status": "START",
+      "target_records": 3,
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "query_normalization",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "source_records": 3,
+      "span_id": "caae9d6f00b06b02",
+      "status": "SUCCESS",
+      "target_records": 3,
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "source_records": 3,
+        "target_records": 3
+      },
+      "duration_ms": 0,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "QUERY",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "ansible_validation_execution",
+      "phase": "PHASE_1",
+      "records": 3,
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "a16a4504b61a1352",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "adapter": "AnsibleAdapter",
+      "adapter_mode": "MOCK",
+      "component": "adapter",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "execute_playbook",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "a16a4504b61a1352",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "adapter": "AnsibleAdapter",
+      "adapter_mode": "MOCK",
+      "component": "adapter",
+      "duration_ms": 0,
+      "fallback": false,
+      "level": "INFO",
+      "mode": "MOCK",
+      "mode_used": "MOCK",
+      "operation": "execute_playbook",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "a16a4504b61a1352",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "ansible_validation_execution",
+      "phase": "PHASE_1",
+      "records": 3,
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "a16a4504b61a1352",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.709143+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "adapter": "PostgresAdapter",
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "validated_inventory_persistence",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "9b30064bd2187343",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.710135+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "adapter": "AnsibleAdapter",
+      "adapter_mode": "MOCK",
+      "component": "adapter",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "fetch_validated_inventory",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "9b30064bd2187343",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.710135+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "adapter": "AnsibleAdapter",
+      "adapter_mode": "MOCK",
+      "component": "adapter",
+      "duration_ms": 0,
+      "fallback": false,
+      "level": "INFO",
+      "mode": "MOCK",
+      "mode_used": "MOCK",
+      "operation": "fetch_validated_inventory",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "9b30064bd2187343",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.710135+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "adapter": "PostgresAdapter",
+      "adapter_mode": "MOCK",
+      "component": "adapter",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "write_canonical_inventory",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "9b30064bd2187343",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.710135+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "adapter": "PostgresAdapter",
+      "adapter_mode": "MOCK",
+      "component": "adapter",
+      "duration_ms": 0,
+      "fallback": false,
+      "level": "INFO",
+      "mode": "MOCK",
+      "mode_used": "MOCK",
+      "operation": "write_canonical_inventory",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "9b30064bd2187343",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.710135+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "adapter": "PostgresAdapter",
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "validated_inventory_persistence",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "9b30064bd2187343",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.710135+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "ansible_execution": {
+          "execution_mode": "MOCK",
+          "operation": "READ_ONLY_VALIDATE",
+          "records_processed": 3,
+          "status": "PASS"
+        },
+        "postgres_write": {
+          "records_inserted": 3,
+          "records_updated": 0,
+          "records_written": 3,
+          "status": "PASS",
+          "storage": "in_memory_emulation",
+          "write_fingerprint": "38deed38e6c2c5c6dfc8040d4d13160186bcdb0085641dad6a054b5c96d2a902",
+          "written_at": "2026-05-02T12:38:14.710135+00:00"
+        }
+      },
+      "duration_ms": 0,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "PERSISTENCE",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.710135+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "adapter_states": {
+          "AnsibleAdapter": {
+            "execute_playbook": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            },
+            "fetch_validated_inventory": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            }
+          },
+          "LogicMonitorAdapter": {},
+          "NautobotAdapter": {},
+          "PostgresAdapter": {
+            "write_canonical_inventory": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            }
+          }
+        }
+      },
+      "duration_ms": 0,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "OBSERVABILITY",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.710135+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "runtime_inputs": {
+          "identity_events": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\identity_events.json",
+          "source": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\source_records.json",
+          "target": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\target_records.json"
+        }
+      },
+      "duration_ms": 0,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "EXPORT",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.713659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "parity",
+      "duration_ms": 0,
+      "level": "INFO",
+      "max_global_drift": 5.0,
+      "mode": "MOCK",
+      "operation": "calculate_parity",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "82c08eec2e43ffa1",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "parity",
+      "duration_ms": 0,
+      "level": "INFO",
+      "max_global_drift": 5.0,
+      "mode": "MOCK",
+      "operation": "CALCULATE_PARITY",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "source_records": 3,
+      "span_id": "82c08eec2e43ffa1",
+      "status": "START",
+      "target_records": 3,
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "compared_records_total": 3,
+      "component": "parity",
+      "drifted_records_total": 0,
+      "duration_ms": 0,
+      "global_drift_pct": 0.0,
+      "hard_drift_count": 0,
+      "identity_conflicts_total": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "CALCULATE_PARITY",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "soft_drift_count": 0,
+      "span_id": "82c08eec2e43ffa1",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "parity",
+      "duration_ms": 0,
+      "level": "INFO",
+      "max_global_drift": 5.0,
+      "mode": "MOCK",
+      "operation": "calculate_parity",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "82c08eec2e43ffa1",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "parity",
+      "drift_count": 0,
+      "drift_pct": 0.0,
+      "duration_ms": 0,
+      "identity_conflicts": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "parity_metrics",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "total_records": 3,
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "DRIFT",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "global_drift_pct": 0.0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "DRIFT",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "global_drift_pct": 0.0,
+        "max_global_drift": 5.0
+      },
+      "duration_ms": 0,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "DRIFT",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "PARITY",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "DRIFT",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "global_drift_pct": 0.0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "DRIFT",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "global_drift_pct": 0.0,
+      "identity_conflicts_total": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "PARITY",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.714659+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "critical_events_180d": 0,
+        "global_drift_pct": 0.0,
+        "identity_conflicts_total": 0,
+        "tracker": {
+          "consecutive_passes": 1,
+          "considered_runs": 1,
+          "history": [
+            {
+              "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T12:38:12.302689+00:00"
+            }
+          ],
+          "pass": true,
+          "required_consecutive_passes": 1,
+          "window_days": 30
+        }
+      },
+      "duration_ms": 0,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "PARITY",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.715656+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "decision": "SUCCESS",
+      "duration_ms": 0,
+      "exit_code": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "command_model_finalize",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-3d07d28c4772",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:38:14.715656+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    }
+  ],
+  "exit_code": 0,
+  "exit_code_reason": "EXECUTION_COMMAND_MODEL_PASS",
+  "external_failures": [],
+  "fail_closed_triggered": false,
+  "failure_point": "",
+  "final_decision": "SUCCESS",
+  "gate_results": [
+    {
+      "details": {
+        "checked_files": [
+          "SYSTEM_CONTRACT_INDEX.md",
+          "EXECUTION_PRECEDENCE_CONTRACT.md",
+          "LAYER_MAP.md"
+        ]
+      },
+      "finished_at": "2026-05-02T12:38:12.305392+00:00",
+      "gate": "SCI",
+      "reason": "SCI_CONTRACT_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:12.304321+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "emv_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+        "violation_count": 0
+      },
+      "finished_at": "2026-05-02T12:38:12.622741+00:00",
+      "gate": "EMV",
+      "reason": "EXTERNAL_GATE_PASS",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:12.306473+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "ci_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"ci_status\": \"PASS\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T12:38:12.861269+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": []\n      },\n      \"violation_count\": 0\n    },\n    {\n      \"name\": \"Import Boundary Enforcement\",\n      \"rule_id\": \"SCI-002\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/import_guard.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T12:38:13.599830+00:00\",\n        \"validator\": \"import_guard\",\n        \"v",
+        "violation_count": 0
+      },
+      "finished_at": "2026-05-02T12:38:14.708137+00:00",
+      "gate": "CI",
+      "reason": "EXTERNAL_GATE_PASS",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:12.623253+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "phase": "PHASE_1",
+        "sst_source": "LOGICMONITOR",
+        "writable_systems": [
+          "LOGICMONITOR"
+        ]
+      },
+      "finished_at": "2026-05-02T12:38:14.708137+00:00",
+      "gate": "AUTH",
+      "reason": "AUTHORITY_MODEL_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:14.708137+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "execution_mode": "READ_ONLY",
+        "governance_approved": false,
+        "phase": "PHASE_1"
+      },
+      "finished_at": "2026-05-02T12:38:14.709143+00:00",
+      "gate": "GOVERNANCE",
+      "reason": "READ_ONLY_MODE_ENFORCED",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:14.709143+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "source_records": 3,
+        "source_selector": "mock",
+        "target_records": 3,
+        "target_selector": "mock"
+      },
+      "finished_at": "2026-05-02T12:38:14.709143+00:00",
+      "gate": "API",
+      "reason": "API_DATA_READY",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:14.709143+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "source_records": 3,
+        "target_records": 3
+      },
+      "finished_at": "2026-05-02T12:38:14.709143+00:00",
+      "gate": "QUERY",
+      "reason": "QUERY_NORMALIZATION_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:14.709143+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "ansible_execution": {
+          "execution_mode": "MOCK",
+          "operation": "READ_ONLY_VALIDATE",
+          "records_processed": 3,
+          "status": "PASS"
+        },
+        "postgres_write": {
+          "records_inserted": 3,
+          "records_updated": 0,
+          "records_written": 3,
+          "status": "PASS",
+          "storage": "in_memory_emulation",
+          "write_fingerprint": "38deed38e6c2c5c6dfc8040d4d13160186bcdb0085641dad6a054b5c96d2a902",
+          "written_at": "2026-05-02T12:38:14.710135+00:00"
+        }
+      },
+      "finished_at": "2026-05-02T12:38:14.710135+00:00",
+      "gate": "PERSISTENCE",
+      "reason": "CANONICAL_PERSISTENCE_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:14.710135+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "adapter_states": {
+          "AnsibleAdapter": {
+            "execute_playbook": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            },
+            "fetch_validated_inventory": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            }
+          },
+          "LogicMonitorAdapter": {},
+          "NautobotAdapter": {},
+          "PostgresAdapter": {
+            "write_canonical_inventory": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            }
+          }
+        }
+      },
+      "finished_at": "2026-05-02T12:38:14.710135+00:00",
+      "gate": "OBSERVABILITY",
+      "reason": "OBSERVABILITY_TRACES_CAPTURED",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:14.710135+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "runtime_inputs": {
+          "identity_events": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\identity_events.json",
+          "source": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\source_records.json",
+          "target": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\target_records.json"
+        }
+      },
+      "finished_at": "2026-05-02T12:38:14.713659+00:00",
+      "gate": "EXPORT",
+      "reason": "EXPORT_ARTIFACTS_WRITTEN",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:14.713659+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "global_drift_pct": 0.0,
+        "max_global_drift": 5.0
+      },
+      "finished_at": "2026-05-02T12:38:14.714659+00:00",
+      "gate": "DRIFT",
+      "reason": "GLOBAL_DRIFT_WITHIN_THRESHOLD",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:14.714659+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "critical_events_180d": 0,
+        "global_drift_pct": 0.0,
+        "identity_conflicts_total": 0,
+        "tracker": {
+          "consecutive_passes": 1,
+          "considered_runs": 1,
+          "history": [
+            {
+              "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T12:38:12.302689+00:00"
+            }
+          ],
+          "pass": true,
+          "required_consecutive_passes": 1,
+          "window_days": 30
+        }
+      },
+      "finished_at": "2026-05-02T12:38:14.714659+00:00",
+      "gate": "PARITY",
+      "reason": "PARITY_GATES_PASSED",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:38:14.714659+00:00",
+      "status": "PASS"
+    }
+  ],
+  "identity_conflict_count": 0,
+  "identity_conflicts": [],
+  "kernel_anchor": "SYSTEM_KERNEL_RUNTIME::v1.0::ANCHOR_HASH=3f2db198::FAIL_CLOSED=true",
+  "mode": "MOCK",
+  "parity_result": {
+    "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+    "reason": "PARITY_GATES_PASSED",
+    "status": "PASS"
+  },
+  "phase": "PHASE_1",
+  "phase_source": "PHASE_1",
+  "phase_target": "PHASE_1",
+  "run_id": "system-enf-3d07d28c4772",
+  "run_metadata": {
+    "execution_mode": "READ_ONLY",
+    "fail_closed": true,
+    "finished_at": "2026-05-02T12:38:14.715656+00:00",
+    "kernel_mode": "MOCK",
+    "run_id": "system-enf-3d07d28c4772",
+    "started_at": "2026-05-02T12:38:12.302689+00:00",
+    "total_duration_ms": 2413,
+    "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+  },
+  "sst_owner": "LOGICMONITOR",
+  "sst_source": "LOGICMONITOR",
+  "sst_target": "LOGICMONITOR",
+  "total_duration_ms": 2413,
+  "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+  "tracker_summary": {
+    "consecutive_passes": 1,
+    "considered_runs": 1,
+    "history": [
+      {
+        "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T12:38:12.302689+00:00"
+      }
+    ],
+    "pass": true,
+    "required_consecutive_passes": 1,
+    "window_days": 30
+  }
+}

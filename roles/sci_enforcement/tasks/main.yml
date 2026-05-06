@@ -1,0 +1,47 @@
+---
+- name: SCI | Resolve validator path
+  ansible.builtin.set_fact:
+    sci_validator_path: "{{ sci_validator_path | default(playbook_dir + '/../ci/sci_validator.py') }}"
+
+- name: SCI | Verify validator exists
+  ansible.builtin.stat:
+    path: "{{ sci_validator_path }}"
+  register: sci_validator_stat
+
+- name: SCI | Fail when validator is missing
+  ansible.builtin.fail:
+    msg: "{{ {'decision':'BLOCK','reason_code':'SCI_VALIDATOR_MISSING','violated_rule':'SCI_ENFORCEMENT_HOOK','run_id': (run_id | default('UNKNOWN'))} | to_json }}"
+  when: not sci_validator_stat.stat.exists
+
+- name: SCI | Build validation context
+  ansible.builtin.set_fact:
+    sci_context:
+      run_id: "{{ run_id | default(lookup('pipe', 'date -u +%Y%m%dT%H%M%SZ')) }}"
+      device_ip: "{{ device_ip | default(ansible_host | default(inventory_hostname)) }}"
+      execution_mode: "{{ execution_mode | default('READ_ONLY') }}"
+      source_layer: "{{ source_layer | default('EXECUTION') }}"
+      target_action: "{{ target_action | default('SSH_VALIDATION') }}"
+      data_classification: "{{ data_classification | default('EVIDENCE') }}"
+      timestamp: "{{ timestamp | default(lookup('pipe', 'date -u +%Y-%m-%dT%H:%M:%SZ')) }}"
+      global_automation_guard: "{{ global_automation_guard | default('enabled') }}"
+      sci_permit: "{{ sci_permit | default(false) | bool }}"
+
+- name: SCI | Run validator
+  ansible.builtin.command:
+    argv:
+      - "{{ sci_validator_path }}"
+      - --context-json
+      - "{{ sci_context | to_json }}"
+  register: sci_validation_raw
+  changed_when: false
+  failed_when: false
+
+- name: SCI | Parse validator result
+  ansible.builtin.set_fact:
+    sci_validation_result: "{{ sci_validation_raw.stdout | from_json }}"
+  failed_when: sci_validation_raw.stdout is not defined or (sci_validation_raw.stdout | trim | length) == 0
+
+- name: SCI | Enforce BLOCK decision
+  ansible.builtin.fail:
+    msg: "{{ {'decision': (sci_validation_result.decision | default('BLOCK')), 'reason_code': (sci_validation_result.reason_code | default('UNKNOWN')), 'violated_rule': (sci_validation_result.violated_rule | default('UNKNOWN')), 'run_id': (sci_validation_result.run_id | default(run_id | default('UNKNOWN')))} | to_json }}"
+  when: (sci_validation_result.decision | default('BLOCK')) != 'ALLOW'

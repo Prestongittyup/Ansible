@@ -1,0 +1,219 @@
+{
+  "adapter_health_snapshot": {
+    "AnsibleAdapter": {
+      "adapter": "AnsibleAdapter",
+      "backend": "runner",
+      "check": "dummy_inventory_pull",
+      "mode": "MOCK",
+      "phase": "PHASE_1",
+      "records": 3,
+      "status": "PASS"
+    },
+    "LogicMonitorAdapter": {
+      "adapter": "LogicMonitorAdapter",
+      "check": "dummy_inventory_pull",
+      "mode": "MOCK",
+      "phase": "PHASE_1",
+      "records": 3,
+      "status": "PASS"
+    },
+    "PostgresAdapter": {
+      "adapter": "PostgresAdapter",
+      "backend": "mock",
+      "check": "schema_validation",
+      "mode": "MOCK",
+      "phase": "PHASE_1",
+      "status": "PASS"
+    }
+  },
+  "created_at": "2026-05-02T12:28:30.732332+00:00",
+  "failure_count": 1,
+  "failure_reason": "GATE_HARD_FAIL",
+  "health_state": "DEGRADED",
+  "integration_readiness_status": {
+    "AnsibleAdapter": {
+      "adapter": "AnsibleAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [],
+        "status": "SKIPPED"
+      },
+      "failure_class": "",
+      "mode": "MOCK",
+      "operation": "bootstrap_integration_probe",
+      "phase": "PHASE_1",
+      "reason": "mock_mode",
+      "root_cause": "",
+      "status": "SKIPPED"
+    },
+    "LogicMonitorAdapter": {
+      "adapter": "LogicMonitorAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [],
+        "status": "SKIPPED"
+      },
+      "failure_class": "",
+      "mode": "MOCK",
+      "operation": "bootstrap_integration_probe",
+      "phase": "PHASE_1",
+      "reason": "mock_mode",
+      "root_cause": "",
+      "status": "SKIPPED"
+    },
+    "PostgresAdapter": {
+      "adapter": "PostgresAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [],
+        "status": "SKIPPED"
+      },
+      "failure_class": "",
+      "mode": "MOCK",
+      "operation": "bootstrap_integration_probe",
+      "phase": "PHASE_1",
+      "reason": "mock_mode",
+      "root_cause": "",
+      "status": "SKIPPED"
+    }
+  },
+  "last_audit_path": "",
+  "last_bootstrap_result": {
+    "adapters_failed": [],
+    "adapters_initialized": [
+      "AnsibleAdapter",
+      "LogicMonitorAdapter",
+      "PostgresAdapter"
+    ],
+    "boot_id": "system-boot-8373d50785b4",
+    "credential_injection": {
+      "ansible_execution_endpoint_present": false,
+      "ansible_inventory_path_present": false,
+      "ansible_runner_path_present": false,
+      "logicmonitor_account_present": false,
+      "logicmonitor_api_key_present": false,
+      "nautobot_token_present": false,
+      "nautobot_url_present": false,
+      "postgres_connection_string_present": false,
+      "postgres_db_present": false,
+      "postgres_password_present": false,
+      "postgres_user_present": false
+    },
+    "environment_valid": true,
+    "execution_status": "READY",
+    "external_dependencies_ready": true,
+    "fail_closed_triggered": false,
+    "health_status": {
+      "AnsibleAdapter": {
+        "adapter": "AnsibleAdapter",
+        "backend": "runner",
+        "check": "dummy_inventory_pull",
+        "mode": "MOCK",
+        "phase": "PHASE_1",
+        "records": 3,
+        "status": "PASS"
+      },
+      "LogicMonitorAdapter": {
+        "adapter": "LogicMonitorAdapter",
+        "check": "dummy_inventory_pull",
+        "mode": "MOCK",
+        "phase": "PHASE_1",
+        "records": 3,
+        "status": "PASS"
+      },
+      "PostgresAdapter": {
+        "adapter": "PostgresAdapter",
+        "backend": "mock",
+        "check": "schema_validation",
+        "mode": "MOCK",
+        "phase": "PHASE_1",
+        "status": "PASS"
+      }
+    },
+    "integration_status": {
+      "AnsibleAdapter": {
+        "adapter": "AnsibleAdapter",
+        "credentials": {
+          "missing": [],
+          "present": [],
+          "status": "SKIPPED"
+        },
+        "failure_class": "",
+        "mode": "MOCK",
+        "operation": "bootstrap_integration_probe",
+        "phase": "PHASE_1",
+        "reason": "mock_mode",
+        "root_cause": "",
+        "status": "SKIPPED"
+      },
+      "LogicMonitorAdapter": {
+        "adapter": "LogicMonitorAdapter",
+        "credentials": {
+          "missing": [],
+          "present": [],
+          "status": "SKIPPED"
+        },
+        "failure_class": "",
+        "mode": "MOCK",
+        "operation": "bootstrap_integration_probe",
+        "phase": "PHASE_1",
+        "reason": "mock_mode",
+        "root_cause": "",
+        "status": "SKIPPED"
+      },
+      "PostgresAdapter": {
+        "adapter": "PostgresAdapter",
+        "credentials": {
+          "missing": [],
+          "present": [],
+          "status": "SKIPPED"
+        },
+        "failure_class": "",
+        "mode": "MOCK",
+        "operation": "bootstrap_integration_probe",
+        "phase": "PHASE_1",
+        "reason": "mock_mode",
+        "root_cause": "",
+        "status": "SKIPPED"
+      }
+    },
+    "live_execution_safe": true,
+    "mode": "MOCK",
+    "phase": "PHASE_1",
+    "runtime_lock_hash": "3850fee23b049d32699637eae7318a792ff3502c17291f35643d86fb5d2b1cf1",
+    "schema_version": "1.0",
+    "sst_owner": "LOGICMONITOR",
+    "system_ready": true,
+    "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+  },
+  "last_run_status": {
+    "audit_path": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\sprint18_tests_ssth71kj\\runs\\20260502T122831Z\\system_enforcement_audit.json",
+    "decision": "GATE_HARD_FAIL",
+    "exit_code": 30,
+    "run_id": "system-enf-cabffb5f7093",
+    "timestamp": "2026-05-02T12:28:32.257649+00:00",
+    "trigger": "manual"
+  },
+  "last_successful_run_id": "",
+  "lifecycle_state": "DEGRADED",
+  "metrics": {
+    "bootstrap_attempts_total": 1,
+    "bootstrap_failures_total": 0,
+    "run_attempts_total": 1,
+    "run_failures_total": 1
+  },
+  "operational_truth": "NOT_RUNNING",
+  "phase_state": {
+    "phase": "PHASE_1",
+    "sst_owner": "LOGICMONITOR"
+  },
+  "require_bootstrap": true,
+  "schema_version": "1.0",
+  "service": {
+    "host": "127.0.0.1",
+    "pid": 0,
+    "port": 8088,
+    "started_at": ""
+  },
+  "updated_at": "2026-05-02T12:28:32.263187+00:00"
+}

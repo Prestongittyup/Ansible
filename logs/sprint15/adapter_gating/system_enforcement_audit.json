@@ -1,0 +1,469 @@
+{
+  "adapter_states": {
+    "AnsibleAdapter": {
+      "execute_playbook": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      },
+      "fetch_validated_inventory": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      }
+    },
+    "LogicMonitorAdapter": {
+      "fetch_discovery_records": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      }
+    },
+    "NautobotAdapter": {},
+    "PostgresAdapter": {
+      "write_canonical_inventory": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      }
+    }
+  },
+  "adapters_active": [
+    "LogicMonitorAdapter",
+    "AnsibleAdapter",
+    "PostgresAdapter"
+  ],
+  "data_stats": {
+    "adapter_activation_registry": {
+      "active": {
+        "AnsibleAdapter": true,
+        "LogicMonitorAdapter": true,
+        "NautobotAdapter": false,
+        "PostgresAdapter": true
+      },
+      "mode": "MOCK",
+      "phase": "PHASE_1",
+      "rules": {
+        "AnsibleAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": true,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "LogicMonitorAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "NautobotAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "PostgresAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": true
+        }
+      },
+      "source": "logicmonitor",
+      "target": "mock"
+    },
+    "adapter_states": {
+      "AnsibleAdapter": {
+        "execute_playbook": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        },
+        "fetch_validated_inventory": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        }
+      },
+      "LogicMonitorAdapter": {
+        "fetch_discovery_records": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        }
+      },
+      "NautobotAdapter": {},
+      "PostgresAdapter": {
+        "write_canonical_inventory": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        }
+      }
+    },
+    "adapters_active": [
+      "LogicMonitorAdapter",
+      "AnsibleAdapter",
+      "PostgresAdapter"
+    ],
+    "command_model": {
+      "emit_audit": "logs/sprint15/adapter_gating",
+      "parity_window": "30d",
+      "source": "logicmonitor",
+      "target": "mock"
+    },
+    "contract_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "deterministic_signature": "d7fcecc2d22242db92d61019300c246e30c98ab9f17b99dd17e58d087378dc4c",
+    "drift_percentage": 0.0,
+    "execution_mode": "READ_ONLY",
+    "execution_status": "PASS",
+    "fail_closed_triggered": false,
+    "identity_conflicts": [],
+    "kernel_mode": "MOCK",
+    "parity_result": {
+      "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+      "reason": "PARITY_GATES_PASSED",
+      "status": "PASS"
+    },
+    "runtime_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "runtime_inputs": {
+      "identity_events": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\identity_events.json",
+      "source": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\source_records.json",
+      "target": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\target_records.json"
+    }
+  },
+  "decision_reason": "EXECUTION_COMMAND_MODEL_PASS",
+  "deterministic_signature": "d7fcecc2d22242db92d61019300c246e30c98ab9f17b99dd17e58d087378dc4c",
+  "drift_metrics": {
+    "compared_records_total": 3,
+    "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+    "drifted_records_total": 0,
+    "global_drift_pct": 0.0,
+    "hard_drift_count": 0,
+    "soft_drift_count": 0
+  },
+  "drift_percentage": 0.0,
+  "errors": [],
+  "execution_status": "PASS",
+  "exit_code": 0,
+  "exit_code_reason": "EXECUTION_COMMAND_MODEL_PASS",
+  "fail_closed_triggered": false,
+  "final_decision": "SUCCESS",
+  "gate_results": [
+    {
+      "details": {
+        "checked_files": [
+          "SYSTEM_CONTRACT_INDEX.md",
+          "EXECUTION_PRECEDENCE_CONTRACT.md",
+          "LAYER_MAP.md"
+        ]
+      },
+      "finished_at": "2026-05-02T01:21:44.885305+00:00",
+      "gate": "SCI",
+      "reason": "SCI_CONTRACT_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:44.884300+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "emv_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+        "violation_count": 0
+      },
+      "finished_at": "2026-05-02T01:21:45.842449+00:00",
+      "gate": "EMV",
+      "reason": "EXTERNAL_GATE_PASS",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:44.886311+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "ci_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"ci_status\": \"PASS\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T01:21:46.773655+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": []\n      },\n      \"violation_count\": 0\n    },\n    {\n      \"name\": \"Import Boundary Enforcement\",\n      \"rule_id\": \"SCI-002\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/import_guard.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T01:21:48.564675+00:00\",\n        \"validator\": \"import_guard\",\n        \"v",
+        "violation_count": 0
+      },
+      "finished_at": "2026-05-02T01:21:50.255274+00:00",
+      "gate": "CI",
+      "reason": "EXTERNAL_GATE_PASS",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:45.843458+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "phase": "PHASE_1",
+        "sst_source": "LOGICMONITOR",
+        "writable_systems": [
+          "LOGICMONITOR"
+        ]
+      },
+      "finished_at": "2026-05-02T01:21:50.255274+00:00",
+      "gate": "AUTH",
+      "reason": "AUTHORITY_MODEL_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:50.255274+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "execution_mode": "READ_ONLY",
+        "governance_approved": false,
+        "phase": "PHASE_1"
+      },
+      "finished_at": "2026-05-02T01:21:50.255274+00:00",
+      "gate": "GOVERNANCE",
+      "reason": "READ_ONLY_MODE_ENFORCED",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:50.255274+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "source_records": 3,
+        "source_selector": "logicmonitor",
+        "target_records": 3,
+        "target_selector": "mock"
+      },
+      "finished_at": "2026-05-02T01:21:50.255274+00:00",
+      "gate": "API",
+      "reason": "API_DATA_READY",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:50.255274+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "source_records": 3,
+        "target_records": 3
+      },
+      "finished_at": "2026-05-02T01:21:50.256273+00:00",
+      "gate": "QUERY",
+      "reason": "QUERY_NORMALIZATION_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:50.256273+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "ansible_execution": {
+          "execution_mode": "MOCK",
+          "operation": "READ_ONLY_VALIDATE",
+          "records_processed": 3,
+          "status": "PASS"
+        },
+        "postgres_write": {
+          "records_inserted": 3,
+          "records_updated": 0,
+          "records_written": 3,
+          "status": "PASS",
+          "storage": "in_memory_emulation",
+          "write_fingerprint": "38deed38e6c2c5c6dfc8040d4d13160186bcdb0085641dad6a054b5c96d2a902",
+          "written_at": "2026-05-02T01:21:50.256273+00:00"
+        }
+      },
+      "finished_at": "2026-05-02T01:21:50.256273+00:00",
+      "gate": "PERSISTENCE",
+      "reason": "CANONICAL_PERSISTENCE_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:50.256273+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "adapter_states": {
+          "AnsibleAdapter": {
+            "execute_playbook": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            },
+            "fetch_validated_inventory": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            }
+          },
+          "LogicMonitorAdapter": {
+            "fetch_discovery_records": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            }
+          },
+          "NautobotAdapter": {},
+          "PostgresAdapter": {
+            "write_canonical_inventory": {
+              "details": {
+                "fallback": false
+              },
+              "mode_used": "MOCK",
+              "status": "PASS"
+            }
+          }
+        }
+      },
+      "finished_at": "2026-05-02T01:21:50.256273+00:00",
+      "gate": "OBSERVABILITY",
+      "reason": "OBSERVABILITY_TRACES_CAPTURED",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:50.256273+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "runtime_inputs": {
+          "identity_events": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\identity_events.json",
+          "source": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\source_records.json",
+          "target": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\target_records.json"
+        }
+      },
+      "finished_at": "2026-05-02T01:21:50.265278+00:00",
+      "gate": "EXPORT",
+      "reason": "EXPORT_ARTIFACTS_WRITTEN",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:50.265278+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "global_drift_pct": 0.0,
+        "max_global_drift": 5.0
+      },
+      "finished_at": "2026-05-02T01:21:50.265278+00:00",
+      "gate": "DRIFT",
+      "reason": "GLOBAL_DRIFT_WITHIN_THRESHOLD",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:50.265278+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "critical_events_180d": 0,
+        "global_drift_pct": 0.0,
+        "identity_conflicts_total": 0,
+        "tracker": {
+          "consecutive_passes": 1,
+          "considered_runs": 1,
+          "history": [
+            {
+              "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:21:44.881995+00:00"
+            }
+          ],
+          "pass": true,
+          "required_consecutive_passes": 1,
+          "window_days": 30
+        }
+      },
+      "finished_at": "2026-05-02T01:21:50.265278+00:00",
+      "gate": "PARITY",
+      "reason": "PARITY_GATES_PASSED",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:21:50.265278+00:00",
+      "status": "PASS"
+    }
+  ],
+  "identity_conflict_count": 0,
+  "identity_conflicts": [],
+  "kernel_anchor": "SYSTEM_KERNEL_RUNTIME::v1.0::ANCHOR_HASH=3f2db198::FAIL_CLOSED=true",
+  "mode": "MOCK",
+  "parity_result": {
+    "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+    "reason": "PARITY_GATES_PASSED",
+    "status": "PASS"
+  },
+  "phase": "PHASE_1",
+  "phase_source": "PHASE_1",
+  "phase_target": "PHASE_1",
+  "run_id": "system-enf-2f35ddb79414",
+  "run_metadata": {
+    "execution_mode": "READ_ONLY",
+    "fail_closed": true,
+    "finished_at": "2026-05-02T01:21:50.265278+00:00",
+    "kernel_mode": "MOCK",
+    "run_id": "system-enf-2f35ddb79414",
+    "started_at": "2026-05-02T01:21:44.881995+00:00"
+  },
+  "sst_owner": "LOGICMONITOR",
+  "sst_source": "LOGICMONITOR",
+  "sst_target": "LOGICMONITOR",
+  "tracker_summary": {
+    "consecutive_passes": 1,
+    "considered_runs": 1,
+    "history": [
+      {
+        "deterministic_hash": "4b3c128f15f8a34133ad9abb71e7bd82c8b5f124d09fb2e855aff67f491924b1",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:21:44.881995+00:00"
+      }
+    ],
+    "pass": true,
+    "required_consecutive_passes": 1,
+    "window_days": 30
+  }
+}

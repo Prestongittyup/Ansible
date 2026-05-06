@@ -1,0 +1,25 @@
+{
+  "adapters_failed": [
+    {
+      "adapter": "SYSTEM",
+      "reason": "LIVE_HEALTH_CHECK_FAILURE::NautobotAdapter"
+    }
+  ],
+  "adapters_initialized": [
+    "AnsibleAdapter",
+    "LogicMonitorAdapter",
+    "NautobotAdapter",
+    "PostgresAdapter"
+  ],
+  "boot_id": "system-boot-8c1cc1f88ff8",
+  "environment_valid": true,
+  "execution_status": "BLOCKED",
+  "fail_closed_triggered": true,
+  "health_status": {},
+  "mode": "LIVE",
+  "phase": "PHASE_3",
+  "reason": "LIVE_HEALTH_CHECK_FAILURE::NautobotAdapter",
+  "schema_version": "1.0",
+  "sst_owner": "NAUTOBOT",
+  "system_ready": false
+}

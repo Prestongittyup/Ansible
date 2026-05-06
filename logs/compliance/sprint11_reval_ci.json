@@ -1,0 +1,137 @@
+{
+  "ci_status": "PASS",
+  "emv_status": "PASS",
+  "emv_violation_count": 0,
+  "execution_mode": "CI_ENFORCEMENT_KERNEL",
+  "rule_results": [
+    {
+      "name": "SCI Presence Validation",
+      "rule_id": "SCI-001",
+      "severity": "CRITICAL",
+      "status": "PASS",
+      "validator_binding": {
+        "file": "ci/sci_validator.py",
+        "function": "run"
+      },
+      "validator_result": {
+        "file_path": "",
+        "rule_id": "",
+        "schema_version": "1.0",
+        "severity": "LOW",
+        "status": "PASS",
+        "timestamp": "2026-05-01T23:45:26.725751+00:00",
+        "validator": "sci_validator",
+        "violations": []
+      },
+      "violation_count": 0
+    },
+    {
+      "name": "Import Boundary Enforcement",
+      "rule_id": "SCI-002",
+      "severity": "CRITICAL",
+      "status": "PASS",
+      "validator_binding": {
+        "file": "ci/import_guard.py",
+        "function": "run"
+      },
+      "validator_result": {
+        "file_path": "",
+        "rule_id": "",
+        "schema_version": "1.0",
+        "severity": "LOW",
+        "status": "PASS",
+        "timestamp": "2026-05-01T23:45:26.952693+00:00",
+        "validator": "import_guard",
+        "violations": []
+      },
+      "violation_count": 0
+    },
+    {
+      "name": "Bootstrap-Only Execution Enforcement",
+      "rule_id": "SCI-003",
+      "severity": "CRITICAL",
+      "status": "PASS",
+      "validator_binding": {
+        "file": "ci/bootstrap_gate.py",
+        "function": "run"
+      },
+      "validator_result": {
+        "file_path": "",
+        "rule_id": "",
+        "schema_version": "1.0",
+        "severity": "LOW",
+        "status": "PASS",
+        "timestamp": "2026-05-01T23:45:27.250082+00:00",
+        "validator": "bootstrap_gate",
+        "violations": []
+      },
+      "violation_count": 0
+    },
+    {
+      "name": "Schema Version 2.1 Enforcement",
+      "rule_id": "SCI-004",
+      "severity": "CRITICAL",
+      "status": "PASS",
+      "validator_binding": {
+        "file": "ci/schema_version_guard.py",
+        "function": "run"
+      },
+      "validator_result": {
+        "file_path": "",
+        "rule_id": "",
+        "schema_version": "1.0",
+        "severity": "LOW",
+        "status": "PASS",
+        "timestamp": "2026-05-01T23:45:27.252254+00:00",
+        "validator": "schema_version_guard",
+        "violations": []
+      },
+      "violation_count": 0
+    },
+    {
+      "name": "Execution Contract Integrity",
+      "rule_id": "SCI-005",
+      "severity": "CRITICAL",
+      "status": "PASS",
+      "validator_binding": {
+        "file": "ci/execution_contract_integrity_guard.py",
+        "function": "run"
+      },
+      "validator_result": {
+        "file_path": "",
+        "rule_id": "",
+        "schema_version": "1.0",
+        "severity": "LOW",
+        "status": "PASS",
+        "timestamp": "2026-05-01T23:45:27.253040+00:00",
+        "validator": "execution_contract_integrity_guard",
+        "violations": []
+      },
+      "violation_count": 0
+    },
+    {
+      "name": "CI Pipeline Ordering Enforcement",
+      "rule_id": "SCI-006",
+      "severity": "CRITICAL",
+      "status": "PASS",
+      "validator_binding": {
+        "file": "ci/ci_pipeline_order_guard.py",
+        "function": "run"
+      },
+      "validator_result": {
+        "file_path": "",
+        "rule_id": "",
+        "schema_version": "1.0",
+        "severity": "LOW",
+        "status": "PASS",
+        "timestamp": "2026-05-01T23:45:27.254272+00:00",
+        "validator": "ci_pipeline_order_guard",
+        "violations": []
+      },
+      "violation_count": 0
+    }
+  ],
+  "schema_version": "1.0",
+  "sprint_blocking": false,
+  "violation_count": 0
+}

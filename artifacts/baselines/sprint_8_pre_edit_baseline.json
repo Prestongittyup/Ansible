@@ -1,0 +1,101 @@
+{
+  "captured_at": "2026-05-01T22:23:21.132759+00:00",
+  "last_execution_timestamps": {
+    "api_gateway": {
+      "last_execution_at": "2026-05-01T22:23:22.416607+00:00",
+      "probe_status": 200
+    },
+    "ci_kernel": {
+      "finished_at": "2026-05-01T22:23:21.833201+00:00",
+      "started_at": "2026-05-01T22:23:21.303786+00:00"
+    },
+    "emv": {
+      "finished_at": "2026-05-01T22:23:21.303734+00:00",
+      "started_at": "2026-05-01T22:23:21.148443+00:00"
+    },
+    "governance_middleware": {
+      "last_execution_at": "2026-05-01T22:23:22.416607+00:00"
+    }
+  },
+  "layers": {
+    "api": {
+      "file_count": 6,
+      "files": {
+        "api_layer\\__init__.py": "f134d9ffede4ca0c07d9e5778e354296e75f523bca0ea23918b0e5537af6afec",
+        "api_layer\\api_contracts.py": "f5029a0397cf442dd5764aca5d97ad93819c03abe33ea5b5ab5527b6ddaa5007",
+        "api_layer\\api_routes.py": "0db12e4e8a27447aa6b082f78ecd57cfb56bdd56ddf9bdfe741bb69a44efdced",
+        "api_layer\\api_server.py": "4c716b4b9dbdc5e14bc87bfc0ae975c30eb3c4ce7c79fe8a68608a6c7e978dfc",
+        "api_layer\\api_validator.py": "96cf6e22d7b55e1ba6b805f23cb9d9b5708ed0e6f977910fa207c10bdc52318e",
+        "test_api_layer.py": "4c193bdffac593b81d7b52a350956f66acbbdbfe7c2162c65cddd6f636964aa0"
+      },
+      "layer": "api",
+      "layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2"
+    },
+    "enforcement": {
+      "file_count": 19,
+      "files": {
+        ".github\\workflows\\sci_enforcement.yml": "e694bfe8a6b4637463205dde64f7444597961a7c7ec373e88db4935122f0372c",
+        "bootstrap.py": "eef0bf47c3f840d91400edb04ed2cd7b7bc780539dc0766e8038a1dd965be7cc",
+        "ci\\bootstrap_gate.py": "d4cbe7243752fa16c6e2c84d829301fd450257f409dc1bad87e4eb0b4ebad6ce",
+        "ci\\ci_pipeline_order_guard.py": "95203e698e536cd86bc6c4889b6beb53e936c3c86874da63b0b0300b1ddfeacf",
+        "ci\\core\\ci_policy_engine.py": "feaa40e275e666e958f484e9cc1d437279d4a1010fa78d8335a41e023838e1d5",
+        "ci\\execution_contract_integrity_guard.py": "d9970c2b6cf9d6a953889c7a527e25dfbd34888191a721c76acd2059b769ce90",
+        "ci\\import_guard.py": "6f9fd07c8953a4fe8bd2cebb0d497badbb26ee70da7e8f5196aff7f6ff398d8a",
+        "ci\\meta\\ci_enforcement_meta_validator.py": "ec72db3b918ba6c0dcc01bebb895b65990d37c1a62eb1b02898db02de01a4866",
+        "ci\\run_ci_kernel.py": "7f4c2684ce26f0ea9bdfa1ada02b3afa8320f5f77666c32e6a1265d0ec9ca172",
+        "ci\\schema_version_guard.py": "421bfa36b4af77ee5bbc596ab29b93a30b4fbb6e646c798894bdcfebc7ede999",
+        "ci\\sci_validator.py": "0bbed1b787c81bd4fa6a0e43d61c96fece59df2f1685db40e3d4bdb6ac0081e1",
+        "ci\\science\\SCI_RULE_REGISTRY.yaml": "b4f65016620d01948894b99e1fd113383380907c3faa38d66c73deba181c43a2",
+        "ci\\tests\\ci_golden_fixtures\\emv_invalid_registry_missing_binding.yaml": "7adee423fa611218a9dc41a2b036c71341be9a40c511210b1824b4278c1e7f4f",
+        "execution_contract\\__init__.py": "f35684db82a87f75289d45b11dbfe1f1acec314c5d376e040c30c0ca8a5bd6af",
+        "execution_contract\\ansible_error_mapper.py": "df9dc91df1aca2f12816a293d2485a11bc52a61b8dbbe00e16d6b5ac2cfd911a",
+        "execution_contract\\execution_state.py": "41b0cf2ac4883fd4d96093a3a78f9d804a817d79c1ada23645af85cdd04e21e5",
+        "execution_contract\\failure_taxonomy.py": "fa7de2b20962325036ff332022e3615365d82b2a46ae4cc6c4ead1b487dcd10d",
+        "execution_contract\\runtime_guard.py": "d3a3332dfd4fd28899881795bcce2e737541374265b043200a115fff4df697cb",
+        "execution_contract\\schema.py": "66a775b29ba9733f39780a44352c5d162f3951dacefd979197133b467dfacc3e"
+      },
+      "layer": "enforcement",
+      "layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702"
+    },
+    "governance": {
+      "file_count": 7,
+      "files": {
+        "governance_layer\\__init__.py": "645a984330d5024967696344f80472472eb9c2e7232de55291d42e008cf65a7d",
+        "governance_layer\\governance_middleware.py": "8f261d5068b4e8ce22b826465a5ad8f0732db53641cffc4170b07c0fe763c5e1",
+        "governance_layer\\query_bounds_validator.py": "fcf13684244400b2d6ad21edc20ca60ae80745b8f86896ae1c7544325193d404",
+        "governance_layer\\quota_manager.py": "77cfbdeb5ea962ab2394d6c1408e41277ce92bac7de90c67f00c8befa9e724b2",
+        "governance_layer\\rate_limiter.py": "049c24f2d193b17276507ea00553ac6a08f45da60525994304393e8e1a6d64db",
+        "governance_layer\\request_policy_engine.py": "de684dcc9148ce876fc41c550299b09a2773ea716bd29754c22d4ef9aec2f5de",
+        "test_governance_layer.py": "62818813593302a754e2af6cea2781c8fab63c4cade4ff8cd48a054d7123b79d"
+      },
+      "layer": "governance",
+      "layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c"
+    },
+    "persistence": {
+      "file_count": 6,
+      "files": {
+        "persistence\\__init__.py": "40424a494d503626ba40d2a6db1f519c9a5f0e92a58c4dea5e28b399c4a2bb4f",
+        "persistence\\contract_validator.py": "388011b308e1ea45dcf2839feadc07cd912c3690acad6e0d4bf67ecf8a5cb428",
+        "persistence\\db_client.py": "c173d4f481be9f20bf8ec61b804e6dcf602fed972567ea0e8b2357f374e2bf4b",
+        "persistence\\ingest_validation.py": "c0c70171a9bf6d28b21af3ec06a86817ef6c1b90de85462569e8d7dba45988e7",
+        "persistence\\schema.sql": "49021fc9e807932bcbee0ea8ebbd1a762bf61cecb696c86a5cb5173c7e1c75d8",
+        "persistence\\test_ingest_validation.py": "7deb297112dc25d13afe0ec9e7ef10bbd3c0adf693b4ccc71a625ae7a7534b83"
+      },
+      "layer": "persistence",
+      "layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6"
+    },
+    "query": {
+      "file_count": 5,
+      "files": {
+        "query_layer\\__init__.py": "9a1331b51ace2835165ace2b49fdc14b5d0e443a60df7c533e062b25bebe89c8",
+        "query_layer\\query_client.py": "56a4b916af9c54cbc5996f9737bf524cc096149a594231271de0958ab75d28df",
+        "query_layer\\query_contracts.py": "b330618a8af3896114ed0e3a1e3937240c0c2235c15cbbe14e768e1cc17f7c4c",
+        "query_layer\\query_service.py": "d8b7160934480ff21f5cf8f12b92e5eba32860eb4df2e4f8d9426e00617b804a",
+        "query_layer\\query_validator.py": "fd08c81c0ee103e5bd0836ac69c7f922be25cba8e48ea34728288f8ecc83c957"
+      },
+      "layer": "query",
+      "layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d"
+    }
+  },
+  "schema_version": "2.1"
+}

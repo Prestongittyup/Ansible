@@ -1,0 +1,25 @@
+{
+  "architecture_coverage": "100.0%",
+  "classified_files": 199,
+  "contract_violations": [],
+  "dead_code_paths": [],
+  "duplicate_modules": [
+    {
+      "files": [
+        "execution_contract/schema.py",
+        "observability/schema.py"
+      ],
+      "name": "schema"
+    },
+    {
+      "files": [
+        "ci/sci_validator.py",
+        "sci_validator.py"
+      ],
+      "name": "sci_validator"
+    }
+  ],
+  "orphaned_files": [],
+  "total_files": 199,
+  "unknown_components": []
+}

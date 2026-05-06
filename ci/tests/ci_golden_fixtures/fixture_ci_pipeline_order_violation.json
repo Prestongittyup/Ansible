@@ -1,0 +1,10 @@
+{
+  "test_name": "workflow_direct_validator_execution",
+  "input_state": {
+    "workflow_file": ".github/workflows/sci_enforcement.yml",
+    "forbidden_step": "python ci/sci_validator.py",
+    "expected_validator": "ci/ci_pipeline_order_guard.py"
+  },
+  "expected_result": "FAIL",
+  "expected_rule_id": "SCI-006"
+}

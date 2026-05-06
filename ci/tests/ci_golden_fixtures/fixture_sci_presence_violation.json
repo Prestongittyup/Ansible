@@ -1,0 +1,11 @@
+{
+  "test_name": "missing_sci_contract_index",
+  "input_state": {
+    "missing_files": [
+      "SYSTEM_CONTRACT_INDEX.md"
+    ],
+    "expected_validator": "ci/sci_validator.py"
+  },
+  "expected_result": "FAIL",
+  "expected_rule_id": "SCI-001"
+}

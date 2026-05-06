@@ -1,0 +1,10 @@
+{
+  "test_name": "runtime_guard_direct_import_bypass",
+  "input_state": {
+    "injected_import": "from execution_contract.runtime_guard import enforce_preimport_runtime_311",
+    "target_file": "ansible_validation/runners/run_validation.py",
+    "expected_validator": "ci/import_guard.py"
+  },
+  "expected_result": "FAIL",
+  "expected_rule_id": "SCI-002"
+}

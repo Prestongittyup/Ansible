@@ -1,0 +1,11 @@
+{
+  "test_name": "schema_version_changed_from_2_1",
+  "input_state": {
+    "file": "execution_contract/schema.py",
+    "modified_field": "SCHEMA_VERSION",
+    "invalid_value": "2.2",
+    "expected_validator": "ci/bootstrap_gate.py"
+  },
+  "expected_result": "FAIL",
+  "expected_rule_id": "SCI-004"
+}

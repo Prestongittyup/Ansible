@@ -1,0 +1,1528 @@
+[
+  {
+    "dependencies": [],
+    "file": ".github/workflows/sci-enforcement.yml",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": ".github/workflows/sci_enforcement.yml",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": ".vscode/settings.json",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "ARCHITECTURAL_GUARDRAILS.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "EVIDENCE_VS_STATE_MODEL.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "EXECUTION_PRECEDENCE_CONTRACT.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "LAYER_MAP.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "NORMATIVE_RULES.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "README.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "RFC-001.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "RUNTIME_CONFLICT_POLICY.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "SCI_ENFORCEMENT_INTERFACE.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "SPRINT_PLAN.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "SYSTEM_CONTRACT_INDEX.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "SYSTEM_OVERVIEW.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [
+      "adapters/ansible_adapter.py",
+      "adapters/logicmonitor_adapter.py",
+      "adapters/nautobot_adapter.py",
+      "adapters/postgres_adapter.py"
+    ],
+    "file": "adapters/__init__.py",
+    "layer": "adapter_layer",
+    "responsibility": "Package boundary marker for adapters"
+  },
+  {
+    "dependencies": [
+      "adapters/base.py",
+      "runtime/mock/__init__.py",
+      "runtime/mock/fixtures.py"
+    ],
+    "file": "adapters/ansible_adapter.py",
+    "layer": "adapter_layer",
+    "responsibility": "External system adapter implementing mode-aware interface"
+  },
+  {
+    "dependencies": [],
+    "file": "adapters/base.py",
+    "layer": "adapter_layer",
+    "responsibility": "Shared adapter lifecycle/mode/record validation contract"
+  },
+  {
+    "dependencies": [
+      "adapters/base.py",
+      "runtime/mock/__init__.py",
+      "runtime/mock/fixtures.py"
+    ],
+    "file": "adapters/logicmonitor_adapter.py",
+    "layer": "adapter_layer",
+    "responsibility": "External system adapter implementing mode-aware interface"
+  },
+  {
+    "dependencies": [
+      "adapters/base.py",
+      "kernel/phase_resolver.py",
+      "runtime/mock/__init__.py",
+      "runtime/mock/fixtures.py"
+    ],
+    "file": "adapters/nautobot_adapter.py",
+    "layer": "adapter_layer",
+    "responsibility": "External system adapter implementing mode-aware interface"
+  },
+  {
+    "dependencies": [
+      "adapters/base.py",
+      "runtime/mock/__init__.py",
+      "runtime/mock/fixtures.py"
+    ],
+    "file": "adapters/postgres_adapter.py",
+    "layer": "adapter_layer",
+    "responsibility": "External system adapter implementing mode-aware interface"
+  },
+  {
+    "dependencies": [],
+    "file": "ansible_validation/inventory/dynamic_inventory.py",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [],
+    "file": "ansible_validation/outputs/validation_results.json",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [],
+    "file": "ansible_validation/playbooks/validate_device.yml",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [
+      "ansible_validation/inventory/dynamic_inventory.py",
+      "execution_contract/ansible_error_mapper.py",
+      "execution_contract/failure_taxonomy.py",
+      "execution_contract/schema.py"
+    ],
+    "file": "ansible_validation/runners/run_validation.py",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [],
+    "file": "api_client/.gitkeep",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_server.py"
+    ],
+    "file": "api_layer/__init__.py",
+    "layer": "execution_model",
+    "responsibility": "Package boundary marker for api_layer"
+  },
+  {
+    "dependencies": [],
+    "file": "api_layer/api_contracts.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_contracts.py",
+      "api_layer/api_validator.py",
+      "query_layer/query_service.py"
+    ],
+    "file": "api_layer/api_routes.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_routes.py",
+      "auth_layer/auth_middleware.py",
+      "auth_layer/auth_provider.py",
+      "governance_layer/governance_middleware.py",
+      "governance_layer/request_policy_engine.py",
+      "query_layer/query_service.py"
+    ],
+    "file": "api_layer/api_server.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_contracts.py",
+      "query_layer/query_validator.py"
+    ],
+    "file": "api_layer/api_validator.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "audit/__init__.py",
+    "layer": "integration_layer",
+    "responsibility": "Package boundary marker for audit"
+  },
+  {
+    "dependencies": [
+      "auth_layer/auth_middleware.py",
+      "auth_layer/auth_policies.py",
+      "auth_layer/auth_provider.py"
+    ],
+    "file": "auth_layer/__init__.py",
+    "layer": "execution_model",
+    "responsibility": "Package boundary marker for auth_layer"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_contracts.py",
+      "api_layer/api_validator.py",
+      "auth_layer/auth_policies.py",
+      "auth_layer/auth_provider.py"
+    ],
+    "file": "auth_layer/auth_middleware.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "auth_layer/auth_provider.py",
+      "auth_layer/auth_validator.py"
+    ],
+    "file": "auth_layer/auth_policies.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "auth_layer/auth_validator.py"
+    ],
+    "file": "auth_layer/auth_provider.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "auth_layer/auth_validator.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "ansible_validation/inventory/dynamic_inventory.py",
+      "ansible_validation/runners/run_validation.py",
+      "execution_contract/runtime_guard.py",
+      "execution_contract/schema.py"
+    ],
+    "file": "bootstrap.py",
+    "layer": "runtime_core",
+    "responsibility": "Legacy bootstrap guard entrypoint for sprint2 flow"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/bootstrap_gate.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/ci_pipeline_order_guard.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/core/ci_policy_engine.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/execution_contract_integrity_guard.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/import_guard.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/meta/ci_enforcement_meta_validator.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "ci/core/ci_policy_engine.py",
+      "ci/meta/ci_enforcement_meta_validator.py"
+    ],
+    "file": "ci/run_ci_kernel.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/schema_version_guard.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/sci_validator.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/science/SCI_RULE_REGISTRY.yaml",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/tests/ci_golden_fixtures/emv_invalid_registry_missing_binding.yaml",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/tests/ci_golden_fixtures/fixture_bootstrap_bypass_attempt.json",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/tests/ci_golden_fixtures/fixture_ci_pipeline_order_violation.json",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/tests/ci_golden_fixtures/fixture_execution_contract_misuse.json",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/tests/ci_golden_fixtures/fixture_import_boundary_violation.json",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/tests/ci_golden_fixtures/fixture_schema_version_drift.json",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "ci/tests/ci_golden_fixtures/fixture_sci_presence_violation.json",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "compliance_layer/compliance_aggregation_engine.py",
+      "compliance_layer/gate_sequencer.py",
+      "compliance_layer/unified_compliance_runner.py"
+    ],
+    "file": "compliance_layer/__init__.py",
+    "layer": "execution_model",
+    "responsibility": "Package boundary marker for compliance_layer"
+  },
+  {
+    "dependencies": [],
+    "file": "compliance_layer/compliance_aggregation_engine.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "compliance_layer/gate_sequencer.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "compliance_layer/compliance_aggregation_engine.py",
+      "compliance_layer/gate_sequencer.py"
+    ],
+    "file": "compliance_layer/unified_compliance_runner.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "config/env_loader.py"
+    ],
+    "file": "config/__init__.py",
+    "layer": "configuration",
+    "responsibility": "Package boundary marker for config"
+  },
+  {
+    "dependencies": [],
+    "file": "config/env_loader.py",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [
+      "core/bootstrap_runtime.py",
+      "core/cutover_simulation.py",
+      "core/runtime_engine.py"
+    ],
+    "file": "core/__init__.py",
+    "layer": "runtime_core",
+    "responsibility": "Package boundary marker for core"
+  },
+  {
+    "dependencies": [
+      "adapters/ansible_adapter.py",
+      "adapters/logicmonitor_adapter.py",
+      "adapters/nautobot_adapter.py",
+      "adapters/postgres_adapter.py",
+      "config/env_loader.py",
+      "core/execution_command_model.py",
+      "core/integration_runtime.py",
+      "kernel/phase_resolver.py",
+      "kernel/state.py"
+    ],
+    "file": "core/bootstrap_runtime.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "core/connection_manager.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "config/env_loader.py"
+    ],
+    "file": "core/credential_provider.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "core/cutover_simulation.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "adapters/ansible_adapter.py",
+      "adapters/logicmonitor_adapter.py",
+      "adapters/nautobot_adapter.py",
+      "adapters/postgres_adapter.py",
+      "config/env_loader.py",
+      "kernel/__init__.py",
+      "kernel/audit_writer.py",
+      "kernel/gates.py",
+      "kernel/parity_engine.py",
+      "kernel/phase_resolver.py",
+      "kernel/state.py",
+      "runtime/mock/__init__.py",
+      "runtime/mock/fixtures.py"
+    ],
+    "file": "core/execution_command_model.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "config/env_loader.py"
+    ],
+    "file": "core/external_client_registry.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "config/env_loader.py",
+      "core/connection_manager.py",
+      "core/credential_provider.py",
+      "core/external_client_registry.py",
+      "operations/failure_classifier.py"
+    ],
+    "file": "core/integration_runtime.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "adapters/ansible_adapter.py",
+      "adapters/logicmonitor_adapter.py",
+      "adapters/nautobot_adapter.py",
+      "adapters/postgres_adapter.py",
+      "config/env_loader.py",
+      "core/cutover_simulation.py",
+      "kernel/audit_writer.py",
+      "kernel/orchestrator.py",
+      "kernel/parity_engine.py",
+      "kernel/state.py",
+      "runtime/mock/__init__.py",
+      "runtime/mock/fixtures.py"
+    ],
+    "file": "core/runtime_engine.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "deploy/.env.ops.example",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "deploy/Dockerfile.ops",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "deploy/container_entrypoint.py",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "deploy/docker-compose.ops.yml",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "deploy/secrets/logicmonitor_api_key.txt",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "deploy/secrets/nautobot_token.txt",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "deploy/secrets/postgres_connection_string.txt",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "docs/architecture.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "docs/data-authority-policy.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "docs/deployment_operations_architecture.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "docs/operational-guardrails.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "docs/system_technical_spec.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [],
+    "file": "execution_contract/__init__.py",
+    "layer": "runtime_core",
+    "responsibility": "Package boundary marker for execution_contract"
+  },
+  {
+    "dependencies": [
+      "execution_contract/failure_taxonomy.py"
+    ],
+    "file": "execution_contract/ansible_error_mapper.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "execution_contract/execution_state.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "execution_contract/execution_state.py"
+    ],
+    "file": "execution_contract/failure_taxonomy.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "execution_contract/runtime_guard.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "execution_contract/execution_state.py",
+      "execution_contract/failure_taxonomy.py"
+    ],
+    "file": "execution_contract/schema.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "export/trace_exporter.py"
+    ],
+    "file": "export/metrics_exporter.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "export/trace_exporter.py"
+    ],
+    "file": "export/otel_mapper.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "export/trace_exporter.py"
+    ],
+    "file": "export/siem_exporter.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "export/trace_exporter.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "governance_layer/governance_middleware.py",
+      "governance_layer/request_policy_engine.py"
+    ],
+    "file": "governance_layer/__init__.py",
+    "layer": "execution_model",
+    "responsibility": "Package boundary marker for governance_layer"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_contracts.py",
+      "api_layer/api_validator.py",
+      "governance_layer/request_policy_engine.py"
+    ],
+    "file": "governance_layer/governance_middleware.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "governance_layer/quota_manager.py"
+    ],
+    "file": "governance_layer/query_bounds_validator.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "governance_layer/quota_manager.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "governance_layer/rate_limiter.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "governance_layer/query_bounds_validator.py",
+      "governance_layer/quota_manager.py",
+      "governance_layer/rate_limiter.py"
+    ],
+    "file": "governance_layer/request_policy_engine.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "hardening/baseline_comparison_toolkit.py",
+      "hardening/drift_detection_engine.py",
+      "hardening/immutability_enforcement_checker.py",
+      "hardening/system_integrity_auditor.py"
+    ],
+    "file": "hardening/__init__.py",
+    "layer": "execution_model",
+    "responsibility": "Package boundary marker for hardening"
+  },
+  {
+    "dependencies": [],
+    "file": "hardening/baseline_comparison_toolkit.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "export/metrics_exporter.py",
+      "export/otel_mapper.py",
+      "export/siem_exporter.py",
+      "export/trace_exporter.py",
+      "observability/schema.py"
+    ],
+    "file": "hardening/drift_detection_engine.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "hardening/drift_detection_engine.py"
+    ],
+    "file": "hardening/immutability_enforcement_checker.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "hardening/baseline_comparison_toolkit.py",
+      "hardening/drift_detection_engine.py"
+    ],
+    "file": "hardening/system_integrity_auditor.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "inventory/.gitkeep",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [],
+    "file": "inventory_output.json",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "inventory_pipeline/__init__.py",
+    "layer": "execution_model",
+    "responsibility": "Package boundary marker for inventory_pipeline"
+  },
+  {
+    "dependencies": [
+      "inventory_pipeline/__init__.py"
+    ],
+    "file": "inventory_pipeline/ingestion/__init__.py",
+    "layer": "execution_model",
+    "responsibility": "Package boundary marker for inventory_pipeline"
+  },
+  {
+    "dependencies": [],
+    "file": "inventory_pipeline/ingestion/inventory_builder.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "inventory_pipeline/ingestion/logicmonitor_client.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "inventory_pipeline/ingestion/normalizer.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "inventory_pipeline/ingestion/vendor_classifier.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "inventory_pipeline/__init__.py",
+      "inventory_pipeline/ingestion/inventory_builder.py",
+      "inventory_pipeline/ingestion/logicmonitor_client.py",
+      "inventory_pipeline/ingestion/normalizer.py",
+      "inventory_pipeline/ingestion/vendor_classifier.py"
+    ],
+    "file": "inventory_pipeline/run_ingestion.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "inventory_pipeline/tests/sprint1_output_contract_test.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "kernel/__init__.py",
+    "layer": "runtime_core",
+    "responsibility": "Package boundary marker for kernel"
+  },
+  {
+    "dependencies": [
+      "kernel/state.py"
+    ],
+    "file": "kernel/audit_writer.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "kernel/phase_resolver.py",
+      "kernel/state.py"
+    ],
+    "file": "kernel/gates.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "kernel/__init__.py",
+      "kernel/gates.py",
+      "kernel/parity_engine.py",
+      "kernel/phase_resolver.py",
+      "kernel/state.py"
+    ],
+    "file": "kernel/orchestrator.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [
+      "kernel/state.py"
+    ],
+    "file": "kernel/parity_engine.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "kernel/phase_resolver.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "kernel/state.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "observability/audit_logger.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_contracts.py",
+      "observability/event_collector.py",
+      "observability/schema.py",
+      "observability/trace_context.py"
+    ],
+    "file": "observability/decision_recorder.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "observability/audit_logger.py",
+      "observability/schema.py",
+      "observability/trace_context.py"
+    ],
+    "file": "observability/event_collector.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "observability/schema.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "observability/trace_context.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "operations/__init__.py",
+    "layer": "operations_layer",
+    "responsibility": "Package boundary marker for operations"
+  },
+  {
+    "dependencies": [],
+    "file": "operations/event_log.py",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "operations/failure_classifier.py",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "operations/lifecycle.py",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [
+      "core/bootstrap_runtime.py",
+      "kernel/state.py",
+      "operations/failure_classifier.py"
+    ],
+    "file": "operations/live_validation_runner.py",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [
+      "kernel/state.py",
+      "operations/service_runtime.py"
+    ],
+    "file": "operations/service_entrypoint.py",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [
+      "core/bootstrap_runtime.py",
+      "kernel/state.py",
+      "operations/event_log.py",
+      "operations/lifecycle.py",
+      "operations/state_store.py"
+    ],
+    "file": "operations/service_runtime.py",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [],
+    "file": "operations/state_store.py",
+    "layer": "operations_layer",
+    "responsibility": "Operations runtime/service/deployment control component"
+  },
+  {
+    "dependencies": [
+      "operations/event_log.py"
+    ],
+    "file": "operations_cli.py",
+    "layer": "operations_layer",
+    "responsibility": "Operator control CLI for service lifecycle/bootstrap/run/audit"
+  },
+  {
+    "dependencies": [],
+    "file": "persistence/__init__.py",
+    "layer": "integration_layer",
+    "responsibility": "Package boundary marker for persistence"
+  },
+  {
+    "dependencies": [],
+    "file": "persistence/contract_validator.py",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [],
+    "file": "persistence/db_client.py",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [
+      "persistence/contract_validator.py",
+      "persistence/db_client.py"
+    ],
+    "file": "persistence/ingest_validation.py",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [],
+    "file": "persistence/schema.sql",
+    "layer": "integration_layer",
+    "responsibility": "Integration/persistence/validation integration component"
+  },
+  {
+    "dependencies": [
+      "persistence/contract_validator.py",
+      "persistence/ingest_validation.py"
+    ],
+    "file": "persistence/test_ingest_validation.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [],
+    "file": "playbooks/.gitkeep",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "playbooks/sci_pre_task_gate_pattern.yml",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "production_readiness_checklist.md",
+    "layer": "documentation",
+    "responsibility": "Normative or explanatory engineering documentation"
+  },
+  {
+    "dependencies": [
+      "query_layer/query_client.py",
+      "query_layer/query_service.py",
+      "query_layer/query_validator.py"
+    ],
+    "file": "query_layer/__init__.py",
+    "layer": "execution_model",
+    "responsibility": "Package boundary marker for query_layer"
+  },
+  {
+    "dependencies": [],
+    "file": "query_layer/query_client.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "query_layer/query_contracts.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "query_layer/query_client.py",
+      "query_layer/query_contracts.py",
+      "query_layer/query_validator.py"
+    ],
+    "file": "query_layer/query_service.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "query_layer/query_contracts.py"
+    ],
+    "file": "query_layer/query_validator.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "roles/.gitkeep",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "roles/aruba/.gitkeep",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "roles/cisco/.gitkeep",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "roles/fortinet/.gitkeep",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "roles/juniper/.gitkeep",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "roles/meraki/.gitkeep",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "roles/sci_enforcement/tasks/main.yml",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "runtime/__init__.py",
+    "layer": "runtime_core",
+    "responsibility": "Package boundary marker for runtime"
+  },
+  {
+    "dependencies": [],
+    "file": "runtime/mock/__init__.py",
+    "layer": "runtime_core",
+    "responsibility": "Package boundary marker for runtime"
+  },
+  {
+    "dependencies": [],
+    "file": "runtime/mock/fixtures.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "sci_validator.py",
+    "layer": "runtime_core",
+    "responsibility": "Core deterministic execution/bootstrap/parity/gate model component"
+  },
+  {
+    "dependencies": [],
+    "file": "scripts/.gitkeep",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "stabilization_layer/cross_sprint_drift_comparator.py"
+    ],
+    "file": "scripts/run_cross_sprint_drift.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "stabilization_layer/integrity_certificate_generator.py"
+    ],
+    "file": "scripts/run_integrity_certificate.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "compliance_layer/unified_compliance_runner.py"
+    ],
+    "file": "scripts/run_unified_compliance.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "scripts/sci_ci_gate.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "sprint_10_pre_edit_baseline.json",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "sprint_11_pre_edit_baseline.json",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "sprint_12_pre_edit_baseline.json",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "sprint_8_pre_edit_baseline.json",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [],
+    "file": "sprint_9_pre_edit_baseline.json",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [
+      "stabilization_layer/cross_sprint_drift_comparator.py",
+      "stabilization_layer/determinism_certification_engine.py",
+      "stabilization_layer/execution_replay_validator.py",
+      "stabilization_layer/integrity_certificate_generator.py"
+    ],
+    "file": "stabilization_layer/__init__.py",
+    "layer": "execution_model",
+    "responsibility": "Package boundary marker for stabilization_layer"
+  },
+  {
+    "dependencies": [
+      "hardening/baseline_comparison_toolkit.py",
+      "hardening/drift_detection_engine.py",
+      "hardening/system_integrity_auditor.py"
+    ],
+    "file": "stabilization_layer/cross_sprint_drift_comparator.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "stabilization_layer/determinism_certification_engine.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [],
+    "file": "stabilization_layer/execution_replay_validator.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "stabilization_layer/cross_sprint_drift_comparator.py",
+      "stabilization_layer/determinism_certification_engine.py",
+      "stabilization_layer/execution_replay_validator.py"
+    ],
+    "file": "stabilization_layer/integrity_certificate_generator.py",
+    "layer": "execution_model",
+    "responsibility": "Execution policy, enforcement, orchestration, or analysis component"
+  },
+  {
+    "dependencies": [
+      "kernel/audit_writer.py",
+      "kernel/orchestrator.py",
+      "kernel/state.py"
+    ],
+    "file": "system_enf_kernel.py",
+    "layer": "runtime_core",
+    "responsibility": "Legacy runtime kernel entrypoint retained for backward compatibility"
+  },
+  {
+    "dependencies": [],
+    "file": "system_integrity_certificate.json",
+    "layer": "configuration",
+    "responsibility": "Environment, CI, deployment, or policy configuration"
+  },
+  {
+    "dependencies": [
+      "core/bootstrap_runtime.py",
+      "core/execution_command_model.py",
+      "core/runtime_engine.py",
+      "kernel/audit_writer.py",
+      "kernel/phase_resolver.py",
+      "kernel/state.py"
+    ],
+    "file": "system_kernel.py",
+    "layer": "runtime_core",
+    "responsibility": "Canonical bootstrap/run CLI lifecycle entrypoint"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_server.py"
+    ],
+    "file": "test_api_layer.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_server.py",
+      "test_api_layer.py"
+    ],
+    "file": "test_auth_layer.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "hardening/baseline_comparison_toolkit.py"
+    ],
+    "file": "test_baseline_comparison.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "core/bootstrap_runtime.py",
+      "system_kernel.py"
+    ],
+    "file": "test_bootstrap_runtime_layer.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "compliance_layer/gate_sequencer.py",
+      "compliance_layer/unified_compliance_runner.py"
+    ],
+    "file": "test_cross_layer_orchestration.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "stabilization_layer/cross_sprint_drift_comparator.py"
+    ],
+    "file": "test_cross_sprint_drift_comparator.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "stabilization_layer/determinism_certification_engine.py"
+    ],
+    "file": "test_determinism_certification.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "hardening/drift_detection_engine.py"
+    ],
+    "file": "test_drift_detection.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "stabilization_layer/execution_replay_validator.py"
+    ],
+    "file": "test_execution_replay_validator.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_server.py",
+      "export/metrics_exporter.py",
+      "export/otel_mapper.py",
+      "export/siem_exporter.py",
+      "export/trace_exporter.py",
+      "test_api_layer.py"
+    ],
+    "file": "test_export_layer.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "compliance_layer/gate_sequencer.py",
+      "compliance_layer/unified_compliance_runner.py"
+    ],
+    "file": "test_failure_aggregation.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "compliance_layer/gate_sequencer.py",
+      "compliance_layer/unified_compliance_runner.py"
+    ],
+    "file": "test_gate_sequencing.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_server.py",
+      "governance_layer/query_bounds_validator.py",
+      "governance_layer/quota_manager.py",
+      "governance_layer/rate_limiter.py",
+      "governance_layer/request_policy_engine.py",
+      "test_api_layer.py"
+    ],
+    "file": "test_governance_layer.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "hardening/drift_detection_engine.py",
+      "hardening/immutability_enforcement_checker.py"
+    ],
+    "file": "test_immutability_checker.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "stabilization_layer/integrity_certificate_generator.py"
+    ],
+    "file": "test_integrity_certificate_generator.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "operations/failure_classifier.py"
+    ],
+    "file": "test_live_validation_hardening.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "api_layer/api_server.py",
+      "observability/audit_logger.py",
+      "observability/decision_recorder.py",
+      "observability/event_collector.py",
+      "observability/trace_context.py",
+      "persistence/__init__.py",
+      "persistence/ingest_validation.py",
+      "test_api_layer.py"
+    ],
+    "file": "test_observability_layer.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "operations/lifecycle.py",
+      "operations/service_runtime.py"
+    ],
+    "file": "test_operations_architecture_layer.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "query_layer/query_service.py",
+      "query_layer/query_validator.py"
+    ],
+    "file": "test_query_layer.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "adapters/ansible_adapter.py",
+      "adapters/base.py",
+      "adapters/nautobot_adapter.py",
+      "config/env_loader.py",
+      "core/integration_runtime.py"
+    ],
+    "file": "test_sprint17_integration_layer.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "hardening/system_integrity_auditor.py"
+    ],
+    "file": "test_system_integrity.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  },
+  {
+    "dependencies": [
+      "compliance_layer/gate_sequencer.py",
+      "compliance_layer/unified_compliance_runner.py"
+    ],
+    "file": "test_unified_compliance_runner.py",
+    "layer": "tests",
+    "responsibility": "Automated contract/regression test"
+  }
+]

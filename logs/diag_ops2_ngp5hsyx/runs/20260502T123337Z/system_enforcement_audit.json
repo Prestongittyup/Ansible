@@ -1,0 +1,767 @@
+{
+  "adapter_states": {},
+  "adapters_active": [
+    "AnsibleAdapter",
+    "PostgresAdapter"
+  ],
+  "data_stats": {
+    "adapter_activation_registry": {
+      "active": {
+        "AnsibleAdapter": true,
+        "LogicMonitorAdapter": false,
+        "NautobotAdapter": false,
+        "PostgresAdapter": true
+      },
+      "mode": "MOCK",
+      "phase": "PHASE_1",
+      "rules": {
+        "AnsibleAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": true,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "LogicMonitorAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "NautobotAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "PostgresAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": true
+        }
+      },
+      "source": "mock",
+      "target": "mock"
+    },
+    "adapters_active": [
+      "AnsibleAdapter",
+      "PostgresAdapter"
+    ],
+    "command_model": {
+      "emit_audit": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\diag_ops2_ngp5hsyx\\runs\\20260502T123337Z",
+      "parity_window": "30d",
+      "source": "mock",
+      "target": "mock"
+    },
+    "contract_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "deterministic_signature": "0ac033045893461e280f0a0e69bab79167f53ddf98b757571681ea442c96f1b1",
+    "execution_mode": "READ_ONLY",
+    "execution_status": "FAIL",
+    "execution_timeline": [
+      {
+        "command": "run",
+        "component": "execution_model",
+        "debug": false,
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "cli.run_input",
+        "parity_window": "30d",
+        "phase": "PHASE_1",
+        "run_id": "system-boot-8373d50785b4",
+        "source": "mock",
+        "span_id": "",
+        "status": "START",
+        "target": "mock",
+        "timestamp": "2026-05-02T12:33:37.691517+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "system_kernel.run",
+        "phase": "PHASE_1",
+        "run_id": "system-boot-8373d50785b4",
+        "source": "mock",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "target": "mock",
+        "timestamp": "2026-05-02T12:33:37.691517+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "command_model_start",
+        "parity_window_days": 30,
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "source": "mock",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "target": "mock",
+        "timestamp": "2026-05-02T12:33:37.691517+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "mode_phase_resolution",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "span_id": "8e9aebff6d03ae1c",
+        "sst_owner": "LOGICMONITOR",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:33:37.693107+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "active_adapters": [
+          "AnsibleAdapter",
+          "PostgresAdapter"
+        ],
+        "component": "execution_model",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "adapter_activation",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:33:37.693107+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "execution_model",
+        "duration_ms": 0,
+        "gate_order": [
+          "SCI",
+          "EMV",
+          "CI",
+          "AUTH",
+          "GOVERNANCE",
+          "API",
+          "QUERY",
+          "PERSISTENCE",
+          "OBSERVABILITY",
+          "EXPORT",
+          "DRIFT",
+          "PARITY"
+        ],
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "gate_sequence",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:33:37.693107+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "SCI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:33:37.693107+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 1,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "SCI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:33:37.694644+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "details": {
+          "checked_files": [
+            "SYSTEM_CONTRACT_INDEX.md",
+            "EXECUTION_PRECEDENCE_CONTRACT.md",
+            "LAYER_MAP.md"
+          ]
+        },
+        "duration_ms": 2,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "SCI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:33:37.694644+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+        ],
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "EMV",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:33:37.694644+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 213,
+        "error": null,
+        "exit_code": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "EMV",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:33:37.907571+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+        "violation_count": 0
+      },
+      {
+        "component": "gate",
+        "details": {
+          "command": [
+            "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+          ],
+          "exit_code": 0,
+          "status": "PASS",
+          "status_field": "emv_status",
+          "stderr_excerpt": "",
+          "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+          "violation_count": 0
+        },
+        "duration_ms": 213,
+        "error": null,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "EMV",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "severity": "SOFT",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "SUCCESS",
+        "timestamp": "2026-05-02T12:33:37.907571+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+        ],
+        "component": "gate",
+        "duration_ms": 0,
+        "level": "INFO",
+        "mode": "MOCK",
+        "operation": "CI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "START",
+        "timestamp": "2026-05-02T12:33:37.907571+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      },
+      {
+        "component": "gate",
+        "duration_ms": 197,
+        "error": "EXTERNAL_GATE_FAIL",
+        "exit_code": 1,
+        "level": "ERROR",
+        "mode": "MOCK",
+        "operation": "CI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "FAIL",
+        "timestamp": "2026-05-02T12:33:38.105401+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+        "violation_count": 4
+      },
+      {
+        "component": "gate",
+        "details": {
+          "command": [
+            "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+          ],
+          "exit_code": 1,
+          "status": "FAIL",
+          "status_field": "ci_status",
+          "stderr_excerpt": "",
+          "stdout_excerpt": "{\n  \"ci_status\": \"FAIL\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"FAIL\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"ARCHITECTURAL_GUARDRAILS.md\",\n        \"rule_id\": \"GOVERNANCE_FILE_MISSING\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"CRITICAL\",\n        \"status\": \"FAIL\",\n        \"timestamp\": \"2026-05-02T12:33:38.091757+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": [\n          {\n            \"details\": {},\n            \"file_path\": \"ARCHITECTURAL_GUARDRAILS.md\",\n            \"rule_broken\": \"GOVERNANCE_FILE_MISSING\",\n            \"rule_id\": \"GOVERNANCE_FILE_MISSING\",\n            \"severity\": \"CRITICAL\",\n            \"timestamp\": \"2026-05-02T12:33:38.088530+00:00\",\n            \"violation_type\": \"SCI_VALIDATION_FAILURE\"\n          },\n          {\n            \"details\": {},\n            \"file_path\": \"SPRINT_PLAN.md\",\n            \"rule_broken\": \"GOVERNANCE_FILE_",
+          "violation_count": 4
+        },
+        "duration_ms": 197,
+        "error": "EXTERNAL_GATE_FAIL",
+        "level": "ERROR",
+        "mode": "MOCK",
+        "operation": "CI",
+        "phase": "PHASE_1",
+        "run_id": "system-enf-4ca6a81657a5",
+        "severity": "HARD",
+        "span_id": "8e9aebff6d03ae1c",
+        "status": "FAIL",
+        "timestamp": "2026-05-02T12:33:38.105401+00:00",
+        "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+      }
+    ],
+    "external_failures": [],
+    "fail_closed_triggered": true,
+    "failure_point": "gate::CI",
+    "kernel_mode": "MOCK",
+    "runtime_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+  },
+  "decision_reason": "CI:EXTERNAL_GATE_FAIL",
+  "deterministic_signature": "0ac033045893461e280f0a0e69bab79167f53ddf98b757571681ea442c96f1b1",
+  "drift_metrics": {
+    "compared_records_total": 0,
+    "deterministic_hash": "",
+    "drifted_records_total": 0,
+    "global_drift_pct": 0.0,
+    "hard_drift_count": 0,
+    "soft_drift_count": 0
+  },
+  "drift_percentage": 0.0,
+  "errors": [],
+  "execution_status": "FAIL",
+  "execution_timeline": [
+    {
+      "command": "run",
+      "component": "execution_model",
+      "debug": false,
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "cli.run_input",
+      "parity_window": "30d",
+      "phase": "PHASE_1",
+      "run_id": "system-boot-8373d50785b4",
+      "source": "mock",
+      "span_id": "",
+      "status": "START",
+      "target": "mock",
+      "timestamp": "2026-05-02T12:33:37.691517+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "system_kernel.run",
+      "phase": "PHASE_1",
+      "run_id": "system-boot-8373d50785b4",
+      "source": "mock",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "target": "mock",
+      "timestamp": "2026-05-02T12:33:37.691517+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "command_model_start",
+      "parity_window_days": 30,
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "source": "mock",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "target": "mock",
+      "timestamp": "2026-05-02T12:33:37.691517+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "mode_phase_resolution",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "sst_owner": "LOGICMONITOR",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:33:37.693107+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "active_adapters": [
+        "AnsibleAdapter",
+        "PostgresAdapter"
+      ],
+      "component": "execution_model",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "adapter_activation",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:33:37.693107+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "gate_order": [
+        "SCI",
+        "EMV",
+        "CI",
+        "AUTH",
+        "GOVERNANCE",
+        "API",
+        "QUERY",
+        "PERSISTENCE",
+        "OBSERVABILITY",
+        "EXPORT",
+        "DRIFT",
+        "PARITY"
+      ],
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "gate_sequence",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:33:37.693107+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "SCI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:33:37.693107+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 1,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "SCI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:33:37.694644+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "details": {
+        "checked_files": [
+          "SYSTEM_CONTRACT_INDEX.md",
+          "EXECUTION_PRECEDENCE_CONTRACT.md",
+          "LAYER_MAP.md"
+        ]
+      },
+      "duration_ms": 2,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "SCI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:33:37.694644+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "command": [
+        "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+      ],
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "EMV",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:33:37.694644+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 213,
+      "error": null,
+      "exit_code": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "EMV",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:33:37.907571+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+      "violation_count": 0
+    },
+    {
+      "component": "gate",
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "emv_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+        "violation_count": 0
+      },
+      "duration_ms": 213,
+      "error": null,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "EMV",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "severity": "SOFT",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "SUCCESS",
+      "timestamp": "2026-05-02T12:33:37.907571+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "command": [
+        "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+      ],
+      "component": "gate",
+      "duration_ms": 0,
+      "level": "INFO",
+      "mode": "MOCK",
+      "operation": "CI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "START",
+      "timestamp": "2026-05-02T12:33:37.907571+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "gate",
+      "duration_ms": 197,
+      "error": "EXTERNAL_GATE_FAIL",
+      "exit_code": 1,
+      "level": "ERROR",
+      "mode": "MOCK",
+      "operation": "CI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "FAIL",
+      "timestamp": "2026-05-02T12:33:38.105401+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+      "violation_count": 4
+    },
+    {
+      "component": "gate",
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+        ],
+        "exit_code": 1,
+        "status": "FAIL",
+        "status_field": "ci_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"ci_status\": \"FAIL\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"FAIL\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"ARCHITECTURAL_GUARDRAILS.md\",\n        \"rule_id\": \"GOVERNANCE_FILE_MISSING\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"CRITICAL\",\n        \"status\": \"FAIL\",\n        \"timestamp\": \"2026-05-02T12:33:38.091757+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": [\n          {\n            \"details\": {},\n            \"file_path\": \"ARCHITECTURAL_GUARDRAILS.md\",\n            \"rule_broken\": \"GOVERNANCE_FILE_MISSING\",\n            \"rule_id\": \"GOVERNANCE_FILE_MISSING\",\n            \"severity\": \"CRITICAL\",\n            \"timestamp\": \"2026-05-02T12:33:38.088530+00:00\",\n            \"violation_type\": \"SCI_VALIDATION_FAILURE\"\n          },\n          {\n            \"details\": {},\n            \"file_path\": \"SPRINT_PLAN.md\",\n            \"rule_broken\": \"GOVERNANCE_FILE_",
+        "violation_count": 4
+      },
+      "duration_ms": 197,
+      "error": "EXTERNAL_GATE_FAIL",
+      "level": "ERROR",
+      "mode": "MOCK",
+      "operation": "CI",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "severity": "HARD",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "FAIL",
+      "timestamp": "2026-05-02T12:33:38.105401+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    },
+    {
+      "component": "execution_model",
+      "decision": "GATE_HARD_FAIL",
+      "duration_ms": 0,
+      "exit_code": 30,
+      "level": "ERROR",
+      "mode": "MOCK",
+      "operation": "command_model_finalize",
+      "phase": "PHASE_1",
+      "run_id": "system-enf-4ca6a81657a5",
+      "span_id": "8e9aebff6d03ae1c",
+      "status": "FAIL",
+      "timestamp": "2026-05-02T12:33:38.105401+00:00",
+      "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+    }
+  ],
+  "exit_code": 30,
+  "exit_code_reason": "CI:EXTERNAL_GATE_FAIL",
+  "external_failures": [],
+  "fail_closed_triggered": true,
+  "failure_point": "gate::CI",
+  "final_decision": "GATE_HARD_FAIL",
+  "gate_results": [
+    {
+      "details": {
+        "checked_files": [
+          "SYSTEM_CONTRACT_INDEX.md",
+          "EXECUTION_PRECEDENCE_CONTRACT.md",
+          "LAYER_MAP.md"
+        ]
+      },
+      "finished_at": "2026-05-02T12:33:37.694644+00:00",
+      "gate": "SCI",
+      "reason": "SCI_CONTRACT_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:33:37.693107+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "emv_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+        "violation_count": 0
+      },
+      "finished_at": "2026-05-02T12:33:37.907571+00:00",
+      "gate": "EMV",
+      "reason": "EXTERNAL_GATE_PASS",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T12:33:37.694644+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+        ],
+        "exit_code": 1,
+        "status": "FAIL",
+        "status_field": "ci_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"ci_status\": \"FAIL\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"FAIL\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"ARCHITECTURAL_GUARDRAILS.md\",\n        \"rule_id\": \"GOVERNANCE_FILE_MISSING\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"CRITICAL\",\n        \"status\": \"FAIL\",\n        \"timestamp\": \"2026-05-02T12:33:38.091757+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": [\n          {\n            \"details\": {},\n            \"file_path\": \"ARCHITECTURAL_GUARDRAILS.md\",\n            \"rule_broken\": \"GOVERNANCE_FILE_MISSING\",\n            \"rule_id\": \"GOVERNANCE_FILE_MISSING\",\n            \"severity\": \"CRITICAL\",\n            \"timestamp\": \"2026-05-02T12:33:38.088530+00:00\",\n            \"violation_type\": \"SCI_VALIDATION_FAILURE\"\n          },\n          {\n            \"details\": {},\n            \"file_path\": \"SPRINT_PLAN.md\",\n            \"rule_broken\": \"GOVERNANCE_FILE_",
+        "violation_count": 4
+      },
+      "finished_at": "2026-05-02T12:33:38.104394+00:00",
+      "gate": "CI",
+      "reason": "EXTERNAL_GATE_FAIL",
+      "severity": "HARD",
+      "started_at": "2026-05-02T12:33:37.907571+00:00",
+      "status": "FAIL"
+    }
+  ],
+  "identity_conflict_count": 0,
+  "identity_conflicts": [],
+  "kernel_anchor": "SYSTEM_KERNEL_RUNTIME::v1.0::ANCHOR_HASH=3f2db198::FAIL_CLOSED=true",
+  "mode": "MOCK",
+  "parity_result": {
+    "deterministic_hash": "",
+    "reason": "CI:EXTERNAL_GATE_FAIL",
+    "status": "FAIL"
+  },
+  "phase": "PHASE_1",
+  "phase_source": "PHASE_1",
+  "phase_target": "PHASE_1",
+  "run_id": "system-enf-4ca6a81657a5",
+  "run_metadata": {
+    "execution_mode": "READ_ONLY",
+    "fail_closed": true,
+    "finished_at": "2026-05-02T12:33:38.105401+00:00",
+    "kernel_mode": "MOCK",
+    "run_id": "system-enf-4ca6a81657a5",
+    "started_at": "2026-05-02T12:33:37.691517+00:00",
+    "total_duration_ms": 414,
+    "trace_id": "ce6ca79e73638f76f74acaf9870a00e3"
+  },
+  "sst_owner": "LOGICMONITOR",
+  "sst_source": "LOGICMONITOR",
+  "sst_target": "LOGICMONITOR",
+  "total_duration_ms": 414,
+  "trace_id": "ce6ca79e73638f76f74acaf9870a00e3",
+  "tracker_summary": {}
+}

@@ -1,0 +1,10 @@
+{
+  "test_name": "direct_runner_execution_command_detected",
+  "input_state": {
+    "forbidden_command": "python ansible_validation/runners/run_validation.py",
+    "command_location": "README.md",
+    "expected_validator": "ci/bootstrap_gate.py"
+  },
+  "expected_result": "FAIL",
+  "expected_rule_id": "SCI-003"
+}

@@ -1,0 +1,172 @@
+{
+  "adapter_states": {
+    "AnsibleAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "INVALID_CLI:the following arguments are required: --target"
+        },
+        "mode_used": "MOCK",
+        "status": "FAIL"
+      }
+    },
+    "LogicMonitorAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "INVALID_CLI:the following arguments are required: --target"
+        },
+        "mode_used": "MOCK",
+        "status": "FAIL"
+      }
+    },
+    "NautobotAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "INVALID_CLI:the following arguments are required: --target"
+        },
+        "mode_used": "MOCK",
+        "status": "FAIL"
+      }
+    },
+    "PostgresAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "INVALID_CLI:the following arguments are required: --target"
+        },
+        "mode_used": "MOCK",
+        "status": "FAIL"
+      }
+    }
+  },
+  "adapters_active": [],
+  "data_stats": {
+    "adapter_states": {
+      "AnsibleAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "INVALID_CLI:the following arguments are required: --target"
+          },
+          "mode_used": "MOCK",
+          "status": "FAIL"
+        }
+      },
+      "LogicMonitorAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "INVALID_CLI:the following arguments are required: --target"
+          },
+          "mode_used": "MOCK",
+          "status": "FAIL"
+        }
+      },
+      "NautobotAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "INVALID_CLI:the following arguments are required: --target"
+          },
+          "mode_used": "MOCK",
+          "status": "FAIL"
+        }
+      },
+      "PostgresAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "INVALID_CLI:the following arguments are required: --target"
+          },
+          "mode_used": "MOCK",
+          "status": "FAIL"
+        }
+      }
+    },
+    "adapters_active": [],
+    "command_model": {
+      "emit_audit": "logs/sprint15/invalid_cli",
+      "parity_window": "30d",
+      "phase": "PHASE_1",
+      "source": "mock",
+      "target": "unknown"
+    },
+    "contract_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "deterministic_signature": "aacec9d8347d4939aef45e530580e2ee75cdf9a1c9a4874bf4efdf71b5919efd",
+    "drift_percentage": 0.0,
+    "execution_mode": "READ_ONLY",
+    "execution_status": "BLOCKED",
+    "fail_closed_triggered": true,
+    "identity_conflicts": [],
+    "kernel_mode": "MOCK",
+    "parity_result": {
+      "reason": "CLI_BOOTSTRAP_ERROR",
+      "status": "NOT_EXECUTED"
+    },
+    "runtime_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ]
+  },
+  "decision_reason": "CLI_BOOTSTRAP_ERROR:INVALID_CLI:the following arguments are required: --target",
+  "deterministic_signature": "aacec9d8347d4939aef45e530580e2ee75cdf9a1c9a4874bf4efdf71b5919efd",
+  "drift_metrics": {
+    "compared_records_total": 0,
+    "deterministic_hash": "",
+    "drifted_records_total": 0,
+    "global_drift_pct": 0.0,
+    "hard_drift_count": 0,
+    "soft_drift_count": 0
+  },
+  "drift_percentage": 0.0,
+  "errors": [
+    "CLI_BOOTSTRAP_ERROR:INVALID_CLI:the following arguments are required: --target"
+  ],
+  "execution_status": "BLOCKED",
+  "exit_code": 30,
+  "exit_code_reason": "CLI_BOOTSTRAP_ERROR:INVALID_CLI:the following arguments are required: --target",
+  "fail_closed_triggered": true,
+  "final_decision": "BOOTSTRAP_FAILURE",
+  "gate_results": [],
+  "identity_conflict_count": 0,
+  "identity_conflicts": [],
+  "kernel_anchor": "SYSTEM_KERNEL_RUNTIME::v1.0::ANCHOR_HASH=3f2db198::FAIL_CLOSED=true",
+  "mode": "MOCK",
+  "parity_result": {
+    "reason": "CLI_BOOTSTRAP_ERROR",
+    "status": "NOT_EXECUTED"
+  },
+  "phase": "PHASE_1",
+  "phase_source": "PHASE_1",
+  "phase_target": "PHASE_1",
+  "run_id": "system-enf-acefee566bca",
+  "run_metadata": {
+    "execution_mode": "READ_ONLY",
+    "fail_closed": true,
+    "finished_at": "2026-05-02T01:21:06.272608+00:00",
+    "kernel_mode": "MOCK",
+    "run_id": "system-enf-acefee566bca",
+    "started_at": "2026-05-02T01:21:06.272057+00:00"
+  },
+  "sst_owner": "LOGICMONITOR",
+  "sst_source": "LOGICMONITOR",
+  "sst_target": "LOGICMONITOR",
+  "tracker_summary": {}
+}

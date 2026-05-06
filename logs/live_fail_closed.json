@@ -1,0 +1,116 @@
+{
+  "adapter_states": {
+    "AnsibleAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+        },
+        "mode_used": "LIVE",
+        "status": "FAIL"
+      }
+    },
+    "LogicMonitorAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+        },
+        "mode_used": "LIVE",
+        "status": "FAIL"
+      }
+    },
+    "NautobotAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+        },
+        "mode_used": "LIVE",
+        "status": "FAIL"
+      }
+    },
+    "PostgresAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+        },
+        "mode_used": "LIVE",
+        "status": "FAIL"
+      }
+    }
+  },
+  "data_stats": {
+    "adapter_states": {
+      "AnsibleAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+          },
+          "mode_used": "LIVE",
+          "status": "FAIL"
+        }
+      },
+      "LogicMonitorAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+          },
+          "mode_used": "LIVE",
+          "status": "FAIL"
+        }
+      },
+      "NautobotAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+          },
+          "mode_used": "LIVE",
+          "status": "FAIL"
+        }
+      },
+      "PostgresAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+          },
+          "mode_used": "LIVE",
+          "status": "FAIL"
+        }
+      }
+    },
+    "deterministic_signature": "4d70befda7efc42e6b97b19d4cd70107ec792eddde700b4d0a907131a36b26bf",
+    "execution_mode": "READ_ONLY",
+    "kernel_mode": "LIVE"
+  },
+  "decision_reason": "CLI_BOOTSTRAP_ERROR:Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER",
+  "deterministic_signature": "4d70befda7efc42e6b97b19d4cd70107ec792eddde700b4d0a907131a36b26bf",
+  "drift_metrics": {
+    "compared_records_total": 0,
+    "deterministic_hash": "",
+    "drifted_records_total": 0,
+    "global_drift_pct": 0.0,
+    "hard_drift_count": 0,
+    "soft_drift_count": 0
+  },
+  "errors": [
+    "CLI_BOOTSTRAP_ERROR:Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+  ],
+  "exit_code": 30,
+  "exit_code_reason": "CLI_BOOTSTRAP_ERROR:Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER",
+  "final_decision": "BOOTSTRAP_FAILURE",
+  "gate_results": [],
+  "identity_conflict_count": 0,
+  "identity_conflicts": [],
+  "kernel_anchor": "SYSTEM_KERNEL_RUNTIME::v1.0::ANCHOR_HASH=3f2db198::FAIL_CLOSED=true",
+  "phase_source": "",
+  "phase_target": "",
+  "run_metadata": {
+    "execution_mode": "READ_ONLY",
+    "fail_closed": true,
+    "finished_at": "2026-05-02T01:11:36.656822+00:00",
+    "kernel_mode": "LIVE",
+    "run_id": "system-enf-e831f8f2aa22",
+    "started_at": "2026-05-02T01:11:36.656749+00:00"
+  },
+  "sst_source": "",
+  "sst_target": "",
+  "tracker_summary": {}
+}

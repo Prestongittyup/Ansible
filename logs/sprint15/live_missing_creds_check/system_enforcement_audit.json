@@ -1,0 +1,85 @@
+{
+  "adapter_states": {},
+  "adapters_active": [],
+  "data_stats": {
+    "adapter_states": {},
+    "contract_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "deterministic_signature": "c14561f4ab291efdbe44931cb47bb4b3da072e56e8aa4ed1f4d644f41a1cea3a",
+    "execution_mode": "READ_ONLY",
+    "execution_status": "FAIL",
+    "fail_closed_triggered": true,
+    "kernel_mode": "LIVE",
+    "runtime_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ]
+  },
+  "decision_reason": "HARD_FAIL:Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER",
+  "deterministic_signature": "c14561f4ab291efdbe44931cb47bb4b3da072e56e8aa4ed1f4d644f41a1cea3a",
+  "drift_metrics": {
+    "compared_records_total": 0,
+    "deterministic_hash": "",
+    "drifted_records_total": 0,
+    "global_drift_pct": 0.0,
+    "hard_drift_count": 0,
+    "soft_drift_count": 0
+  },
+  "drift_percentage": 0.0,
+  "errors": [
+    "Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER"
+  ],
+  "execution_status": "FAIL",
+  "exit_code": 30,
+  "exit_code_reason": "HARD_FAIL:Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER",
+  "fail_closed_triggered": true,
+  "final_decision": "HARD_FAIL",
+  "gate_results": [],
+  "identity_conflict_count": 0,
+  "identity_conflicts": [],
+  "kernel_anchor": "SYSTEM_KERNEL_RUNTIME::v1.0::ANCHOR_HASH=3f2db198::FAIL_CLOSED=true",
+  "mode": "LIVE",
+  "parity_result": {
+    "deterministic_hash": "",
+    "reason": "HARD_FAIL:Missing LIVE mode configuration: ANSIBLE_INVENTORY_SOURCE_PATH, ANSIBLE_PLAYBOOK_COMMAND, LOGICMONITOR_API_KEY, LOGICMONITOR_BASE_URL|LOGICMONITOR_LIVE_PAYLOAD_PATH, NAUTOBOT_BASE_URL|NAUTOBOT_DESIRED_STATE_PATH, NAUTOBOT_TOKEN, POSTGRES_DATABASE, POSTGRES_PASSWORD, POSTGRES_USER",
+    "status": "FAIL"
+  },
+  "phase": "PHASE_1",
+  "phase_source": "PHASE_1",
+  "phase_target": "PHASE_1",
+  "run_id": "system-enf-e2fb08a26bdb",
+  "run_metadata": {
+    "execution_mode": "READ_ONLY",
+    "fail_closed": true,
+    "finished_at": "2026-05-02T01:25:38.910035+00:00",
+    "kernel_mode": "LIVE",
+    "run_id": "system-enf-e2fb08a26bdb",
+    "started_at": "2026-05-02T01:25:38.910035+00:00"
+  },
+  "sst_owner": "LOGICMONITOR",
+  "sst_source": "LOGICMONITOR",
+  "sst_target": "LOGICMONITOR",
+  "tracker_summary": {}
+}

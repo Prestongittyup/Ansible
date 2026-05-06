@@ -1,0 +1,134 @@
+{
+  "adapters_failed": [
+    {
+      "adapter": "SYSTEM",
+      "reason": "INTEGRATION_DEPENDENCIES_NOT_READY"
+    }
+  ],
+  "adapters_initialized": [],
+  "boot_id": "system-boot-eca713f32d70",
+  "environment_valid": true,
+  "execution_status": "BLOCKED",
+  "external_dependencies_ready": false,
+  "fail_closed_triggered": true,
+  "health_status": {},
+  "integration_status": {
+    "AnsibleAdapter": {
+      "adapter": "AnsibleAdapter",
+      "auth": {
+        "status": "PASS"
+      },
+      "connectivity": {
+        "path": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\sprint16_tests_nxu_60or\\health_fail\\runner",
+        "status": "PASS"
+      },
+      "credentials": {
+        "missing": [],
+        "present": [
+          "ANSIBLE_RUNNER_PATH"
+        ],
+        "status": "PASS"
+      },
+      "dependency": "ansible_runner_path",
+      "failure_class": "",
+      "mode": "LIVE",
+      "operation": "ansible_runner_bootstrap_probe",
+      "phase": "PHASE_3",
+      "root_cause": "",
+      "schema_handshake": {
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "LogicMonitorAdapter": {
+      "adapter": "LogicMonitorAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [
+          "LOGICMONITOR_API_KEY",
+          "LOGICMONITOR_ACCOUNT"
+        ],
+        "status": "PASS"
+      },
+      "dependency": "logicmonitor_api",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "mode": "LIVE",
+      "operation": "logicmonitor_bootstrap_probe",
+      "phase": "PHASE_3",
+      "reason": "LogicMonitorAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+      "root_cause": "LogicMonitorAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+      "status": "FAIL"
+    },
+    "NautobotAdapter": {
+      "adapter": "NautobotAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [
+          "NAUTOBOT_TOKEN",
+          "NAUTOBOT_URL"
+        ],
+        "status": "PASS"
+      },
+      "dependency": "nautobot_api",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "mode": "LIVE",
+      "operation": "nautobot_bootstrap_probe",
+      "phase": "PHASE_3",
+      "reason": "NautobotAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+      "root_cause": "NautobotAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+      "status": "FAIL"
+    },
+    "PostgresAdapter": {
+      "adapter": "PostgresAdapter",
+      "auth": {
+        "status": "FAIL"
+      },
+      "connectivity": {
+        "dns": {
+          "address": "127.0.0.1",
+          "host": "localhost",
+          "status": "PASS"
+        },
+        "status": "FAIL",
+        "tcp": {
+          "host": "localhost",
+          "port": 5432,
+          "reason": "[WinError 10061] No connection could be made because the target machine actively refused it",
+          "status": "FAIL"
+        }
+      },
+      "credentials": {
+        "missing": [],
+        "present": [
+          "POSTGRES_CONNECTION_STRING",
+          "POSTGRES_DB",
+          "POSTGRES_USER",
+          "POSTGRES_PASSWORD"
+        ],
+        "status": "PASS"
+      },
+      "dependency": "postgres",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "mode": "LIVE",
+      "operation": "postgres_bootstrap_probe",
+      "phase": "PHASE_3",
+      "reason": "psycopg2 unavailable: No module named 'psycopg2'",
+      "root_cause": "psycopg2 unavailable: No module named 'psycopg2'",
+      "schema_handshake": {
+        "status": "FAIL"
+      },
+      "status": "FAIL",
+      "transaction_handshake": {
+        "reason": "psycopg2 unavailable: No module named 'psycopg2'",
+        "status": "FAIL"
+      }
+    }
+  },
+  "live_execution_safe": false,
+  "mode": "LIVE",
+  "phase": "PHASE_3",
+  "reason": "INTEGRATION_DEPENDENCIES_NOT_READY",
+  "schema_version": "1.0",
+  "sst_owner": "NAUTOBOT",
+  "system_ready": false
+}

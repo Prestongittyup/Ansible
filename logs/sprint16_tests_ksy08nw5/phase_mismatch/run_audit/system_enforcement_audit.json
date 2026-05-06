@@ -1,0 +1,197 @@
+{
+  "adapter_states": {
+    "AnsibleAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2"
+        },
+        "mode_used": "MOCK",
+        "status": "FAIL"
+      }
+    },
+    "LogicMonitorAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2"
+        },
+        "mode_used": "MOCK",
+        "status": "FAIL"
+      }
+    },
+    "NautobotAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2"
+        },
+        "mode_used": "MOCK",
+        "status": "FAIL"
+      }
+    },
+    "PostgresAdapter": {
+      "bootstrap": {
+        "details": {
+          "error": "BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2"
+        },
+        "mode_used": "MOCK",
+        "status": "FAIL"
+      }
+    }
+  },
+  "adapters_active": [],
+  "data_stats": {
+    "adapter_states": {
+      "AnsibleAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2"
+          },
+          "mode_used": "MOCK",
+          "status": "FAIL"
+        }
+      },
+      "LogicMonitorAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2"
+          },
+          "mode_used": "MOCK",
+          "status": "FAIL"
+        }
+      },
+      "NautobotAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2"
+          },
+          "mode_used": "MOCK",
+          "status": "FAIL"
+        }
+      },
+      "PostgresAdapter": {
+        "bootstrap": {
+          "details": {
+            "error": "BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2"
+          },
+          "mode_used": "MOCK",
+          "status": "FAIL"
+        }
+      }
+    },
+    "adapters_active": [],
+    "command_model": {
+      "emit_audit": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\sprint16_tests_ksy08nw5\\phase_mismatch\\run_audit",
+      "parity_window": "30d",
+      "phase": "PHASE_2",
+      "source": "mock",
+      "target": "mock"
+    },
+    "contract_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "deterministic_signature": "3995fc49300174a19b95ffeac991a3507cb547589d891bb64d754f0ca1201d79",
+    "drift_percentage": 0.0,
+    "execution_mode": "READ_ONLY",
+    "execution_status": "BLOCKED",
+    "fail_closed_triggered": true,
+    "identity_conflicts": [],
+    "kernel_mode": "MOCK",
+    "parity_result": {
+      "reason": "CLI_BOOTSTRAP_ERROR",
+      "status": "NOT_EXECUTED"
+    },
+    "runtime_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "trace_id": "a7730a7b1365a48489d7142ef18effc9"
+  },
+  "decision_reason": "CLI_BOOTSTRAP_ERROR:BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2",
+  "deterministic_signature": "3995fc49300174a19b95ffeac991a3507cb547589d891bb64d754f0ca1201d79",
+  "drift_metrics": {
+    "compared_records_total": 0,
+    "deterministic_hash": "",
+    "drifted_records_total": 0,
+    "global_drift_pct": 0.0,
+    "hard_drift_count": 0,
+    "soft_drift_count": 0
+  },
+  "drift_percentage": 0.0,
+  "errors": [
+    "CLI_BOOTSTRAP_ERROR:BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2"
+  ],
+  "execution_status": "BLOCKED",
+  "execution_timeline": [
+    {
+      "component": "execution_model",
+      "duration_ms": 0,
+      "error_message": "BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2",
+      "error_type": "UNKNOWN",
+      "level": "ERROR",
+      "mode": "MOCK",
+      "operation": "system_kernel.run",
+      "phase": "PHASE_2",
+      "retryable": false,
+      "run_id": "error:run:MOCK:PHASE_2",
+      "span_id": "",
+      "status": "FAIL",
+      "timestamp": "2026-05-02T12:28:29.104651+00:00",
+      "trace_id": "a7730a7b1365a48489d7142ef18effc9"
+    }
+  ],
+  "exit_code": 30,
+  "exit_code_reason": "CLI_BOOTSTRAP_ERROR:BOOTSTRAP_PHASE_MISMATCH:PHASE_1!= PHASE_2",
+  "external_failures": [],
+  "fail_closed_triggered": true,
+  "failure_point": "execution_model::system_kernel.run",
+  "final_decision": "BOOTSTRAP_FAILURE",
+  "gate_results": [],
+  "identity_conflict_count": 0,
+  "identity_conflicts": [],
+  "kernel_anchor": "SYSTEM_KERNEL_RUNTIME::v1.0::ANCHOR_HASH=3f2db198::FAIL_CLOSED=true",
+  "mode": "MOCK",
+  "parity_result": {
+    "reason": "CLI_BOOTSTRAP_ERROR",
+    "status": "NOT_EXECUTED"
+  },
+  "phase": "PHASE_2",
+  "phase_source": "PHASE_2",
+  "phase_target": "PHASE_2",
+  "run_id": "system-enf-6024971f8db5",
+  "run_metadata": {
+    "execution_mode": "READ_ONLY",
+    "fail_closed": true,
+    "finished_at": "2026-05-02T12:28:29.104922+00:00",
+    "kernel_mode": "MOCK",
+    "run_id": "system-enf-6024971f8db5",
+    "started_at": "2026-05-02T12:28:29.104880+00:00",
+    "total_duration_ms": 0,
+    "trace_id": "a7730a7b1365a48489d7142ef18effc9"
+  },
+  "sst_owner": "ANSIBLE_POSTGRES",
+  "sst_source": "ANSIBLE_POSTGRES",
+  "sst_target": "ANSIBLE_POSTGRES",
+  "total_duration_ms": 0,
+  "trace_id": "a7730a7b1365a48489d7142ef18effc9",
+  "tracker_summary": {}
+}

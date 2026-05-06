@@ -1,0 +1,510 @@
+{
+  "adapter_states": {
+    "AnsibleAdapter": {
+      "execute_playbook": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      },
+      "fetch_validated_inventory": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      }
+    },
+    "LogicMonitorAdapter": {
+      "fetch_discovery_records": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      }
+    },
+    "NautobotAdapter": {
+      "fetch_authoritative_inventory": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      }
+    },
+    "PostgresAdapter": {
+      "fetch_phase2_canonical_inventory": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      },
+      "fetch_phase3_mirror_inventory": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      },
+      "write_canonical_inventory": {
+        "details": {
+          "fallback": false
+        },
+        "mode_used": "MOCK",
+        "status": "PASS"
+      }
+    }
+  },
+  "data_stats": {
+    "adapter_results": {
+      "ansible_execution": {
+        "execution_mode": "MOCK",
+        "operation": "READ_ONLY_VALIDATE",
+        "records_processed": 3,
+        "status": "PASS"
+      },
+      "governance_simulation": {
+        "execution_mode": "READ_ONLY",
+        "phase": "PHASE2",
+        "status": "NOT_REQUESTED"
+      },
+      "postgres_write": {
+        "records_inserted": 3,
+        "records_updated": 0,
+        "records_written": 3,
+        "status": "PASS",
+        "storage": "in_memory_emulation",
+        "write_fingerprint": "38deed38e6c2c5c6dfc8040d4d13160186bcdb0085641dad6a054b5c96d2a902",
+        "written_at": "2026-05-02T01:12:37.988828+00:00"
+      }
+    },
+    "adapter_states": {
+      "AnsibleAdapter": {
+        "execute_playbook": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        },
+        "fetch_validated_inventory": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        }
+      },
+      "LogicMonitorAdapter": {
+        "fetch_discovery_records": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        }
+      },
+      "NautobotAdapter": {
+        "fetch_authoritative_inventory": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        }
+      },
+      "PostgresAdapter": {
+        "fetch_phase2_canonical_inventory": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        },
+        "fetch_phase3_mirror_inventory": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        },
+        "write_canonical_inventory": {
+          "details": {
+            "fallback": false
+          },
+          "mode_used": "MOCK",
+          "status": "PASS"
+        }
+      }
+    },
+    "contract_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT_HARDENING"
+    ],
+    "cutover_simulation": {
+      "authority_switch_valid": true,
+      "checks": {
+        "authority_switch_valid": true,
+        "drift_within_threshold": true,
+        "identity_stable": true,
+        "parity_stability_met": true
+      },
+      "current_phase": "PHASE_2",
+      "reason": "PHASE_2_TO_PHASE_3_SIMULATION_PASS",
+      "requested": true,
+      "status": "PASS",
+      "target_phase": "PHASE_3"
+    },
+    "deterministic_signature": "e373b6ca1f3f71f5c03a28730e69871cb1956307d0adf926942ec6b6bc9bac1d",
+    "execution_mode": "READ_ONLY",
+    "kernel_mode": "MOCK",
+    "normalized_source_records": 3,
+    "normalized_target_records": 3,
+    "pipeline_trace": [
+      {
+        "adapter": "LogicMonitorAdapter",
+        "records": 3,
+        "stage": "discovery"
+      },
+      {
+        "adapter": "runtime_engine",
+        "records": 3,
+        "stage": "normalization"
+      },
+      {
+        "adapter": "AnsibleAdapter",
+        "records": 3,
+        "stage": "execution",
+        "status": "PASS"
+      },
+      {
+        "adapter": "AnsibleAdapter",
+        "records": 3,
+        "stage": "validation_output"
+      },
+      {
+        "adapter": "PostgresAdapter",
+        "records": 3,
+        "stage": "persistence",
+        "status": "PASS"
+      },
+      {
+        "phase": "PHASE2",
+        "source_records": 3,
+        "stage": "parity_source_selection",
+        "target_phase": "PHASE3",
+        "target_records": 3
+      },
+      {
+        "stage": "governance_simulation",
+        "status": "NOT_REQUESTED"
+      }
+    ],
+    "runtime_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "DRIFT",
+      "PARITY"
+    ],
+    "runtime_inputs": {
+      "identity_events": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\identity_events.json",
+      "source": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\source_records.json",
+      "target": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\runtime_inputs\\target_records.json"
+    },
+    "source_records_loaded": 3,
+    "target_records_loaded": 3
+  },
+  "decision_reason": "PHASE_2->PHASE_3 approved",
+  "deterministic_signature": "e373b6ca1f3f71f5c03a28730e69871cb1956307d0adf926942ec6b6bc9bac1d",
+  "drift_metrics": {
+    "compared_records_total": 3,
+    "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+    "drifted_records_total": 0,
+    "global_drift_pct": 0.0,
+    "hard_drift_count": 0,
+    "soft_drift_count": 0
+  },
+  "errors": [],
+  "exit_code": 0,
+  "exit_code_reason": "PHASE_2->PHASE_3 approved",
+  "final_decision": "SUCCESS",
+  "gate_results": [
+    {
+      "details": {
+        "checked_files": [
+          "SYSTEM_CONTRACT_INDEX.md",
+          "EXECUTION_PRECEDENCE_CONTRACT.md",
+          "LAYER_MAP.md"
+        ]
+      },
+      "finished_at": "2026-05-02T01:12:37.992573+00:00",
+      "gate": "SCI",
+      "reason": "SCI_CONTRACT_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:12:37.991812+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Program Files\\Python313\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "emv_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+        "violation_count": 0
+      },
+      "finished_at": "2026-05-02T01:12:38.162254+00:00",
+      "gate": "EMV",
+      "reason": "EXTERNAL_GATE_PASS",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:12:37.994829+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Program Files\\Python313\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "ci_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"ci_status\": \"PASS\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T01:12:38.317170+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": []\n      },\n      \"violation_count\": 0\n    },\n    {\n      \"name\": \"Import Boundary Enforcement\",\n      \"rule_id\": \"SCI-002\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/import_guard.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T01:12:38.695095+00:00\",\n        \"validator\": \"import_guard\",\n        \"v",
+        "violation_count": 0
+      },
+      "finished_at": "2026-05-02T01:12:39.141416+00:00",
+      "gate": "CI",
+      "reason": "EXTERNAL_GATE_PASS",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:12:38.162432+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "phase": "PHASE_2",
+        "sst_source": "ANSIBLE_POSTGRES",
+        "writable_systems": [
+          "ANSIBLE",
+          "POSTGRES"
+        ]
+      },
+      "finished_at": "2026-05-02T01:12:39.141450+00:00",
+      "gate": "AUTH",
+      "reason": "AUTHORITY_MODEL_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:12:39.141445+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "execution_mode": "READ_ONLY",
+        "governance_approved": false,
+        "phase": "PHASE_2"
+      },
+      "finished_at": "2026-05-02T01:12:39.141458+00:00",
+      "gate": "GOVERNANCE",
+      "reason": "READ_ONLY_MODE_ENFORCED",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:12:39.141455+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "global_drift_pct": 0.0,
+        "max_global_drift": 5.0
+      },
+      "finished_at": "2026-05-02T01:12:39.141464+00:00",
+      "gate": "DRIFT",
+      "reason": "GLOBAL_DRIFT_WITHIN_THRESHOLD",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:12:39.141461+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "critical_events_180d": 0,
+        "global_drift_pct": 0.0,
+        "identity_conflicts_total": 0,
+        "tracker": {
+          "consecutive_passes": 1,
+          "considered_runs": 12,
+          "history": [
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T00:55:33.113061+00:00"
+            },
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:10:34.567516+00:00"
+            },
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:10:36.151501+00:00"
+            },
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:11:33.007140+00:00"
+            },
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:11:34.886430+00:00"
+            },
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:11:36.935204+00:00"
+            },
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:12:23.265951+00:00"
+            },
+            {
+              "deterministic_hash": "b1670d4c35c52d43afb4a8756fc62661ce3624a0cd6f618defe45a33e4bce56c",
+              "parity_pass": false,
+              "timestamp": "2026-05-02T01:12:24.307797+00:00"
+            },
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:12:25.370547+00:00"
+            },
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:12:35.517051+00:00"
+            },
+            {
+              "deterministic_hash": "b1670d4c35c52d43afb4a8756fc62661ce3624a0cd6f618defe45a33e4bce56c",
+              "parity_pass": false,
+              "timestamp": "2026-05-02T01:12:36.641342+00:00"
+            },
+            {
+              "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+              "parity_pass": true,
+              "timestamp": "2026-05-02T01:12:37.991783+00:00"
+            }
+          ],
+          "pass": true,
+          "required_consecutive_passes": 1,
+          "window_days": 30
+        }
+      },
+      "finished_at": "2026-05-02T01:12:39.141477+00:00",
+      "gate": "PARITY",
+      "reason": "PARITY_GATES_PASSED",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:12:39.141468+00:00",
+      "status": "PASS"
+    }
+  ],
+  "identity_conflict_count": 0,
+  "identity_conflicts": [],
+  "kernel_anchor": "SYSTEM_KERNEL_RUNTIME::v1.0::ANCHOR_HASH=3f2db198::FAIL_CLOSED=true",
+  "phase_source": "PHASE_2",
+  "phase_target": "PHASE_3",
+  "run_metadata": {
+    "execution_mode": "READ_ONLY",
+    "fail_closed": true,
+    "finished_at": "2026-05-02T01:12:39.141488+00:00",
+    "kernel_mode": "MOCK",
+    "run_id": "system-enf-de112da2ad65",
+    "started_at": "2026-05-02T01:12:37.991783+00:00"
+  },
+  "sst_source": "ANSIBLE_POSTGRES",
+  "sst_target": "NAUTOBOT",
+  "tracker_summary": {
+    "consecutive_passes": 1,
+    "considered_runs": 12,
+    "history": [
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T00:55:33.113061+00:00"
+      },
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:10:34.567516+00:00"
+      },
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:10:36.151501+00:00"
+      },
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:11:33.007140+00:00"
+      },
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:11:34.886430+00:00"
+      },
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:11:36.935204+00:00"
+      },
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:12:23.265951+00:00"
+      },
+      {
+        "deterministic_hash": "b1670d4c35c52d43afb4a8756fc62661ce3624a0cd6f618defe45a33e4bce56c",
+        "parity_pass": false,
+        "timestamp": "2026-05-02T01:12:24.307797+00:00"
+      },
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:12:25.370547+00:00"
+      },
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:12:35.517051+00:00"
+      },
+      {
+        "deterministic_hash": "b1670d4c35c52d43afb4a8756fc62661ce3624a0cd6f618defe45a33e4bce56c",
+        "parity_pass": false,
+        "timestamp": "2026-05-02T01:12:36.641342+00:00"
+      },
+      {
+        "deterministic_hash": "d77a8464f5a1c5759a0dd1c47eb919b76f6f9fc3f8bfd1dafd9d965235b11808",
+        "parity_pass": true,
+        "timestamp": "2026-05-02T01:12:37.991783+00:00"
+      }
+    ],
+    "pass": true,
+    "required_consecutive_passes": 1,
+    "window_days": 30
+  }
+}

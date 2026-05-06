@@ -1,0 +1,116 @@
+{
+  "classification_counts": {
+    "adapter_layer": 6,
+    "configuration": 21,
+    "documentation": 18,
+    "execution_model": 74,
+    "integration_layer": 12,
+    "operations_layer": 16,
+    "runtime_core": 29,
+    "tests": 23
+  },
+  "conflicting_modules": [
+    {
+      "files": [
+        "system_enf_kernel.py",
+        "system_kernel.py"
+      ],
+      "pattern": "legacy_vs_canonical_kernel_entrypoint"
+    },
+    {
+      "files": [
+        "sci_validator.py",
+        "ci/sci_validator.py"
+      ],
+      "pattern": "dual_sci_validators_with_different_scope"
+    }
+  ],
+  "duplicate_modules": [
+    {
+      "files": [
+        "execution_contract/schema.py",
+        "observability/schema.py"
+      ],
+      "name": "schema"
+    },
+    {
+      "files": [
+        "ci/sci_validator.py",
+        "sci_validator.py"
+      ],
+      "name": "sci_validator"
+    }
+  ],
+  "entrypoints": [
+    "ansible_validation/inventory/dynamic_inventory.py",
+    "ansible_validation/runners/run_validation.py",
+    "bootstrap.py",
+    "ci/bootstrap_gate.py",
+    "ci/ci_pipeline_order_guard.py",
+    "ci/execution_contract_integrity_guard.py",
+    "ci/import_guard.py",
+    "ci/meta/ci_enforcement_meta_validator.py",
+    "ci/run_ci_kernel.py",
+    "ci/schema_version_guard.py",
+    "ci/sci_validator.py",
+    "compliance_layer/unified_compliance_runner.py",
+    "deploy/container_entrypoint.py",
+    "hardening/baseline_comparison_toolkit.py",
+    "hardening/drift_detection_engine.py",
+    "hardening/immutability_enforcement_checker.py",
+    "hardening/system_integrity_auditor.py",
+    "inventory_pipeline/run_ingestion.py",
+    "inventory_pipeline/tests/sprint1_output_contract_test.py",
+    "operations/live_validation_runner.py",
+    "operations/service_entrypoint.py",
+    "operations_cli.py",
+    "persistence/ingest_validation.py",
+    "persistence/test_ingest_validation.py",
+    "sci_validator.py",
+    "scripts/run_cross_sprint_drift.py",
+    "scripts/run_integrity_certificate.py",
+    "scripts/run_unified_compliance.py",
+    "scripts/sci_ci_gate.py",
+    "stabilization_layer/cross_sprint_drift_comparator.py",
+    "stabilization_layer/determinism_certification_engine.py",
+    "stabilization_layer/execution_replay_validator.py",
+    "stabilization_layer/integrity_certificate_generator.py",
+    "system_enf_kernel.py",
+    "system_kernel.py",
+    "test_api_layer.py",
+    "test_auth_layer.py",
+    "test_baseline_comparison.py",
+    "test_bootstrap_runtime_layer.py",
+    "test_cross_layer_orchestration.py",
+    "test_cross_sprint_drift_comparator.py",
+    "test_determinism_certification.py",
+    "test_drift_detection.py",
+    "test_execution_replay_validator.py",
+    "test_export_layer.py",
+    "test_failure_aggregation.py",
+    "test_gate_sequencing.py",
+    "test_governance_layer.py",
+    "test_immutability_checker.py",
+    "test_integrity_certificate_generator.py",
+    "test_live_validation_hardening.py",
+    "test_observability_layer.py",
+    "test_operations_architecture_layer.py",
+    "test_query_layer.py",
+    "test_sprint17_integration_layer.py",
+    "test_system_integrity.py",
+    "test_unified_compliance_runner.py"
+  ],
+  "probable_dead_code_paths": [],
+  "probable_orphans": [],
+  "scan_scope": {
+    "excluded_generated_or_env_files": 1252,
+    "excluded_segments": [
+      ".venv",
+      "__pycache__",
+      "logs"
+    ],
+    "repo_files_scanned": 199,
+    "workspace_total_files": 1451
+  },
+  "unknown_unclassified": []
+}

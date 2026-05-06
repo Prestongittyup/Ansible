@@ -1,0 +1,23 @@
+{
+  "adapters_failed": [
+    {
+      "adapter": "SYSTEM",
+      "reason": "Missing LIVE mode configuration: ANSIBLE_EXECUTION_ENDPOINT|ANSIBLE_RUNNER_PATH, LOGICMONITOR_ACCOUNT, LOGICMONITOR_API_KEY, NAUTOBOT_TOKEN|NAUTOBOT_API_TOKEN, NAUTOBOT_URL, POSTGRES_CONNECTION_STRING, POSTGRES_DB, POSTGRES_PASSWORD, POSTGRES_USER"
+    }
+  ],
+  "adapters_initialized": [],
+  "boot_id": "system-boot-147d1f289538",
+  "environment_valid": false,
+  "execution_status": "BLOCKED",
+  "external_dependencies_ready": false,
+  "fail_closed_triggered": true,
+  "health_status": {},
+  "integration_status": {},
+  "live_execution_safe": false,
+  "mode": "LIVE",
+  "phase": "PHASE_1",
+  "reason": "Missing LIVE mode configuration: ANSIBLE_EXECUTION_ENDPOINT|ANSIBLE_RUNNER_PATH, LOGICMONITOR_ACCOUNT, LOGICMONITOR_API_KEY, NAUTOBOT_TOKEN|NAUTOBOT_API_TOKEN, NAUTOBOT_URL, POSTGRES_CONNECTION_STRING, POSTGRES_DB, POSTGRES_PASSWORD, POSTGRES_USER",
+  "schema_version": "1.0",
+  "system_ready": false,
+  "trace_id": "959764fb1cd45d0ec12a14c204800d87"
+}

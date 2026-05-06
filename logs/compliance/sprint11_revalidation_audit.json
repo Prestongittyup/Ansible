@@ -1,0 +1,137 @@
+{
+  "documentation_compliance_report": {
+    "boundary_violations": {
+      "orchestration_imports_runtime": [],
+      "runtime_imports_orchestration": []
+    },
+    "doc_content_mismatches": [],
+    "missing_docs": [],
+    "read_errors": [],
+    "sequence_issues": [],
+    "sequence_ok": true,
+    "status": "PASS"
+  },
+  "drift_report": {
+    "dependency_boundary": {
+      "is_valid": true,
+      "violation_count": 0,
+      "violations": []
+    },
+    "frozen_layer_total_mismatch_count": 0,
+    "layers": {
+      "api": {
+        "current_files": 6,
+        "current_layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2",
+        "expected_layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 6
+      },
+      "auth": {
+        "current_files": 6,
+        "current_layer_hash": "6486ceec29d9db3a912931c83e46f83b8f51828a01fbf839812ff8dcdb75d1a7",
+        "expected_layer_hash": "6486ceec29d9db3a912931c83e46f83b8f51828a01fbf839812ff8dcdb75d1a7",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 6
+      },
+      "enforcement": {
+        "current_files": 19,
+        "current_layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702",
+        "expected_layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 19
+      },
+      "export": {
+        "current_files": 5,
+        "current_layer_hash": "634fbff7f7d6a2a9b8bb4545ad6d0fbe257ee95ba35ead75cf0f28cd3336e1f7",
+        "expected_layer_hash": "634fbff7f7d6a2a9b8bb4545ad6d0fbe257ee95ba35ead75cf0f28cd3336e1f7",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 5
+      },
+      "governance": {
+        "current_files": 7,
+        "current_layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c",
+        "expected_layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 7
+      },
+      "hardening": {
+        "current_files": 9,
+        "current_layer_hash": "7f003bcab0b9b4afeaa40b4c6141bc6430c4752197c179fa36d9d612b9ff615c",
+        "expected_layer_hash": "7f003bcab0b9b4afeaa40b4c6141bc6430c4752197c179fa36d9d612b9ff615c",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 9
+      },
+      "observability": {
+        "current_files": 6,
+        "current_layer_hash": "d02fd1ca13a41fa8dccf9f2ab79351c2df38dc4438842bebe0ed636c793b9a1e",
+        "expected_layer_hash": "d02fd1ca13a41fa8dccf9f2ab79351c2df38dc4438842bebe0ed636c793b9a1e",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 6
+      },
+      "persistence": {
+        "current_files": 6,
+        "current_layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6",
+        "expected_layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 6
+      },
+      "query": {
+        "current_files": 5,
+        "current_layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d",
+        "expected_layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 5
+      }
+    },
+    "schema_consistency_current": {
+      "all_consistent": true,
+      "checks": {
+        "export_metrics_schema_version": "2.1",
+        "export_otel_schema_version": "2.1",
+        "export_siem_schema_version": "2.1",
+        "export_trace_schema_version": "2.1",
+        "input_metadata_schema_version": "2.1",
+        "input_schema_block_schema_version": "2.1",
+        "observability_schema_version": "2.1"
+      }
+    },
+    "schema_vs_sprint11_baseline_diff": [],
+    "status": "PASS"
+  },
+  "summary": {
+    "authority_gate": {
+      "ci_status": "PASS",
+      "ci_violation_count": 0,
+      "emv_status": "PASS",
+      "emv_violation_count": 0
+    },
+    "determinism": {
+      "hash_match": true,
+      "run1_hash": "b4fcda05fe4aab0da42c35af341ef93504d800f878fd10e1be7900c4f08cfee1",
+      "run1_status": "COMPLIANT",
+      "run2_hash": "b4fcda05fe4aab0da42c35af341ef93504d800f878fd10e1be7900c4f08cfee1",
+      "run2_status": "COMPLIANT",
+      "status": "PASS"
+    },
+    "documentation_compliance": {
+      "mismatch_count": 0,
+      "status": "PASS"
+    },
+    "drift_gate": {
+      "dependency_violation_count": 0,
+      "frozen_layer_total_mismatch_count": 0,
+      "schema_consistent": true,
+      "status": "PASS"
+    },
+    "overall_status": "PASS"
+  }
+}

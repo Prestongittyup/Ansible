@@ -1,0 +1,38 @@
+{
+  "sprint": "Sprint 21",
+  "validation_timestamp_utc": "2026-05-02T12:44:30Z",
+  "unit_tests": {
+    "command": ".venv/Scripts/python.exe -m unittest discover -s tests -p test*.py",
+    "status": "PASS",
+    "ran": 95,
+    "skipped": 1,
+    "duration_seconds": 67.546
+  },
+  "runtime_commands": [
+    {
+      "command": ".venv/Scripts/python.exe system_kernel.py bootstrap",
+      "status": "FAIL",
+      "exit_code": 1,
+      "reason": "INVALID_CLI: required bootstrap arguments are missing"
+    },
+    {
+      "command": ".venv/Scripts/python.exe system_kernel.py bootstrap --mode MOCK --phase PHASE_2 --env-path logs/sprint21_validation/mock.env --validate-env true --init-adapters true --health-check true --emit-ready-state logs/sprint21_validation/runtime_ready_state.json --fail-closed true",
+      "status": "PASS",
+      "exit_code": 0,
+      "execution_status": "READY",
+      "ready_state_path": "logs/sprint21_validation/runtime_ready_state.json"
+    },
+    {
+      "command": ".venv/Scripts/python.exe system_kernel.py run --mode MOCK --phase PHASE_2 --source mock --target mock --parity-window 30d --fail-closed true --emit-audit logs/sprint21_validation/run_audit",
+      "status": "FAIL",
+      "exit_code": 20,
+      "decision": "GATE_FAIL",
+      "gate_failure": "DRIFT:GLOBAL_DRIFT_THRESHOLD_EXCEEDED",
+      "audit_path": "logs/sprint21_validation/run_audit/system_enforcement_audit.json"
+    }
+  ],
+  "notes": [
+    "PHASE_2 mock run is fail-closed and blocks on drift threshold (100.0 > 5.0), which is expected with current mock parity fixture behavior.",
+    "CI kernel and operations runtime path validation were corrected and now pass in MOCK flow."
+  ]
+}

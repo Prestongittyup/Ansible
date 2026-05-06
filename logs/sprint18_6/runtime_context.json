@@ -1,0 +1,1 @@
+{"run_id":"runtime-check","device_ip":"192.0.2.10","execution_mode":"READ_ONLY","source_layer":"EXECUTION","target_action":"SSH_VALIDATION","data_classification":"EVIDENCE","timestamp":"2026-05-02T00:00:00Z","global_automation_guard":"CLOSED","sci_permit":false}

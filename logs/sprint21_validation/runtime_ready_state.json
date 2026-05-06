@@ -1,0 +1,108 @@
+{
+  "adapters_failed": [],
+  "adapters_initialized": [
+    "AnsibleAdapter",
+    "LogicMonitorAdapter",
+    "PostgresAdapter"
+  ],
+  "boot_id": "system-boot-173363b4996c",
+  "credential_injection": {
+    "ansible_execution_endpoint_present": false,
+    "ansible_inventory_path_present": false,
+    "ansible_runner_path_present": false,
+    "logicmonitor_account_present": false,
+    "logicmonitor_api_key_present": false,
+    "nautobot_token_present": false,
+    "nautobot_url_present": false,
+    "postgres_connection_string_present": false,
+    "postgres_db_present": false,
+    "postgres_password_present": false,
+    "postgres_user_present": false
+  },
+  "environment_valid": true,
+  "execution_status": "READY",
+  "external_dependencies_ready": true,
+  "fail_closed_triggered": false,
+  "health_status": {
+    "AnsibleAdapter": {
+      "adapter": "AnsibleAdapter",
+      "backend": "runner",
+      "check": "dummy_inventory_pull",
+      "mode": "MOCK",
+      "phase": "PHASE_2",
+      "records": 3,
+      "status": "PASS"
+    },
+    "LogicMonitorAdapter": {
+      "adapter": "LogicMonitorAdapter",
+      "check": "dummy_inventory_pull",
+      "mode": "MOCK",
+      "phase": "PHASE_2",
+      "records": 3,
+      "status": "PASS"
+    },
+    "PostgresAdapter": {
+      "adapter": "PostgresAdapter",
+      "backend": "mock",
+      "check": "schema_validation",
+      "mode": "MOCK",
+      "phase": "PHASE_2",
+      "status": "PASS"
+    }
+  },
+  "integration_status": {
+    "AnsibleAdapter": {
+      "adapter": "AnsibleAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [],
+        "status": "SKIPPED"
+      },
+      "failure_class": "",
+      "mode": "MOCK",
+      "operation": "bootstrap_integration_probe",
+      "phase": "PHASE_2",
+      "reason": "mock_mode",
+      "root_cause": "",
+      "status": "SKIPPED"
+    },
+    "LogicMonitorAdapter": {
+      "adapter": "LogicMonitorAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [],
+        "status": "SKIPPED"
+      },
+      "failure_class": "",
+      "mode": "MOCK",
+      "operation": "bootstrap_integration_probe",
+      "phase": "PHASE_2",
+      "reason": "mock_mode",
+      "root_cause": "",
+      "status": "SKIPPED"
+    },
+    "PostgresAdapter": {
+      "adapter": "PostgresAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [],
+        "status": "SKIPPED"
+      },
+      "failure_class": "",
+      "mode": "MOCK",
+      "operation": "bootstrap_integration_probe",
+      "phase": "PHASE_2",
+      "reason": "mock_mode",
+      "root_cause": "",
+      "status": "SKIPPED"
+    }
+  },
+  "live_execution_safe": true,
+  "mode": "MOCK",
+  "phase": "PHASE_2",
+  "runtime_lock_hash": "e3d92196003d34c486243a45d60415cb2f4c9b4bb115008023bcf6bbe5805174",
+  "schema_version": "1.0",
+  "sst_owner": "ANSIBLE_POSTGRES",
+  "system_ready": true,
+  "trace_id": "acb92b92a45da6cc115d852df9fb2dd5"
+}

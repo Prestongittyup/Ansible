@@ -1,0 +1,127 @@
+{
+  "registry_name": "SCI Enforcement Kernel Rule Registry",
+  "registry_version": "1.0",
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "rule_id": "SCI-001",
+      "name": "SCI Presence Validation",
+      "description": "SYSTEM_CONTRACT_INDEX and required governance authority artifacts must exist and pass SCI ambiguity checks.",
+      "severity": "CRITICAL",
+      "enforcement": {
+        "type": "CI_VALIDATION"
+      },
+      "validator_binding": {
+        "file": "ci/sci_validator.py",
+        "function": "run"
+      },
+      "fail_behavior": "FAIL_CLOSED",
+      "dependencies": [
+        "SCI",
+        "EXECUTION_PRECEDENCE_CONTRACT"
+      ],
+      "version": "1.0",
+      "execution_order": 1
+    },
+    {
+      "rule_id": "SCI-002",
+      "name": "Import Boundary Enforcement",
+      "description": "Cross-layer imports and control inversion are prohibited outside execution contract boundaries.",
+      "severity": "CRITICAL",
+      "enforcement": {
+        "type": "IMPORT_GUARD"
+      },
+      "validator_binding": {
+        "file": "ci/import_guard.py",
+        "function": "run"
+      },
+      "fail_behavior": "FAIL_CLOSED",
+      "dependencies": [
+        "SCI",
+        "EXECUTION_PRECEDENCE_CONTRACT"
+      ],
+      "version": "1.0",
+      "execution_order": 2
+    },
+    {
+      "rule_id": "SCI-003",
+      "name": "Canonical Kernel Execution Enforcement",
+      "description": "Execution authority must route through system_kernel bootstrap/run and direct legacy runner paths are prohibited.",
+      "severity": "CRITICAL",
+      "enforcement": {
+        "type": "RUNTIME_GUARD"
+      },
+      "validator_binding": {
+        "file": "ci/bootstrap_gate.py",
+        "function": "run"
+      },
+      "fail_behavior": "FAIL_CLOSED",
+      "dependencies": [
+        "SCI",
+        "EXECUTION_PRECEDENCE_CONTRACT"
+      ],
+      "version": "1.0",
+      "execution_order": 3
+    },
+    {
+      "rule_id": "SCI-004",
+      "name": "Schema Version 2.1 Enforcement",
+      "description": "Schema contract version must remain fixed at 2.1 in schema gate and emitted results.",
+      "severity": "CRITICAL",
+      "enforcement": {
+        "type": "SCHEMA_GUARD"
+      },
+      "validator_binding": {
+        "file": "ci/schema_version_guard.py",
+        "function": "run"
+      },
+      "fail_behavior": "FAIL_CLOSED",
+      "dependencies": [
+        "SCI",
+        "EXECUTION_PRECEDENCE_CONTRACT"
+      ],
+      "version": "1.0",
+      "execution_order": 4
+    },
+    {
+      "rule_id": "SCI-005",
+      "name": "Execution Contract Integrity",
+      "description": "Execution precedence contract artifacts must remain present, complete, and aligned to CI-above-runtime ordering.",
+      "severity": "CRITICAL",
+      "enforcement": {
+        "type": "IMPORT_GUARD"
+      },
+      "validator_binding": {
+        "file": "ci/execution_contract_integrity_guard.py",
+        "function": "run"
+      },
+      "fail_behavior": "FAIL_CLOSED",
+      "dependencies": [
+        "SCI",
+        "EXECUTION_PRECEDENCE_CONTRACT"
+      ],
+      "version": "1.0",
+      "execution_order": 5
+    },
+    {
+      "rule_id": "SCI-006",
+      "name": "CI Pipeline Ordering Enforcement",
+      "description": "CI workflow must execute only through the CI kernel runner and must not directly execute validators or runtime paths.",
+      "severity": "CRITICAL",
+      "enforcement": {
+        "type": "CI_VALIDATION"
+      },
+      "validator_binding": {
+        "file": "ci/ci_pipeline_order_guard.py",
+        "function": "run"
+      },
+      "fail_behavior": "FAIL_CLOSED",
+      "dependencies": [
+        "SCI",
+        "EXECUTION_PRECEDENCE_CONTRACT"
+      ],
+      "version": "1.0",
+      "execution_order": 6
+    }
+  ]
+}

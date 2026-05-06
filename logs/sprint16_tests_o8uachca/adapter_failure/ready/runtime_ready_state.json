@@ -1,0 +1,22 @@
+{
+  "adapters_failed": [
+    {
+      "adapter": "AnsibleAdapter",
+      "reason": "Ansible inventory source file missing: C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\sprint16_tests_o8uachca\\adapter_failure\\missing_inventory.json"
+    }
+  ],
+  "adapters_initialized": [
+    "LogicMonitorAdapter"
+  ],
+  "boot_id": "system-boot-ba3a07cbb518",
+  "environment_valid": true,
+  "execution_status": "BLOCKED",
+  "fail_closed_triggered": true,
+  "health_status": {},
+  "mode": "LIVE",
+  "phase": "PHASE_1",
+  "reason": "Ansible inventory source file missing: C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\sprint16_tests_o8uachca\\adapter_failure\\missing_inventory.json",
+  "schema_version": "1.0",
+  "sst_owner": "LOGICMONITOR",
+  "system_ready": false
+}

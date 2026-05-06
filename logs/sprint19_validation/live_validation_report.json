@@ -1,0 +1,59 @@
+{
+  "bootstrap_result": "FAIL",
+  "deterministic_match": false,
+  "drift_percentage": 0.0,
+  "external_dependencies_ready": false,
+  "failures": [
+    {
+      "adapter": "AnsibleAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "ansible_endpoint_bootstrap_probe",
+      "phase": "PHASE_2",
+      "root_cause": "AnsibleAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "adapter": "LogicMonitorAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "logicmonitor_bootstrap_probe",
+      "phase": "PHASE_2",
+      "root_cause": "LogicMonitorAdapter request failed: <urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "adapter": "PostgresAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "postgres_bootstrap_probe",
+      "phase": "PHASE_2",
+      "root_cause": "psycopg2 unavailable: No module named 'psycopg2'"
+    }
+  ],
+  "final_system_state": {
+    "ready_for_trust": "NO",
+    "state": "BLOCKED"
+  },
+  "generated_at": "2026-05-02T11:08:28.663006+00:00",
+  "hardening_actions": [
+    {
+      "impacted_component": "core/integration_runtime.py",
+      "reason": "Bootstrap failures needed deterministic and structured failure classes",
+      "validation_proof": "integration_status now includes adapter, operation, root_cause, failure_class"
+    },
+    {
+      "impacted_component": "adapters/logicmonitor_adapter.py",
+      "reason": "LogicMonitor live pagination required bounded safety under malformed page contracts",
+      "validation_proof": "pagination loop now fails closed with explicit limit error"
+    },
+    {
+      "impacted_component": "adapters/ansible_adapter.py",
+      "reason": "Ansible endpoint responses required stricter execution-result contract enforcement",
+      "validation_proof": "live endpoint now rejects missing/invalid status and PASS with non-zero exit code"
+    }
+  ],
+  "identity_conflicts": 0,
+  "integration_status": "UNHEALTHY",
+  "run_result": "FAIL",
+  "verified_audit_artifacts": {
+    "bootstrap_audit": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\sprint19_validation\\bootstrap\\runtime_ready_state.json",
+    "deterministic_comparison": "",
+    "run_audit": ""
+  }
+}

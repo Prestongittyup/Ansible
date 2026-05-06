@@ -1,0 +1,31 @@
+{
+  "root": "system_kernel.py",
+  "reachable": [
+    "adapters/ansible_adapter.py",
+    "adapters/base.py",
+    "adapters/logicmonitor_adapter.py",
+    "adapters/nautobot_adapter.py",
+    "adapters/postgres_adapter.py",
+    "config/env_loader.py",
+    "core/bootstrap_runtime.py",
+    "core/connection_manager.py",
+    "core/credential_provider.py",
+    "core/cutover_simulation.py",
+    "core/execution_command_model.py",
+    "core/external_client_registry.py",
+    "core/integration_runtime.py",
+    "core/runtime_engine.py",
+    "kernel/__init__.py",
+    "kernel/audit_writer.py",
+    "kernel/orchestrator.py",
+    "kernel/parity_engine.py",
+    "kernel/phase_resolver.py",
+    "kernel/state.py",
+    "observability/context.py",
+    "observability/logger.py",
+    "operations/failure_classifier.py",
+    "runtime/mock/__init__.py",
+    "system_kernel.py"
+  ],
+  "count": 25
+}

@@ -1,0 +1,3 @@
+{"action": "lifecycle.transition", "details": {"from_state": "STOPPED", "reason": "bootstrap:test", "timestamp": "2026-05-02T11:15:32.928137+00:00", "to_state": "BOOTSTRAPPING"}, "override_used": false, "status": "PASS", "timestamp": "2026-05-02T11:15:32.928137+00:00"}
+{"action": "lifecycle.transition", "details": {"from_state": "BOOTSTRAPPING", "reason": "bootstrap_ready:test", "timestamp": "2026-05-02T11:15:33.169666+00:00", "to_state": "READY"}, "override_used": false, "status": "PASS", "timestamp": "2026-05-02T11:15:33.169666+00:00"}
+{"action": "bootstrap", "details": {"exit_code": 0, "trigger": "test"}, "override_used": false, "status": "PASS", "timestamp": "2026-05-02T11:15:33.184263+00:00"}

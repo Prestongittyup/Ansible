@@ -1,0 +1,5058 @@
+{
+  "files": [
+    {
+      "path": ".github/workflows/sci_enforcement.yml",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ARCHITECTURAL_GUARDRAILS.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "EVIDENCE_VS_STATE_MODEL.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "EXECUTION_PRECEDENCE_CONTRACT.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "LAYER_MAP.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "NORMATIVE_RULES.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "README.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "RFC-001.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "RUNTIME_CONFLICT_POLICY.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "SCI_ENFORCEMENT_INTERFACE.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "SPRINT_PLAN.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "SYSTEM_CONTRACT_INDEX.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "SYSTEM_OVERVIEW.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "adapters/__init__.py",
+      "type": "adapter",
+      "role": "adapter_module",
+      "depends_on": [
+        "adapters/ansible_adapter.py",
+        "adapters/logicmonitor_adapter.py",
+        "adapters/nautobot_adapter.py",
+        "adapters/postgres_adapter.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "adapters/ansible_adapter.py",
+      "type": "adapter",
+      "role": "adapter_module",
+      "depends_on": [
+        "adapters/base.py",
+        "observability/logger.py",
+        "runtime/mock/__init__.py"
+      ],
+      "imported_by": [
+        "adapters/__init__.py",
+        "core/bootstrap_runtime.py",
+        "core/execution_command_model.py",
+        "core/runtime_engine.py",
+        "test_sprint17_integration_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "adapters/base.py",
+      "type": "adapter",
+      "role": "adapter_module",
+      "depends_on": [
+        "observability/logger.py"
+      ],
+      "imported_by": [
+        "adapters/ansible_adapter.py",
+        "adapters/logicmonitor_adapter.py",
+        "adapters/nautobot_adapter.py",
+        "adapters/postgres_adapter.py",
+        "test_sprint17_integration_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "adapters/logicmonitor_adapter.py",
+      "type": "adapter",
+      "role": "adapter_module",
+      "depends_on": [
+        "adapters/base.py",
+        "observability/logger.py",
+        "runtime/mock/__init__.py"
+      ],
+      "imported_by": [
+        "adapters/__init__.py",
+        "core/bootstrap_runtime.py",
+        "core/execution_command_model.py",
+        "core/runtime_engine.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "adapters/nautobot_adapter.py",
+      "type": "adapter",
+      "role": "adapter_module",
+      "depends_on": [
+        "adapters/base.py",
+        "kernel/phase_resolver.py",
+        "observability/logger.py",
+        "runtime/mock/__init__.py"
+      ],
+      "imported_by": [
+        "adapters/__init__.py",
+        "core/bootstrap_runtime.py",
+        "core/execution_command_model.py",
+        "core/runtime_engine.py",
+        "test_sprint17_integration_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "adapters/postgres_adapter.py",
+      "type": "adapter",
+      "role": "adapter_module",
+      "depends_on": [
+        "adapters/base.py",
+        "observability/logger.py",
+        "runtime/mock/__init__.py"
+      ],
+      "imported_by": [
+        "adapters/__init__.py",
+        "core/bootstrap_runtime.py",
+        "core/execution_command_model.py",
+        "core/runtime_engine.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "ansible_validation/inventory/dynamic_inventory.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "ansible_validation/runners/run_validation.py",
+        "bootstrap.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "ansible_validation/outputs/validation_results.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ansible_validation/playbooks/validate_device.yml",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ansible_validation/runners/run_validation.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "ansible_validation/inventory/dynamic_inventory.py",
+        "execution_contract/ansible_error_mapper.py",
+        "execution_contract/failure_taxonomy.py",
+        "execution_contract/schema.py"
+      ],
+      "imported_by": [
+        "bootstrap.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "api_client/.gitkeep",
+      "type": "integration",
+      "role": "integration_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "api_layer/__init__.py",
+      "type": "integration",
+      "role": "integration_module",
+      "depends_on": [
+        "api_layer/api_server.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "api_layer/api_contracts.py",
+      "type": "integration",
+      "role": "integration_module",
+      "depends_on": [],
+      "imported_by": [
+        "api_layer/api_routes.py",
+        "api_layer/api_validator.py",
+        "auth_layer/auth_middleware.py",
+        "governance_layer/governance_middleware.py",
+        "observability/decision_recorder.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "api_layer/api_routes.py",
+      "type": "integration",
+      "role": "integration_module",
+      "depends_on": [
+        "api_layer/api_contracts.py",
+        "api_layer/api_validator.py",
+        "query_layer/query_service.py"
+      ],
+      "imported_by": [
+        "api_layer/api_server.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "api_layer/api_server.py",
+      "type": "integration",
+      "role": "integration_module",
+      "depends_on": [
+        "api_layer/api_routes.py",
+        "auth_layer/auth_middleware.py",
+        "auth_layer/auth_provider.py",
+        "governance_layer/governance_middleware.py",
+        "governance_layer/request_policy_engine.py",
+        "query_layer/query_service.py"
+      ],
+      "imported_by": [
+        "api_layer/__init__.py",
+        "test_api_layer.py",
+        "test_auth_layer.py",
+        "test_export_layer.py",
+        "test_governance_layer.py",
+        "test_observability_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "api_layer/api_validator.py",
+      "type": "integration",
+      "role": "integration_module",
+      "depends_on": [
+        "api_layer/api_contracts.py",
+        "query_layer/query_validator.py"
+      ],
+      "imported_by": [
+        "api_layer/api_routes.py",
+        "auth_layer/auth_middleware.py",
+        "governance_layer/governance_middleware.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "audit/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "auth_layer/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "auth_layer/auth_middleware.py",
+        "auth_layer/auth_policies.py",
+        "auth_layer/auth_provider.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "auth_layer/auth_middleware.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "api_layer/api_contracts.py",
+        "api_layer/api_validator.py",
+        "auth_layer/auth_policies.py",
+        "auth_layer/auth_provider.py"
+      ],
+      "imported_by": [
+        "api_layer/api_server.py",
+        "auth_layer/__init__.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "auth_layer/auth_policies.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "auth_layer/auth_provider.py",
+        "auth_layer/auth_validator.py"
+      ],
+      "imported_by": [
+        "auth_layer/__init__.py",
+        "auth_layer/auth_middleware.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "auth_layer/auth_provider.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "auth_layer/auth_validator.py"
+      ],
+      "imported_by": [
+        "api_layer/api_server.py",
+        "auth_layer/__init__.py",
+        "auth_layer/auth_middleware.py",
+        "auth_layer/auth_policies.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "auth_layer/auth_validator.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "auth_layer/auth_policies.py",
+        "auth_layer/auth_provider.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "bootstrap.py",
+      "type": "unknown",
+      "role": "secondary_entrypoint_candidate",
+      "depends_on": [
+        "ansible_validation/inventory/dynamic_inventory.py",
+        "ansible_validation/runners/run_validation.py",
+        "execution_contract/runtime_guard.py",
+        "execution_contract/schema.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ci/bootstrap_gate.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "ci/ci_pipeline_order_guard.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "ci/core/ci_policy_engine.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "ci/run_ci_kernel.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "ci/execution_contract_integrity_guard.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "ci/import_guard.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "ci/meta/ci_enforcement_meta_validator.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "ci/run_ci_kernel.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "ci/run_ci_kernel.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "ci/core/ci_policy_engine.py",
+        "ci/meta/ci_enforcement_meta_validator.py"
+      ],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "ci/schema_version_guard.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "ci/sci_validator.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "ci/science/SCI_RULE_REGISTRY.yaml",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ci/tests/ci_golden_fixtures/emv_invalid_registry_missing_binding.yaml",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ci/tests/ci_golden_fixtures/fixture_bootstrap_bypass_attempt.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ci/tests/ci_golden_fixtures/fixture_ci_pipeline_order_violation.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ci/tests/ci_golden_fixtures/fixture_execution_contract_misuse.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ci/tests/ci_golden_fixtures/fixture_import_boundary_violation.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ci/tests/ci_golden_fixtures/fixture_schema_version_drift.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "ci/tests/ci_golden_fixtures/fixture_sci_presence_violation.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "compliance_layer/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "compliance_layer/compliance_aggregation_engine.py",
+        "compliance_layer/gate_sequencer.py",
+        "compliance_layer/unified_compliance_runner.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "compliance_layer/compliance_aggregation_engine.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "compliance_layer/__init__.py",
+        "compliance_layer/unified_compliance_runner.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "compliance_layer/gate_sequencer.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "compliance_layer/__init__.py",
+        "compliance_layer/unified_compliance_runner.py",
+        "test_cross_layer_orchestration.py",
+        "test_failure_aggregation.py",
+        "test_gate_sequencing.py",
+        "test_unified_compliance_runner.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "compliance_layer/unified_compliance_runner.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "compliance_layer/compliance_aggregation_engine.py",
+        "compliance_layer/gate_sequencer.py"
+      ],
+      "imported_by": [
+        "compliance_layer/__init__.py",
+        "scripts/run_unified_compliance.py",
+        "test_cross_layer_orchestration.py",
+        "test_failure_aggregation.py",
+        "test_gate_sequencing.py",
+        "test_unified_compliance_runner.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "config/__init__.py",
+      "type": "config",
+      "role": "configuration",
+      "depends_on": [
+        "config/env_loader.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "config/env_loader.py",
+      "type": "config",
+      "role": "configuration",
+      "depends_on": [],
+      "imported_by": [
+        "config/__init__.py",
+        "core/bootstrap_runtime.py",
+        "core/credential_provider.py",
+        "core/execution_command_model.py",
+        "core/external_client_registry.py",
+        "core/integration_runtime.py",
+        "core/runtime_engine.py",
+        "test_sprint17_integration_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "core/__init__.py",
+      "type": "core",
+      "role": "python_module",
+      "depends_on": [
+        "core/bootstrap_runtime.py",
+        "core/cutover_simulation.py",
+        "core/runtime_engine.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "core/bootstrap_runtime.py",
+      "type": "core",
+      "role": "python_module",
+      "depends_on": [
+        "adapters/ansible_adapter.py",
+        "adapters/logicmonitor_adapter.py",
+        "adapters/nautobot_adapter.py",
+        "adapters/postgres_adapter.py",
+        "config/env_loader.py",
+        "core/execution_command_model.py",
+        "core/integration_runtime.py",
+        "kernel/phase_resolver.py",
+        "kernel/state.py",
+        "observability/logger.py"
+      ],
+      "imported_by": [
+        "core/__init__.py",
+        "operations/live_validation_runner.py",
+        "operations/service_runtime.py",
+        "system_kernel.py",
+        "test_bootstrap_runtime_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "core/connection_manager.py",
+      "type": "core",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "core/integration_runtime.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "core/credential_provider.py",
+      "type": "core",
+      "role": "python_module",
+      "depends_on": [
+        "config/env_loader.py"
+      ],
+      "imported_by": [
+        "core/integration_runtime.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "core/cutover_simulation.py",
+      "type": "core",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "core/__init__.py",
+        "core/runtime_engine.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "core/execution_command_model.py",
+      "type": "core",
+      "role": "python_module",
+      "depends_on": [
+        "adapters/ansible_adapter.py",
+        "adapters/logicmonitor_adapter.py",
+        "adapters/nautobot_adapter.py",
+        "adapters/postgres_adapter.py",
+        "config/env_loader.py",
+        "kernel/__init__.py",
+        "kernel/audit_writer.py",
+        "kernel/parity_engine.py",
+        "kernel/phase_resolver.py",
+        "kernel/state.py",
+        "observability/logger.py",
+        "runtime/mock/__init__.py"
+      ],
+      "imported_by": [
+        "core/bootstrap_runtime.py",
+        "system_kernel.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "core/external_client_registry.py",
+      "type": "core",
+      "role": "python_module",
+      "depends_on": [
+        "config/env_loader.py"
+      ],
+      "imported_by": [
+        "core/integration_runtime.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "core/integration_runtime.py",
+      "type": "core",
+      "role": "python_module",
+      "depends_on": [
+        "config/env_loader.py",
+        "core/connection_manager.py",
+        "core/credential_provider.py",
+        "core/external_client_registry.py",
+        "operations/failure_classifier.py"
+      ],
+      "imported_by": [
+        "core/bootstrap_runtime.py",
+        "test_sprint17_integration_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "core/runtime_engine.py",
+      "type": "core",
+      "role": "python_module",
+      "depends_on": [
+        "adapters/ansible_adapter.py",
+        "adapters/logicmonitor_adapter.py",
+        "adapters/nautobot_adapter.py",
+        "adapters/postgres_adapter.py",
+        "config/env_loader.py",
+        "core/cutover_simulation.py",
+        "kernel/audit_writer.py",
+        "kernel/orchestrator.py",
+        "kernel/parity_engine.py",
+        "kernel/state.py",
+        "runtime/mock/__init__.py"
+      ],
+      "imported_by": [
+        "core/__init__.py",
+        "system_kernel.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "deploy/.env.ops.example",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "deploy/Dockerfile.ops",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "deploy/container_entrypoint.py",
+      "type": "deploy",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "deploy/docker-compose.ops.yml",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "deploy/secrets/logicmonitor_api_key.txt",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "deploy/secrets/nautobot_token.txt",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "deploy/secrets/postgres_connection_string.txt",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "docs/architecture.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "docs/data-authority-policy.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "docs/deployment_operations_architecture.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "docs/operational-guardrails.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "docs/system_technical_spec.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "execution_contract/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "execution_contract/ansible_error_mapper.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "execution_contract/failure_taxonomy.py"
+      ],
+      "imported_by": [
+        "ansible_validation/runners/run_validation.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "execution_contract/execution_state.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "execution_contract/failure_taxonomy.py",
+        "execution_contract/schema.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "execution_contract/failure_taxonomy.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "execution_contract/execution_state.py"
+      ],
+      "imported_by": [
+        "ansible_validation/runners/run_validation.py",
+        "execution_contract/ansible_error_mapper.py",
+        "execution_contract/schema.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "execution_contract/runtime_guard.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "bootstrap.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "execution_contract/schema.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "execution_contract/execution_state.py",
+        "execution_contract/failure_taxonomy.py"
+      ],
+      "imported_by": [
+        "ansible_validation/runners/run_validation.py",
+        "bootstrap.py"
+      ],
+      "status": "duplicate"
+    },
+    {
+      "path": "export/metrics_exporter.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "export/trace_exporter.py"
+      ],
+      "imported_by": [
+        "test_export_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "export/otel_mapper.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "export/trace_exporter.py"
+      ],
+      "imported_by": [
+        "test_export_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "export/siem_exporter.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "export/trace_exporter.py"
+      ],
+      "imported_by": [
+        "test_export_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "export/trace_exporter.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "export/metrics_exporter.py",
+        "export/otel_mapper.py",
+        "export/siem_exporter.py",
+        "test_export_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "governance_layer/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "governance_layer/governance_middleware.py",
+        "governance_layer/request_policy_engine.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "governance_layer/governance_middleware.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "api_layer/api_contracts.py",
+        "api_layer/api_validator.py",
+        "governance_layer/request_policy_engine.py"
+      ],
+      "imported_by": [
+        "api_layer/api_server.py",
+        "governance_layer/__init__.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "governance_layer/query_bounds_validator.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "governance_layer/quota_manager.py"
+      ],
+      "imported_by": [
+        "governance_layer/request_policy_engine.py",
+        "test_governance_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "governance_layer/quota_manager.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "governance_layer/query_bounds_validator.py",
+        "governance_layer/request_policy_engine.py",
+        "test_governance_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "governance_layer/rate_limiter.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "governance_layer/request_policy_engine.py",
+        "test_governance_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "governance_layer/request_policy_engine.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "governance_layer/query_bounds_validator.py",
+        "governance_layer/quota_manager.py",
+        "governance_layer/rate_limiter.py"
+      ],
+      "imported_by": [
+        "api_layer/api_server.py",
+        "governance_layer/__init__.py",
+        "governance_layer/governance_middleware.py",
+        "test_governance_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "hardening/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "hardening/baseline_comparison_toolkit.py",
+        "hardening/drift_detection_engine.py",
+        "hardening/immutability_enforcement_checker.py",
+        "hardening/system_integrity_auditor.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "hardening/baseline_comparison_toolkit.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "hardening/__init__.py",
+        "hardening/system_integrity_auditor.py",
+        "stabilization_layer/cross_sprint_drift_comparator.py",
+        "test_baseline_comparison.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "hardening/drift_detection_engine.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "hardening/__init__.py",
+        "hardening/immutability_enforcement_checker.py",
+        "hardening/system_integrity_auditor.py",
+        "stabilization_layer/cross_sprint_drift_comparator.py",
+        "test_drift_detection.py",
+        "test_immutability_checker.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "hardening/immutability_enforcement_checker.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "hardening/drift_detection_engine.py"
+      ],
+      "imported_by": [
+        "hardening/__init__.py",
+        "test_immutability_checker.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "hardening/system_integrity_auditor.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "hardening/baseline_comparison_toolkit.py",
+        "hardening/drift_detection_engine.py"
+      ],
+      "imported_by": [
+        "hardening/__init__.py",
+        "stabilization_layer/cross_sprint_drift_comparator.py",
+        "test_system_integrity.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "inventory/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "inventory_output.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "inventory_pipeline/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "inventory_pipeline/ingestion/__init__.py"
+      ],
+      "status": "duplicate"
+    },
+    {
+      "path": "inventory_pipeline/ingestion/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "inventory_pipeline/__init__.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "inventory_pipeline/ingestion/inventory_builder.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "inventory_pipeline/run_ingestion.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "inventory_pipeline/ingestion/logicmonitor_client.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "inventory_pipeline/run_ingestion.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "inventory_pipeline/ingestion/normalizer.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "inventory_pipeline/run_ingestion.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "inventory_pipeline/ingestion/vendor_classifier.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "inventory_pipeline/run_ingestion.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "inventory_pipeline/run_ingestion.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "inventory_pipeline/ingestion/inventory_builder.py",
+        "inventory_pipeline/ingestion/logicmonitor_client.py",
+        "inventory_pipeline/ingestion/normalizer.py",
+        "inventory_pipeline/ingestion/vendor_classifier.py"
+      ],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "inventory_pipeline/tests/sprint1_output_contract_test.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "kernel/__init__.py",
+      "type": "kernel",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "core/execution_command_model.py",
+        "kernel/orchestrator.py"
+      ],
+      "status": "duplicate"
+    },
+    {
+      "path": "kernel/audit_writer.py",
+      "type": "kernel",
+      "role": "python_module",
+      "depends_on": [
+        "kernel/state.py",
+        "observability/context.py"
+      ],
+      "imported_by": [
+        "core/execution_command_model.py",
+        "core/runtime_engine.py",
+        "system_kernel.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "kernel/gates.py",
+      "type": "kernel",
+      "role": "python_module",
+      "depends_on": [
+        "kernel/phase_resolver.py",
+        "kernel/state.py",
+        "observability/logger.py"
+      ],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "kernel/orchestrator.py",
+      "type": "kernel",
+      "role": "python_module",
+      "depends_on": [
+        "kernel/__init__.py",
+        "kernel/parity_engine.py",
+        "kernel/phase_resolver.py",
+        "kernel/state.py"
+      ],
+      "imported_by": [
+        "core/runtime_engine.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "kernel/parity_engine.py",
+      "type": "kernel",
+      "role": "python_module",
+      "depends_on": [
+        "kernel/state.py",
+        "observability/logger.py"
+      ],
+      "imported_by": [
+        "core/execution_command_model.py",
+        "core/runtime_engine.py",
+        "kernel/orchestrator.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "kernel/phase_resolver.py",
+      "type": "kernel",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "adapters/nautobot_adapter.py",
+        "core/bootstrap_runtime.py",
+        "core/execution_command_model.py",
+        "kernel/gates.py",
+        "kernel/orchestrator.py",
+        "system_kernel.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "kernel/state.py",
+      "type": "kernel",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "core/bootstrap_runtime.py",
+        "core/execution_command_model.py",
+        "core/runtime_engine.py",
+        "kernel/audit_writer.py",
+        "kernel/gates.py",
+        "kernel/orchestrator.py",
+        "kernel/parity_engine.py",
+        "operations/live_validation_runner.py",
+        "operations/service_entrypoint.py",
+        "operations/service_runtime.py",
+        "system_kernel.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "logs/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_kernel_spec_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_kernel_spec_ci.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_kernel_spec_emv.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_kernel_spec_unified_1.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_kernel_spec_unified_1.stdout.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_kernel_spec_unified_2.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_kernel_spec_unified_2.stdout.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_reval_ci.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_reval_emv.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_reval_suite_breakdown.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_reval_tests.txt",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_reval_tests_full.txt",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_reval_unified_1.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_reval_unified_1.stdout.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_reval_unified_2.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_reval_unified_2.stdout.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint11_revalidation_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint12_cross_sprint_drift_final.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint12_integrity_certificate_final.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint12_unified_final_1.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint12_unified_final_1.stdout.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint12_unified_final_2.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/sprint12_unified_final_2.stdout.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/unified_run_1.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/compliance/unified_run_2.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/cutover_p1_p2.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/cutover_p2_p3.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/governance_block.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/hybrid_run.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/live_fail_closed.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/mock_run_1.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/mock_run_2.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/observability/sprint9_probe_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/parity_history.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/runtime_inputs/identity_events.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/runtime_inputs/source_records.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/runtime_inputs/target_records.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint15/adapter_gating/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint15/invalid_cli/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint15/live_missing_creds_check/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint15/live_sqlite_path_gap/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint15/mock_success/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint15/mode_enforcement/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint15/phase_enforcement/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_manual/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_manual/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_manual/run_after_bootstrap/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests/health_fail/postgres/canonical.db",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_245s0ogi/mock_success/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_245s0ogi/mock_success/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_2u6_6ggq/phase_mismatch/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_2u6_6ggq/phase_mismatch/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_2u6_6ggq/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_36cq86pz/mock_success/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_36cq86pz/mock_success/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_4304bati/phase_mismatch/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_4304bati/phase_mismatch/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_4304bati/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_4xpp0uj4/health_fail/ansible_inventory.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_4xpp0uj4/health_fail/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_4xpp0uj4/health_fail/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_4xpp0uj4/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_5bboln4u/phase_mismatch/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_5bboln4u/phase_mismatch/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_5bboln4u/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_5f6udcrg/phase_mismatch/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_5f6udcrg/phase_mismatch/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_5f6udcrg/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_62bouwrm/deterministic/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_62bouwrm/deterministic/ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_6lk8n1ki/live_missing_env/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_6lk8n1ki/live_missing_env/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_7lhlxjiq/mock_success/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_7lhlxjiq/mock_success/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_8nm4615b/deterministic/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_8nm4615b/deterministic/ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_9mdcvt0v/health_fail/ansible_inventory.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_9mdcvt0v/health_fail/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_9mdcvt0v/health_fail/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_9mdcvt0v/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests__0hoimau/phase_mismatch/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests__0hoimau/phase_mismatch/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests__0hoimau/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests__6i8quth/mock_success/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests__6i8quth/mock_success/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests___pl69eh/adapter_failure/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests___pl69eh/adapter_failure/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests___pl69eh/adapter_failure/nautobot_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests___pl69eh/adapter_failure/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_a69cmqvg/live_missing_env/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_a69cmqvg/live_missing_env/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_b05ipobo/health_fail/ansible_inventory.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_b05ipobo/health_fail/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_b05ipobo/health_fail/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_b05ipobo/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_bhqh16ij/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_bqo0xl2h/live_missing_env/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_bqo0xl2h/live_missing_env/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_c8kyg01o/health_fail/ansible_inventory.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_c8kyg01o/health_fail/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_c8kyg01o/health_fail/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_c8kyg01o/health_fail/postgres/canonical.db",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_c8kyg01o/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_cvi0efhe/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_d63v81pq/deterministic/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_d63v81pq/deterministic/ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_djn6ue9h/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_dsu2fz67/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_e8h1yx1i/deterministic/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_e8h1yx1i/deterministic/ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_e_a97i2d/mock_success/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_e_a97i2d/mock_success/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_elpyhzo3/deterministic/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_elpyhzo3/deterministic/ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_gus0chke/health_fail/ansible_inventory.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_gus0chke/health_fail/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_gus0chke/health_fail/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_gus0chke/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_h07mf3fd/live_missing_env/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_h07mf3fd/live_missing_env/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_h3fhs46f/live_missing_env/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_h3fhs46f/live_missing_env/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_hg523mcp/health_fail/ansible_inventory.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_hg523mcp/health_fail/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_hg523mcp/health_fail/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_hg523mcp/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_iug7o1rw/mock_success/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_iug7o1rw/mock_success/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_j13qfrjk/phase_mismatch/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_j13qfrjk/phase_mismatch/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_j13qfrjk/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_k6b8j_kn/deterministic/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_k6b8j_kn/deterministic/ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_kq0ipgq3/deterministic/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_kq0ipgq3/deterministic/ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_ldrsv47v/mock_success/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_ldrsv47v/mock_success/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_lu9s6r61/mock_success/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_lu9s6r61/mock_success/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_n1v3rzub/adapter_failure/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_n1v3rzub/adapter_failure/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_n1v3rzub/adapter_failure/nautobot_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_n1v3rzub/adapter_failure/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_nfpgrj42/live_missing_env/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_nfpgrj42/live_missing_env/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_nl9crhqh/live_missing_env/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_nl9crhqh/live_missing_env/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_nxu_60or/health_fail/ansible_inventory.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_nxu_60or/health_fail/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_nxu_60or/health_fail/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_nxu_60or/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_o6hnfn0r/mock_success/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_o6hnfn0r/mock_success/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_o8uachca/adapter_failure/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_o8uachca/adapter_failure/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_o8uachca/adapter_failure/nautobot_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_o8uachca/adapter_failure/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_oo27o0mi/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_pe6fruud/deterministic/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_pe6fruud/deterministic/ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_pg2p3ocw/live_missing_env/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_pg2p3ocw/live_missing_env/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_pjcbo3jc/live_missing_env/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_pjcbo3jc/live_missing_env/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_qs93rh7s/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_quahwlgz/phase_mismatch/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_quahwlgz/phase_mismatch/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_quahwlgz/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/nautobot_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_r94d_7bc/phase_mismatch/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_r94d_7bc/phase_mismatch/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_r94d_7bc/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_s4o85owd/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_sfno4jy_/health_fail/ansible_inventory.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_sfno4jy_/health_fail/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_sfno4jy_/health_fail/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_sfno4jy_/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_tvi0ai63/health_fail/ansible_inventory.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_tvi0ai63/health_fail/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_tvi0ai63/health_fail/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_tvi0ai63/health_fail/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_tzol7aox/adapter_failure/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_tzol7aox/adapter_failure/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_tzol7aox/adapter_failure/nautobot_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_tzol7aox/adapter_failure/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_v8px7e56/adapter_failure/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_v8px7e56/adapter_failure/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_v8px7e56/adapter_failure/nautobot_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_v8px7e56/adapter_failure/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_vof5t6z3/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_wmbxbifa/adapter_failure/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_wmbxbifa/adapter_failure/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_wmbxbifa/adapter_failure/nautobot_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_wmbxbifa/adapter_failure/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_xi04hbdx/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_yh_cbreu/adapter_failure/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_yh_cbreu/adapter_failure/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_yh_cbreu/adapter_failure/nautobot_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_yh_cbreu/adapter_failure/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_z8mwod0v/adapter_failure/live.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_z8mwod0v/adapter_failure/logicmonitor_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_z8mwod0v/adapter_failure/nautobot_payload.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_z8mwod0v/adapter_failure/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_zjbf8jr4/phase_mismatch/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_zjbf8jr4/phase_mismatch/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_zjbf8jr4/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_zr_dgef4/deterministic/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint16_tests_zr_dgef4/deterministic/ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_manual/audit/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_manual/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_manual/ready/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_1e4bs1ik/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_1y7qw_78/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_2i_v6cvq/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_718qxfmj/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_8ipnosyt/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests__ui_pbyc/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_fr620_mv/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_lc35ahfb/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_lwz0190v/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_nadye7h1/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_ofajd3tv/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_s_e6pvvz/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_syz7czb5/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_xmtmh8xc/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint17_tests_ynt2ksz8/test.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_5/module_architecture_map.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_5/repo_audit_report.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_5/repo_audit_summary.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_6/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_6/run/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_6/runtime_context.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_ops/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_ops/events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_ops/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_ops/runs/20260502T022047Z/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_ops/state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_2s6wklwz/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_2s6wklwz/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_2s6wklwz/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_2s6wklwz/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_2s6wklwz/runs/20260502T110751Z/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_4vogb3my/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_4vogb3my/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_4vogb3my/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_4vogb3my/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_4vogb3my/runs/20260502T111533Z/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_52ot_vyw/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_661v6l_n/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_661v6l_n/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_661v6l_n/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_661v6l_n/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_68_9yojp/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_abvcxwv9/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_h0hxn1cu/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_h0hxn1cu/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_h0hxn1cu/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_h0hxn1cu/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_hycwymi_/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_hycwymi_/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_hycwymi_/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_hycwymi_/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_i48ph2ie/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_i48ph2ie/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_i48ph2ie/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_i48ph2ie/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_i71zkmzz/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_i71zkmzz/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_i71zkmzz/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_i71zkmzz/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_i71zkmzz/runs/20260502T113438Z/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_j0rm69tq/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_j0rm69tq/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_j0rm69tq/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_j0rm69tq/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_j0rm69tq/runs/20260502T113309Z/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_j5zik6jz/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_j5zik6jz/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_j5zik6jz/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_j5zik6jz/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_jetok328/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_jetok328/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_jetok328/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_jetok328/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_lptt351k/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_lptt351k/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_lptt351k/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_lptt351k/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_mk7l5iyd/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_mk7l5iyd/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_mk7l5iyd/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_mk7l5iyd/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_mx_mrru_/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_mx_mrru_/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_mx_mrru_/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_mx_mrru_/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_mx_mrru_/runs/20260502T113832Z/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_n07dfc7n/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_n07dfc7n/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_n07dfc7n/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_n07dfc7n/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_p33s2wr3/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_pyuuvzdc/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_skh53r5v/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_x7181m54/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_x7181m54/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_x7181m54/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_x7181m54/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_x7181m54/runs/20260502T022035Z/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_xdf2mhu0/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_xdf2mhu0/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_xdf2mhu0/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_xdf2mhu0/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_z56veew7/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_z56veew7/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_z56veew7/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_z56veew7/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_zww06_sp/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_zww06_sp/mock.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_zww06_sp/operations_events.jsonl",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint18_tests_zww06_sp/operations_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint19_validation/bootstrap/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint19_validation/bootstrap_phase3/runtime_ready_state.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint19_validation/failure_mapping.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint19_validation/live_validation.env",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint19_validation/live_validation_report.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint20/failure-http401/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint20/failure-missing-credentials/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint20/failure-timeout-v2/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint20/failure-timeout/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/sprint20/mock-success/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/system.log",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "logs/system_enforcement_audit.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "observability/audit_logger.py",
+      "type": "observability",
+      "role": "telemetry_module",
+      "depends_on": [],
+      "imported_by": [
+        "observability/event_collector.py",
+        "test_observability_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "observability/context.py",
+      "type": "observability",
+      "role": "telemetry_module",
+      "depends_on": [],
+      "imported_by": [
+        "kernel/audit_writer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "observability/decision_recorder.py",
+      "type": "observability",
+      "role": "telemetry_module",
+      "depends_on": [
+        "api_layer/api_contracts.py",
+        "observability/event_collector.py",
+        "observability/schema.py",
+        "observability/trace_context.py"
+      ],
+      "imported_by": [
+        "test_observability_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "observability/event_collector.py",
+      "type": "observability",
+      "role": "telemetry_module",
+      "depends_on": [
+        "observability/audit_logger.py",
+        "observability/schema.py",
+        "observability/trace_context.py"
+      ],
+      "imported_by": [
+        "observability/decision_recorder.py",
+        "test_observability_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "observability/logger.py",
+      "type": "observability",
+      "role": "telemetry_module",
+      "depends_on": [],
+      "imported_by": [
+        "adapters/ansible_adapter.py",
+        "adapters/base.py",
+        "adapters/logicmonitor_adapter.py",
+        "adapters/nautobot_adapter.py",
+        "adapters/postgres_adapter.py",
+        "core/bootstrap_runtime.py",
+        "core/execution_command_model.py",
+        "kernel/gates.py",
+        "kernel/parity_engine.py",
+        "system_kernel.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "observability/schema.py",
+      "type": "observability",
+      "role": "telemetry_module",
+      "depends_on": [],
+      "imported_by": [
+        "observability/decision_recorder.py",
+        "observability/event_collector.py"
+      ],
+      "status": "duplicate"
+    },
+    {
+      "path": "observability/trace.py",
+      "type": "observability",
+      "role": "telemetry_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "observability/trace_context.py",
+      "type": "observability",
+      "role": "telemetry_module",
+      "depends_on": [],
+      "imported_by": [
+        "observability/decision_recorder.py",
+        "observability/event_collector.py",
+        "test_observability_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "operations/__init__.py",
+      "type": "operations",
+      "role": "operations_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "operations/event_log.py",
+      "type": "operations",
+      "role": "operations_module",
+      "depends_on": [],
+      "imported_by": [
+        "operations/service_runtime.py",
+        "operations_cli.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "operations/failure_classifier.py",
+      "type": "operations",
+      "role": "operations_module",
+      "depends_on": [],
+      "imported_by": [
+        "core/integration_runtime.py",
+        "operations/live_validation_runner.py",
+        "test_live_validation_hardening.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "operations/lifecycle.py",
+      "type": "operations",
+      "role": "operations_module",
+      "depends_on": [],
+      "imported_by": [
+        "operations/service_runtime.py",
+        "test_operations_architecture_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "operations/live_validation_runner.py",
+      "type": "operations",
+      "role": "operations_module",
+      "depends_on": [
+        "core/bootstrap_runtime.py",
+        "kernel/state.py",
+        "operations/failure_classifier.py"
+      ],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "operations/service_entrypoint.py",
+      "type": "operations",
+      "role": "operations_module",
+      "depends_on": [
+        "kernel/state.py",
+        "operations/service_runtime.py"
+      ],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "operations/service_runtime.py",
+      "type": "operations",
+      "role": "operations_module",
+      "depends_on": [
+        "core/bootstrap_runtime.py",
+        "kernel/state.py",
+        "operations/event_log.py",
+        "operations/lifecycle.py",
+        "operations/state_store.py"
+      ],
+      "imported_by": [
+        "operations/service_entrypoint.py",
+        "test_operations_architecture_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "operations/state_store.py",
+      "type": "operations",
+      "role": "operations_module",
+      "depends_on": [],
+      "imported_by": [
+        "operations/service_runtime.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "operations_cli.py",
+      "type": "operations",
+      "role": "secondary_entrypoint_candidate",
+      "depends_on": [
+        "operations/event_log.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "persistence/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "test_observability_layer.py"
+      ],
+      "status": "duplicate"
+    },
+    {
+      "path": "persistence/contract_validator.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "persistence/ingest_validation.py",
+        "persistence/test_ingest_validation.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "persistence/db_client.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "persistence/ingest_validation.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "persistence/ingest_validation.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "persistence/contract_validator.py",
+        "persistence/db_client.py"
+      ],
+      "imported_by": [
+        "persistence/test_ingest_validation.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "persistence/schema.sql",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "persistence/test_ingest_validation.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "persistence/contract_validator.py",
+        "persistence/ingest_validation.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "playbooks/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "playbooks/sci_pre_task_gate_pattern.yml",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "production_readiness_checklist.md",
+      "type": "docs",
+      "role": "documentation",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "query_layer/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "query_layer/query_client.py",
+        "query_layer/query_service.py",
+        "query_layer/query_validator.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "query_layer/query_client.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "query_layer/__init__.py",
+        "query_layer/query_service.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "query_layer/query_contracts.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "query_layer/query_service.py",
+        "query_layer/query_validator.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "query_layer/query_service.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "query_layer/query_client.py",
+        "query_layer/query_contracts.py",
+        "query_layer/query_validator.py"
+      ],
+      "imported_by": [
+        "api_layer/api_routes.py",
+        "api_layer/api_server.py",
+        "query_layer/__init__.py",
+        "test_query_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "query_layer/query_validator.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "query_layer/query_contracts.py"
+      ],
+      "imported_by": [
+        "api_layer/api_validator.py",
+        "query_layer/__init__.py",
+        "query_layer/query_service.py",
+        "test_query_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "roles/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "roles/aruba/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "roles/cisco/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "roles/fortinet/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "roles/juniper/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "roles/meraki/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "roles/sci_enforcement/tasks/main.yml",
+      "type": "deploy",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "runtime/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "runtime/mock/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "adapters/ansible_adapter.py",
+        "adapters/logicmonitor_adapter.py",
+        "adapters/nautobot_adapter.py",
+        "adapters/postgres_adapter.py",
+        "core/execution_command_model.py",
+        "core/runtime_engine.py"
+      ],
+      "status": "duplicate"
+    },
+    {
+      "path": "runtime/mock/fixtures.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "scripts/.gitkeep",
+      "type": "unknown",
+      "role": "artifact_or_support",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "scripts/run_cross_sprint_drift.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "stabilization_layer/cross_sprint_drift_comparator.py"
+      ],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "scripts/run_integrity_certificate.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "stabilization_layer/integrity_certificate_generator.py"
+      ],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "scripts/run_unified_compliance.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "compliance_layer/unified_compliance_runner.py"
+      ],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "scripts/sci_ci_gate.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "orphan"
+    },
+    {
+      "path": "sprint_10_pre_edit_baseline.json",
+      "type": "legacy",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "legacy"
+    },
+    {
+      "path": "sprint_11_pre_edit_baseline.json",
+      "type": "legacy",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "legacy"
+    },
+    {
+      "path": "sprint_12_pre_edit_baseline.json",
+      "type": "legacy",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "legacy"
+    },
+    {
+      "path": "sprint_8_pre_edit_baseline.json",
+      "type": "legacy",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "legacy"
+    },
+    {
+      "path": "sprint_9_pre_edit_baseline.json",
+      "type": "legacy",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "legacy"
+    },
+    {
+      "path": "stabilization_layer/__init__.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "stabilization_layer/cross_sprint_drift_comparator.py",
+        "stabilization_layer/determinism_certification_engine.py",
+        "stabilization_layer/execution_replay_validator.py",
+        "stabilization_layer/integrity_certificate_generator.py"
+      ],
+      "imported_by": [],
+      "status": "duplicate"
+    },
+    {
+      "path": "stabilization_layer/cross_sprint_drift_comparator.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "hardening/baseline_comparison_toolkit.py",
+        "hardening/drift_detection_engine.py",
+        "hardening/system_integrity_auditor.py"
+      ],
+      "imported_by": [
+        "scripts/run_cross_sprint_drift.py",
+        "stabilization_layer/__init__.py",
+        "stabilization_layer/integrity_certificate_generator.py",
+        "test_cross_sprint_drift_comparator.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "stabilization_layer/determinism_certification_engine.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "stabilization_layer/__init__.py",
+        "stabilization_layer/integrity_certificate_generator.py",
+        "test_determinism_certification.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "stabilization_layer/execution_replay_validator.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [],
+      "imported_by": [
+        "stabilization_layer/__init__.py",
+        "stabilization_layer/integrity_certificate_generator.py",
+        "test_execution_replay_validator.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "stabilization_layer/integrity_certificate_generator.py",
+      "type": "unknown",
+      "role": "python_module",
+      "depends_on": [
+        "stabilization_layer/cross_sprint_drift_comparator.py",
+        "stabilization_layer/determinism_certification_engine.py",
+        "stabilization_layer/execution_replay_validator.py"
+      ],
+      "imported_by": [
+        "scripts/run_integrity_certificate.py",
+        "stabilization_layer/__init__.py",
+        "test_integrity_certificate_generator.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "system_integrity_certificate.json",
+      "type": "unknown",
+      "role": "data_artifact",
+      "depends_on": [],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "system_kernel.py",
+      "type": "kernel",
+      "role": "primary_entrypoint",
+      "depends_on": [
+        "core/bootstrap_runtime.py",
+        "core/execution_command_model.py",
+        "core/runtime_engine.py",
+        "kernel/audit_writer.py",
+        "kernel/phase_resolver.py",
+        "kernel/state.py",
+        "observability/logger.py"
+      ],
+      "imported_by": [
+        "test_bootstrap_runtime_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "test_api_layer.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "api_layer/api_server.py"
+      ],
+      "imported_by": [
+        "test_auth_layer.py",
+        "test_export_layer.py",
+        "test_governance_layer.py",
+        "test_observability_layer.py"
+      ],
+      "status": "active"
+    },
+    {
+      "path": "test_auth_layer.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "api_layer/api_server.py",
+        "test_api_layer.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_baseline_comparison.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "hardening/baseline_comparison_toolkit.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_bootstrap_runtime_layer.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "core/bootstrap_runtime.py",
+        "system_kernel.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_cross_layer_orchestration.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "compliance_layer/gate_sequencer.py",
+        "compliance_layer/unified_compliance_runner.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_cross_sprint_drift_comparator.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "stabilization_layer/cross_sprint_drift_comparator.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_determinism_certification.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "stabilization_layer/determinism_certification_engine.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_drift_detection.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "hardening/drift_detection_engine.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_execution_replay_validator.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "stabilization_layer/execution_replay_validator.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_export_layer.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "api_layer/api_server.py",
+        "export/metrics_exporter.py",
+        "export/otel_mapper.py",
+        "export/siem_exporter.py",
+        "export/trace_exporter.py",
+        "test_api_layer.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_failure_aggregation.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "compliance_layer/gate_sequencer.py",
+        "compliance_layer/unified_compliance_runner.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_gate_sequencing.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "compliance_layer/gate_sequencer.py",
+        "compliance_layer/unified_compliance_runner.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_governance_layer.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "api_layer/api_server.py",
+        "governance_layer/query_bounds_validator.py",
+        "governance_layer/quota_manager.py",
+        "governance_layer/rate_limiter.py",
+        "governance_layer/request_policy_engine.py",
+        "test_api_layer.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_immutability_checker.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "hardening/drift_detection_engine.py",
+        "hardening/immutability_enforcement_checker.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_integrity_certificate_generator.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "stabilization_layer/integrity_certificate_generator.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_live_validation_hardening.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "operations/failure_classifier.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_observability_layer.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "api_layer/api_server.py",
+        "observability/audit_logger.py",
+        "observability/decision_recorder.py",
+        "observability/event_collector.py",
+        "observability/trace_context.py",
+        "persistence/__init__.py",
+        "test_api_layer.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_operations_architecture_layer.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "operations/lifecycle.py",
+        "operations/service_runtime.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_query_layer.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "query_layer/query_service.py",
+        "query_layer/query_validator.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_sprint17_integration_layer.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "adapters/ansible_adapter.py",
+        "adapters/base.py",
+        "adapters/nautobot_adapter.py",
+        "config/env_loader.py",
+        "core/integration_runtime.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_system_integrity.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "hardening/system_integrity_auditor.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    },
+    {
+      "path": "test_unified_compliance_runner.py",
+      "type": "tests",
+      "role": "test_module",
+      "depends_on": [
+        "compliance_layer/gate_sequencer.py",
+        "compliance_layer/unified_compliance_runner.py"
+      ],
+      "imported_by": [],
+      "status": "active"
+    }
+  ],
+  "entrypoints": [
+    "ansible_validation/inventory/dynamic_inventory.py",
+    "ansible_validation/runners/run_validation.py",
+    "bootstrap.py",
+    "ci/bootstrap_gate.py",
+    "ci/ci_pipeline_order_guard.py",
+    "ci/execution_contract_integrity_guard.py",
+    "ci/import_guard.py",
+    "ci/meta/ci_enforcement_meta_validator.py",
+    "ci/run_ci_kernel.py",
+    "ci/schema_version_guard.py",
+    "ci/sci_validator.py",
+    "compliance_layer/unified_compliance_runner.py",
+    "deploy/container_entrypoint.py",
+    "hardening/baseline_comparison_toolkit.py",
+    "hardening/drift_detection_engine.py",
+    "hardening/immutability_enforcement_checker.py",
+    "hardening/system_integrity_auditor.py",
+    "inventory_pipeline/run_ingestion.py",
+    "inventory_pipeline/tests/sprint1_output_contract_test.py",
+    "operations/live_validation_runner.py",
+    "operations/service_entrypoint.py",
+    "operations_cli.py",
+    "persistence/ingest_validation.py",
+    "persistence/test_ingest_validation.py",
+    "scripts/run_cross_sprint_drift.py",
+    "scripts/run_integrity_certificate.py",
+    "scripts/run_unified_compliance.py",
+    "scripts/sci_ci_gate.py",
+    "stabilization_layer/cross_sprint_drift_comparator.py",
+    "stabilization_layer/determinism_certification_engine.py",
+    "stabilization_layer/execution_replay_validator.py",
+    "stabilization_layer/integrity_certificate_generator.py",
+    "system_kernel.py",
+    "test_api_layer.py",
+    "test_auth_layer.py",
+    "test_baseline_comparison.py",
+    "test_bootstrap_runtime_layer.py",
+    "test_cross_layer_orchestration.py",
+    "test_cross_sprint_drift_comparator.py",
+    "test_determinism_certification.py",
+    "test_drift_detection.py",
+    "test_execution_replay_validator.py",
+    "test_export_layer.py",
+    "test_failure_aggregation.py",
+    "test_gate_sequencing.py",
+    "test_governance_layer.py",
+    "test_immutability_checker.py",
+    "test_integrity_certificate_generator.py",
+    "test_live_validation_hardening.py",
+    "test_observability_layer.py",
+    "test_operations_architecture_layer.py",
+    "test_query_layer.py",
+    "test_sprint17_integration_layer.py",
+    "test_system_integrity.py",
+    "test_unified_compliance_runner.py"
+  ],
+  "circular_dependencies": [],
+  "duplicate_candidates": {
+    "__init__": [
+      "adapters/__init__.py",
+      "api_layer/__init__.py",
+      "audit/__init__.py",
+      "auth_layer/__init__.py",
+      "compliance_layer/__init__.py",
+      "config/__init__.py",
+      "core/__init__.py",
+      "execution_contract/__init__.py",
+      "governance_layer/__init__.py",
+      "hardening/__init__.py",
+      "inventory_pipeline/__init__.py",
+      "inventory_pipeline/ingestion/__init__.py",
+      "kernel/__init__.py",
+      "operations/__init__.py",
+      "persistence/__init__.py",
+      "query_layer/__init__.py",
+      "runtime/__init__.py",
+      "runtime/mock/__init__.py",
+      "stabilization_layer/__init__.py"
+    ],
+    "schema": [
+      "execution_contract/schema.py",
+      "observability/schema.py"
+    ]
+  },
+  "parse_errors": {},
+  "summary": {
+    "total_files": 539,
+    "python_files": 143,
+    "orphans": 19,
+    "duplicates": 21,
+    "legacy": 5,
+    "uncertain": 0,
+    "cycles": 0
+  }
+}

@@ -1,0 +1,27 @@
+name: SCI Contract Enforcement
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  sci-enforcement:
+    name: SCI and Execution Contract Gate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: CI Kernel Runner - Registry Driven Enforcement
+        run: python ci/run_ci_kernel.py

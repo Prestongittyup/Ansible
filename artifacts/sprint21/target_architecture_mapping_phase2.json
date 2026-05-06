@@ -1,0 +1,3792 @@
+{
+  "target_entrypoint": "system_kernel.py",
+  "canonical_layers": [
+    "core/",
+    "adapters/",
+    "integration/",
+    "operations/",
+    "observability/",
+    "config/",
+    "tests/",
+    "docs/",
+    "deploy/",
+    "logs/",
+    "artifacts/",
+    "legacy/"
+  ],
+  "mapping": [
+    {
+      "source_path": ".github/workflows/sci_enforcement.yml",
+      "target_path": ".github/workflows/sci_enforcement.yml",
+      "source_type": "deploy",
+      "target_layer": "deploy",
+      "status": "active"
+    },
+    {
+      "source_path": ".vscode/settings.json",
+      "target_path": ".vscode/settings.json",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ARCHITECTURAL_GUARDRAILS.md",
+      "target_path": "docs/ARCHITECTURAL_GUARDRAILS.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "EVIDENCE_VS_STATE_MODEL.md",
+      "target_path": "docs/EVIDENCE_VS_STATE_MODEL.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "EXECUTION_PRECEDENCE_CONTRACT.md",
+      "target_path": "EXECUTION_PRECEDENCE_CONTRACT.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "LAYER_MAP.md",
+      "target_path": "LAYER_MAP.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "NORMATIVE_RULES.md",
+      "target_path": "docs/NORMATIVE_RULES.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "README.md",
+      "target_path": "README.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "RFC-001.md",
+      "target_path": "docs/RFC-001.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "RUNTIME_CONFLICT_POLICY.md",
+      "target_path": "docs/RUNTIME_CONFLICT_POLICY.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "SCI_ENFORCEMENT_INTERFACE.md",
+      "target_path": "docs/SCI_ENFORCEMENT_INTERFACE.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "SPRINT_PLAN.md",
+      "target_path": "docs/SPRINT_PLAN.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "SYSTEM_CONTRACT_INDEX.md",
+      "target_path": "SYSTEM_CONTRACT_INDEX.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "SYSTEM_OVERVIEW.md",
+      "target_path": "docs/SYSTEM_OVERVIEW.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "adapters/__init__.py",
+      "target_path": "adapters/__init__.py",
+      "source_type": "adapter",
+      "target_layer": "adapters",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "adapters/ansible_adapter.py",
+      "target_path": "adapters/ansible_adapter.py",
+      "source_type": "adapter",
+      "target_layer": "adapters",
+      "status": "active"
+    },
+    {
+      "source_path": "adapters/base.py",
+      "target_path": "adapters/base.py",
+      "source_type": "adapter",
+      "target_layer": "adapters",
+      "status": "active"
+    },
+    {
+      "source_path": "adapters/logicmonitor_adapter.py",
+      "target_path": "adapters/logicmonitor_adapter.py",
+      "source_type": "adapter",
+      "target_layer": "adapters",
+      "status": "active"
+    },
+    {
+      "source_path": "adapters/nautobot_adapter.py",
+      "target_path": "adapters/nautobot_adapter.py",
+      "source_type": "adapter",
+      "target_layer": "adapters",
+      "status": "active"
+    },
+    {
+      "source_path": "adapters/postgres_adapter.py",
+      "target_path": "adapters/postgres_adapter.py",
+      "source_type": "adapter",
+      "target_layer": "adapters",
+      "status": "active"
+    },
+    {
+      "source_path": "ansible_validation/inventory/dynamic_inventory.py",
+      "target_path": "legacy/ansible_validation/inventory/dynamic_inventory.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "ansible_validation/outputs/validation_results.json",
+      "target_path": "legacy/ansible_validation/outputs/validation_results.json",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "ansible_validation/playbooks/validate_device.yml",
+      "target_path": "legacy/ansible_validation/playbooks/validate_device.yml",
+      "source_type": "deploy",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "ansible_validation/runners/run_validation.py",
+      "target_path": "legacy/ansible_validation/runners/run_validation.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "api_client/.gitkeep",
+      "target_path": "legacy/api_client/.gitkeep",
+      "source_type": "integration",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "api_layer/__init__.py",
+      "target_path": "legacy/api_layer/__init__.py",
+      "source_type": "integration",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "api_layer/api_contracts.py",
+      "target_path": "legacy/api_layer/api_contracts.py",
+      "source_type": "integration",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "api_layer/api_routes.py",
+      "target_path": "legacy/api_layer/api_routes.py",
+      "source_type": "integration",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "api_layer/api_server.py",
+      "target_path": "legacy/api_layer/api_server.py",
+      "source_type": "integration",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "api_layer/api_validator.py",
+      "target_path": "legacy/api_layer/api_validator.py",
+      "source_type": "integration",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "audit/__init__.py",
+      "target_path": "legacy/audit/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "auth_layer/__init__.py",
+      "target_path": "legacy/auth_layer/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "auth_layer/auth_middleware.py",
+      "target_path": "legacy/auth_layer/auth_middleware.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "auth_layer/auth_policies.py",
+      "target_path": "legacy/auth_layer/auth_policies.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "auth_layer/auth_provider.py",
+      "target_path": "legacy/auth_layer/auth_provider.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "auth_layer/auth_validator.py",
+      "target_path": "legacy/auth_layer/auth_validator.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "bootstrap.py",
+      "target_path": "bootstrap.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/bootstrap_gate.py",
+      "target_path": "ci/bootstrap_gate.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "orphan"
+    },
+    {
+      "source_path": "ci/ci_pipeline_order_guard.py",
+      "target_path": "ci/ci_pipeline_order_guard.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "orphan"
+    },
+    {
+      "source_path": "ci/core/ci_policy_engine.py",
+      "target_path": "ci/core/ci_policy_engine.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/execution_contract_integrity_guard.py",
+      "target_path": "ci/execution_contract_integrity_guard.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "orphan"
+    },
+    {
+      "source_path": "ci/import_guard.py",
+      "target_path": "ci/import_guard.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "orphan"
+    },
+    {
+      "source_path": "ci/meta/ci_enforcement_meta_validator.py",
+      "target_path": "ci/meta/ci_enforcement_meta_validator.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/run_ci_kernel.py",
+      "target_path": "ci/run_ci_kernel.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "orphan"
+    },
+    {
+      "source_path": "ci/schema_version_guard.py",
+      "target_path": "ci/schema_version_guard.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "orphan"
+    },
+    {
+      "source_path": "ci/sci_validator.py",
+      "target_path": "ci/sci_validator.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "orphan"
+    },
+    {
+      "source_path": "ci/science/SCI_RULE_REGISTRY.yaml",
+      "target_path": "ci/science/SCI_RULE_REGISTRY.yaml",
+      "source_type": "deploy",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/tests/ci_golden_fixtures/emv_invalid_registry_missing_binding.yaml",
+      "target_path": "ci/tests/ci_golden_fixtures/emv_invalid_registry_missing_binding.yaml",
+      "source_type": "deploy",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/tests/ci_golden_fixtures/fixture_bootstrap_bypass_attempt.json",
+      "target_path": "ci/tests/ci_golden_fixtures/fixture_bootstrap_bypass_attempt.json",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/tests/ci_golden_fixtures/fixture_ci_pipeline_order_violation.json",
+      "target_path": "ci/tests/ci_golden_fixtures/fixture_ci_pipeline_order_violation.json",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/tests/ci_golden_fixtures/fixture_execution_contract_misuse.json",
+      "target_path": "ci/tests/ci_golden_fixtures/fixture_execution_contract_misuse.json",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/tests/ci_golden_fixtures/fixture_import_boundary_violation.json",
+      "target_path": "ci/tests/ci_golden_fixtures/fixture_import_boundary_violation.json",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/tests/ci_golden_fixtures/fixture_schema_version_drift.json",
+      "target_path": "ci/tests/ci_golden_fixtures/fixture_schema_version_drift.json",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "ci/tests/ci_golden_fixtures/fixture_sci_presence_violation.json",
+      "target_path": "ci/tests/ci_golden_fixtures/fixture_sci_presence_violation.json",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "compliance_layer/__init__.py",
+      "target_path": "legacy/compliance_layer/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "compliance_layer/compliance_aggregation_engine.py",
+      "target_path": "legacy/compliance_layer/compliance_aggregation_engine.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "compliance_layer/gate_sequencer.py",
+      "target_path": "legacy/compliance_layer/gate_sequencer.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "compliance_layer/unified_compliance_runner.py",
+      "target_path": "legacy/compliance_layer/unified_compliance_runner.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "config/__init__.py",
+      "target_path": "config/__init__.py",
+      "source_type": "config",
+      "target_layer": "config",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "config/env_loader.py",
+      "target_path": "config/env_loader.py",
+      "source_type": "config",
+      "target_layer": "config",
+      "status": "active"
+    },
+    {
+      "source_path": "core/__init__.py",
+      "target_path": "core/__init__.py",
+      "source_type": "core",
+      "target_layer": "core",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "core/bootstrap_runtime.py",
+      "target_path": "core/bootstrap_runtime.py",
+      "source_type": "core",
+      "target_layer": "core",
+      "status": "active"
+    },
+    {
+      "source_path": "core/connection_manager.py",
+      "target_path": "core/connection_manager.py",
+      "source_type": "core",
+      "target_layer": "core",
+      "status": "active"
+    },
+    {
+      "source_path": "core/credential_provider.py",
+      "target_path": "core/credential_provider.py",
+      "source_type": "core",
+      "target_layer": "core",
+      "status": "active"
+    },
+    {
+      "source_path": "core/cutover_simulation.py",
+      "target_path": "core/cutover_simulation.py",
+      "source_type": "core",
+      "target_layer": "core",
+      "status": "active"
+    },
+    {
+      "source_path": "core/execution_command_model.py",
+      "target_path": "core/execution_command_model.py",
+      "source_type": "core",
+      "target_layer": "core",
+      "status": "active"
+    },
+    {
+      "source_path": "core/external_client_registry.py",
+      "target_path": "core/external_client_registry.py",
+      "source_type": "core",
+      "target_layer": "core",
+      "status": "active"
+    },
+    {
+      "source_path": "core/integration_runtime.py",
+      "target_path": "core/integration_runtime.py",
+      "source_type": "core",
+      "target_layer": "core",
+      "status": "active"
+    },
+    {
+      "source_path": "core/runtime_engine.py",
+      "target_path": "core/runtime_engine.py",
+      "source_type": "core",
+      "target_layer": "core",
+      "status": "active"
+    },
+    {
+      "source_path": "deploy/.env.ops.example",
+      "target_path": "deploy/.env.ops.example",
+      "source_type": "deploy",
+      "target_layer": "deploy",
+      "status": "active"
+    },
+    {
+      "source_path": "deploy/Dockerfile.ops",
+      "target_path": "deploy/Dockerfile.ops",
+      "source_type": "deploy",
+      "target_layer": "deploy",
+      "status": "active"
+    },
+    {
+      "source_path": "deploy/container_entrypoint.py",
+      "target_path": "deploy/container_entrypoint.py",
+      "source_type": "deploy",
+      "target_layer": "deploy",
+      "status": "orphan"
+    },
+    {
+      "source_path": "deploy/docker-compose.ops.yml",
+      "target_path": "deploy/docker-compose.ops.yml",
+      "source_type": "deploy",
+      "target_layer": "deploy",
+      "status": "active"
+    },
+    {
+      "source_path": "deploy/secrets/logicmonitor_api_key.txt",
+      "target_path": "deploy/secrets/logicmonitor_api_key.txt",
+      "source_type": "deploy",
+      "target_layer": "deploy",
+      "status": "active"
+    },
+    {
+      "source_path": "deploy/secrets/nautobot_token.txt",
+      "target_path": "deploy/secrets/nautobot_token.txt",
+      "source_type": "deploy",
+      "target_layer": "deploy",
+      "status": "active"
+    },
+    {
+      "source_path": "deploy/secrets/postgres_connection_string.txt",
+      "target_path": "deploy/secrets/postgres_connection_string.txt",
+      "source_type": "deploy",
+      "target_layer": "deploy",
+      "status": "active"
+    },
+    {
+      "source_path": "docs/architecture.md",
+      "target_path": "docs/architecture.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "docs/data-authority-policy.md",
+      "target_path": "docs/data-authority-policy.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "docs/deployment_operations_architecture.md",
+      "target_path": "docs/deployment_operations_architecture.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "docs/operational-guardrails.md",
+      "target_path": "docs/operational-guardrails.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "docs/system_technical_spec.md",
+      "target_path": "docs/system_technical_spec.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "execution_contract/__init__.py",
+      "target_path": "legacy/execution_contract/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "execution_contract/ansible_error_mapper.py",
+      "target_path": "legacy/execution_contract/ansible_error_mapper.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "execution_contract/execution_state.py",
+      "target_path": "legacy/execution_contract/execution_state.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "execution_contract/failure_taxonomy.py",
+      "target_path": "legacy/execution_contract/failure_taxonomy.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "execution_contract/runtime_guard.py",
+      "target_path": "legacy/execution_contract/runtime_guard.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "execution_contract/schema.py",
+      "target_path": "legacy/execution_contract/schema.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "export/metrics_exporter.py",
+      "target_path": "legacy/export/metrics_exporter.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "export/otel_mapper.py",
+      "target_path": "legacy/export/otel_mapper.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "export/siem_exporter.py",
+      "target_path": "legacy/export/siem_exporter.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "export/trace_exporter.py",
+      "target_path": "legacy/export/trace_exporter.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "governance_layer/__init__.py",
+      "target_path": "legacy/governance_layer/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "governance_layer/governance_middleware.py",
+      "target_path": "legacy/governance_layer/governance_middleware.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "governance_layer/query_bounds_validator.py",
+      "target_path": "legacy/governance_layer/query_bounds_validator.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "governance_layer/quota_manager.py",
+      "target_path": "legacy/governance_layer/quota_manager.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "governance_layer/rate_limiter.py",
+      "target_path": "legacy/governance_layer/rate_limiter.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "governance_layer/request_policy_engine.py",
+      "target_path": "legacy/governance_layer/request_policy_engine.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "hardening/__init__.py",
+      "target_path": "legacy/hardening/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "hardening/baseline_comparison_toolkit.py",
+      "target_path": "legacy/hardening/baseline_comparison_toolkit.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "hardening/drift_detection_engine.py",
+      "target_path": "legacy/hardening/drift_detection_engine.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "hardening/immutability_enforcement_checker.py",
+      "target_path": "legacy/hardening/immutability_enforcement_checker.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "hardening/system_integrity_auditor.py",
+      "target_path": "legacy/hardening/system_integrity_auditor.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "inventory/.gitkeep",
+      "target_path": "legacy/inventory/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "inventory_output.json",
+      "target_path": "inventory_output.json",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "inventory_pipeline/__init__.py",
+      "target_path": "legacy/inventory_pipeline/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "inventory_pipeline/ingestion/__init__.py",
+      "target_path": "legacy/inventory_pipeline/ingestion/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "inventory_pipeline/ingestion/inventory_builder.py",
+      "target_path": "legacy/inventory_pipeline/ingestion/inventory_builder.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "inventory_pipeline/ingestion/logicmonitor_client.py",
+      "target_path": "legacy/inventory_pipeline/ingestion/logicmonitor_client.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "inventory_pipeline/ingestion/normalizer.py",
+      "target_path": "legacy/inventory_pipeline/ingestion/normalizer.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "inventory_pipeline/ingestion/vendor_classifier.py",
+      "target_path": "legacy/inventory_pipeline/ingestion/vendor_classifier.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "inventory_pipeline/run_ingestion.py",
+      "target_path": "legacy/inventory_pipeline/run_ingestion.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "orphan"
+    },
+    {
+      "source_path": "inventory_pipeline/tests/sprint1_output_contract_test.py",
+      "target_path": "legacy/inventory_pipeline/tests/sprint1_output_contract_test.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "orphan"
+    },
+    {
+      "source_path": "kernel/__init__.py",
+      "target_path": "kernel/__init__.py",
+      "source_type": "kernel",
+      "target_layer": "kernel",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "kernel/audit_writer.py",
+      "target_path": "kernel/audit_writer.py",
+      "source_type": "kernel",
+      "target_layer": "kernel",
+      "status": "active"
+    },
+    {
+      "source_path": "kernel/gates.py",
+      "target_path": "kernel/gates.py",
+      "source_type": "kernel",
+      "target_layer": "kernel",
+      "status": "orphan"
+    },
+    {
+      "source_path": "kernel/orchestrator.py",
+      "target_path": "kernel/orchestrator.py",
+      "source_type": "kernel",
+      "target_layer": "kernel",
+      "status": "active"
+    },
+    {
+      "source_path": "kernel/parity_engine.py",
+      "target_path": "kernel/parity_engine.py",
+      "source_type": "kernel",
+      "target_layer": "kernel",
+      "status": "active"
+    },
+    {
+      "source_path": "kernel/phase_resolver.py",
+      "target_path": "kernel/phase_resolver.py",
+      "source_type": "kernel",
+      "target_layer": "kernel",
+      "status": "active"
+    },
+    {
+      "source_path": "kernel/state.py",
+      "target_path": "kernel/state.py",
+      "source_type": "kernel",
+      "target_layer": "kernel",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/.gitkeep",
+      "target_path": "logs/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_kernel_spec_audit.json",
+      "target_path": "logs/compliance/sprint11_kernel_spec_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_kernel_spec_ci.json",
+      "target_path": "logs/compliance/sprint11_kernel_spec_ci.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_kernel_spec_emv.json",
+      "target_path": "logs/compliance/sprint11_kernel_spec_emv.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_kernel_spec_unified_1.json",
+      "target_path": "logs/compliance/sprint11_kernel_spec_unified_1.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_kernel_spec_unified_1.stdout.json",
+      "target_path": "logs/compliance/sprint11_kernel_spec_unified_1.stdout.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_kernel_spec_unified_2.json",
+      "target_path": "logs/compliance/sprint11_kernel_spec_unified_2.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_kernel_spec_unified_2.stdout.json",
+      "target_path": "logs/compliance/sprint11_kernel_spec_unified_2.stdout.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_reval_ci.json",
+      "target_path": "logs/compliance/sprint11_reval_ci.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_reval_emv.json",
+      "target_path": "logs/compliance/sprint11_reval_emv.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_reval_suite_breakdown.json",
+      "target_path": "logs/compliance/sprint11_reval_suite_breakdown.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_reval_tests.txt",
+      "target_path": "logs/compliance/sprint11_reval_tests.txt",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_reval_tests_full.txt",
+      "target_path": "logs/compliance/sprint11_reval_tests_full.txt",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_reval_unified_1.json",
+      "target_path": "logs/compliance/sprint11_reval_unified_1.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_reval_unified_1.stdout.json",
+      "target_path": "logs/compliance/sprint11_reval_unified_1.stdout.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_reval_unified_2.json",
+      "target_path": "logs/compliance/sprint11_reval_unified_2.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_reval_unified_2.stdout.json",
+      "target_path": "logs/compliance/sprint11_reval_unified_2.stdout.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint11_revalidation_audit.json",
+      "target_path": "logs/compliance/sprint11_revalidation_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint12_cross_sprint_drift_final.json",
+      "target_path": "logs/compliance/sprint12_cross_sprint_drift_final.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint12_integrity_certificate_final.json",
+      "target_path": "logs/compliance/sprint12_integrity_certificate_final.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint12_unified_final_1.json",
+      "target_path": "logs/compliance/sprint12_unified_final_1.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint12_unified_final_1.stdout.json",
+      "target_path": "logs/compliance/sprint12_unified_final_1.stdout.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint12_unified_final_2.json",
+      "target_path": "logs/compliance/sprint12_unified_final_2.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/sprint12_unified_final_2.stdout.json",
+      "target_path": "logs/compliance/sprint12_unified_final_2.stdout.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/unified_run_1.json",
+      "target_path": "logs/compliance/unified_run_1.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/compliance/unified_run_2.json",
+      "target_path": "logs/compliance/unified_run_2.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/cutover_p1_p2.json",
+      "target_path": "logs/cutover_p1_p2.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/cutover_p2_p3.json",
+      "target_path": "logs/cutover_p2_p3.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/governance_block.json",
+      "target_path": "logs/governance_block.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/hybrid_run.json",
+      "target_path": "logs/hybrid_run.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/live_fail_closed.json",
+      "target_path": "logs/live_fail_closed.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/mock_run_1.json",
+      "target_path": "logs/mock_run_1.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/mock_run_2.json",
+      "target_path": "logs/mock_run_2.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/observability/sprint9_probe_events.jsonl",
+      "target_path": "logs/observability/sprint9_probe_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/parity_history.json",
+      "target_path": "logs/parity_history.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/runtime_inputs/identity_events.json",
+      "target_path": "logs/runtime_inputs/identity_events.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/runtime_inputs/source_records.json",
+      "target_path": "logs/runtime_inputs/source_records.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/runtime_inputs/target_records.json",
+      "target_path": "logs/runtime_inputs/target_records.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/runtime_ready_state.json",
+      "target_path": "logs/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint15/adapter_gating/system_enforcement_audit.json",
+      "target_path": "logs/sprint15/adapter_gating/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint15/invalid_cli/system_enforcement_audit.json",
+      "target_path": "logs/sprint15/invalid_cli/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint15/live_missing_creds_check/system_enforcement_audit.json",
+      "target_path": "logs/sprint15/live_missing_creds_check/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint15/live_sqlite_path_gap/system_enforcement_audit.json",
+      "target_path": "logs/sprint15/live_sqlite_path_gap/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint15/mock_success/system_enforcement_audit.json",
+      "target_path": "logs/sprint15/mock_success/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint15/mode_enforcement/system_enforcement_audit.json",
+      "target_path": "logs/sprint15/mode_enforcement/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint15/phase_enforcement/system_enforcement_audit.json",
+      "target_path": "logs/sprint15/phase_enforcement/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_manual/mock.env",
+      "target_path": "logs/sprint16_manual/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_manual/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_manual/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_manual/run_after_bootstrap/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_manual/run_after_bootstrap/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests/health_fail/postgres/canonical.db",
+      "target_path": "logs/sprint16_tests/health_fail/postgres/canonical.db",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_245s0ogi/mock_success/mock.env",
+      "target_path": "logs/sprint16_tests_245s0ogi/mock_success/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_245s0ogi/mock_success/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_245s0ogi/mock_success/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_2u6_6ggq/phase_mismatch/mock.env",
+      "target_path": "logs/sprint16_tests_2u6_6ggq/phase_mismatch/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_2u6_6ggq/phase_mismatch/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_2u6_6ggq/phase_mismatch/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_2u6_6ggq/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_2u6_6ggq/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_36cq86pz/mock_success/mock.env",
+      "target_path": "logs/sprint16_tests_36cq86pz/mock_success/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_36cq86pz/mock_success/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_36cq86pz/mock_success/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_4304bati/phase_mismatch/mock.env",
+      "target_path": "logs/sprint16_tests_4304bati/phase_mismatch/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_4304bati/phase_mismatch/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_4304bati/phase_mismatch/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_4304bati/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_4304bati/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_4xpp0uj4/health_fail/ansible_inventory.json",
+      "target_path": "logs/sprint16_tests_4xpp0uj4/health_fail/ansible_inventory.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_4xpp0uj4/health_fail/live.env",
+      "target_path": "logs/sprint16_tests_4xpp0uj4/health_fail/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_4xpp0uj4/health_fail/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_4xpp0uj4/health_fail/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_4xpp0uj4/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_4xpp0uj4/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_5bboln4u/phase_mismatch/mock.env",
+      "target_path": "logs/sprint16_tests_5bboln4u/phase_mismatch/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_5bboln4u/phase_mismatch/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_5bboln4u/phase_mismatch/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_5bboln4u/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_5bboln4u/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_5f6udcrg/phase_mismatch/mock.env",
+      "target_path": "logs/sprint16_tests_5f6udcrg/phase_mismatch/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_5f6udcrg/phase_mismatch/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_5f6udcrg/phase_mismatch/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_5f6udcrg/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_5f6udcrg/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_62bouwrm/deterministic/mock.env",
+      "target_path": "logs/sprint16_tests_62bouwrm/deterministic/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_62bouwrm/deterministic/ready_state.json",
+      "target_path": "logs/sprint16_tests_62bouwrm/deterministic/ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_6lk8n1ki/live_missing_env/live.env",
+      "target_path": "logs/sprint16_tests_6lk8n1ki/live_missing_env/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_6lk8n1ki/live_missing_env/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_6lk8n1ki/live_missing_env/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_7lhlxjiq/mock_success/mock.env",
+      "target_path": "logs/sprint16_tests_7lhlxjiq/mock_success/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_7lhlxjiq/mock_success/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_7lhlxjiq/mock_success/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_8nm4615b/deterministic/mock.env",
+      "target_path": "logs/sprint16_tests_8nm4615b/deterministic/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_8nm4615b/deterministic/ready_state.json",
+      "target_path": "logs/sprint16_tests_8nm4615b/deterministic/ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_9mdcvt0v/health_fail/ansible_inventory.json",
+      "target_path": "logs/sprint16_tests_9mdcvt0v/health_fail/ansible_inventory.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_9mdcvt0v/health_fail/live.env",
+      "target_path": "logs/sprint16_tests_9mdcvt0v/health_fail/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_9mdcvt0v/health_fail/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_9mdcvt0v/health_fail/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_9mdcvt0v/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_9mdcvt0v/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests__0hoimau/phase_mismatch/mock.env",
+      "target_path": "logs/sprint16_tests__0hoimau/phase_mismatch/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests__0hoimau/phase_mismatch/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests__0hoimau/phase_mismatch/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests__0hoimau/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests__0hoimau/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests__6i8quth/mock_success/mock.env",
+      "target_path": "logs/sprint16_tests__6i8quth/mock_success/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests__6i8quth/mock_success/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests__6i8quth/mock_success/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests___pl69eh/adapter_failure/live.env",
+      "target_path": "logs/sprint16_tests___pl69eh/adapter_failure/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests___pl69eh/adapter_failure/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests___pl69eh/adapter_failure/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests___pl69eh/adapter_failure/nautobot_payload.json",
+      "target_path": "logs/sprint16_tests___pl69eh/adapter_failure/nautobot_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests___pl69eh/adapter_failure/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests___pl69eh/adapter_failure/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_a69cmqvg/live_missing_env/live.env",
+      "target_path": "logs/sprint16_tests_a69cmqvg/live_missing_env/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_a69cmqvg/live_missing_env/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_a69cmqvg/live_missing_env/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_b05ipobo/health_fail/ansible_inventory.json",
+      "target_path": "logs/sprint16_tests_b05ipobo/health_fail/ansible_inventory.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_b05ipobo/health_fail/live.env",
+      "target_path": "logs/sprint16_tests_b05ipobo/health_fail/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_b05ipobo/health_fail/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_b05ipobo/health_fail/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_b05ipobo/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_b05ipobo/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_bhqh16ij/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_bhqh16ij/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_bqo0xl2h/live_missing_env/live.env",
+      "target_path": "logs/sprint16_tests_bqo0xl2h/live_missing_env/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_bqo0xl2h/live_missing_env/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_bqo0xl2h/live_missing_env/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_c8kyg01o/health_fail/ansible_inventory.json",
+      "target_path": "logs/sprint16_tests_c8kyg01o/health_fail/ansible_inventory.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_c8kyg01o/health_fail/live.env",
+      "target_path": "logs/sprint16_tests_c8kyg01o/health_fail/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_c8kyg01o/health_fail/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_c8kyg01o/health_fail/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_c8kyg01o/health_fail/postgres/canonical.db",
+      "target_path": "logs/sprint16_tests_c8kyg01o/health_fail/postgres/canonical.db",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_c8kyg01o/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_c8kyg01o/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_cvi0efhe/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_cvi0efhe/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_d63v81pq/deterministic/mock.env",
+      "target_path": "logs/sprint16_tests_d63v81pq/deterministic/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_d63v81pq/deterministic/ready_state.json",
+      "target_path": "logs/sprint16_tests_d63v81pq/deterministic/ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_djn6ue9h/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_djn6ue9h/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_dsu2fz67/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_dsu2fz67/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_e8h1yx1i/deterministic/mock.env",
+      "target_path": "logs/sprint16_tests_e8h1yx1i/deterministic/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_e8h1yx1i/deterministic/ready_state.json",
+      "target_path": "logs/sprint16_tests_e8h1yx1i/deterministic/ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_e_a97i2d/mock_success/mock.env",
+      "target_path": "logs/sprint16_tests_e_a97i2d/mock_success/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_e_a97i2d/mock_success/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_e_a97i2d/mock_success/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_elpyhzo3/deterministic/mock.env",
+      "target_path": "logs/sprint16_tests_elpyhzo3/deterministic/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_elpyhzo3/deterministic/ready_state.json",
+      "target_path": "logs/sprint16_tests_elpyhzo3/deterministic/ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_gus0chke/health_fail/ansible_inventory.json",
+      "target_path": "logs/sprint16_tests_gus0chke/health_fail/ansible_inventory.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_gus0chke/health_fail/live.env",
+      "target_path": "logs/sprint16_tests_gus0chke/health_fail/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_gus0chke/health_fail/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_gus0chke/health_fail/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_gus0chke/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_gus0chke/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_h07mf3fd/live_missing_env/live.env",
+      "target_path": "logs/sprint16_tests_h07mf3fd/live_missing_env/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_h07mf3fd/live_missing_env/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_h07mf3fd/live_missing_env/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_h3fhs46f/live_missing_env/live.env",
+      "target_path": "logs/sprint16_tests_h3fhs46f/live_missing_env/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_h3fhs46f/live_missing_env/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_h3fhs46f/live_missing_env/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_hg523mcp/health_fail/ansible_inventory.json",
+      "target_path": "logs/sprint16_tests_hg523mcp/health_fail/ansible_inventory.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_hg523mcp/health_fail/live.env",
+      "target_path": "logs/sprint16_tests_hg523mcp/health_fail/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_hg523mcp/health_fail/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_hg523mcp/health_fail/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_hg523mcp/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_hg523mcp/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_iug7o1rw/mock_success/mock.env",
+      "target_path": "logs/sprint16_tests_iug7o1rw/mock_success/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_iug7o1rw/mock_success/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_iug7o1rw/mock_success/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_j13qfrjk/phase_mismatch/mock.env",
+      "target_path": "logs/sprint16_tests_j13qfrjk/phase_mismatch/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_j13qfrjk/phase_mismatch/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_j13qfrjk/phase_mismatch/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_j13qfrjk/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_j13qfrjk/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_k6b8j_kn/deterministic/mock.env",
+      "target_path": "logs/sprint16_tests_k6b8j_kn/deterministic/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_k6b8j_kn/deterministic/ready_state.json",
+      "target_path": "logs/sprint16_tests_k6b8j_kn/deterministic/ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_kq0ipgq3/deterministic/mock.env",
+      "target_path": "logs/sprint16_tests_kq0ipgq3/deterministic/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_kq0ipgq3/deterministic/ready_state.json",
+      "target_path": "logs/sprint16_tests_kq0ipgq3/deterministic/ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_ldrsv47v/mock_success/mock.env",
+      "target_path": "logs/sprint16_tests_ldrsv47v/mock_success/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_ldrsv47v/mock_success/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_ldrsv47v/mock_success/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_lu9s6r61/mock_success/mock.env",
+      "target_path": "logs/sprint16_tests_lu9s6r61/mock_success/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_lu9s6r61/mock_success/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_lu9s6r61/mock_success/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_n1v3rzub/adapter_failure/live.env",
+      "target_path": "logs/sprint16_tests_n1v3rzub/adapter_failure/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_n1v3rzub/adapter_failure/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_n1v3rzub/adapter_failure/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_n1v3rzub/adapter_failure/nautobot_payload.json",
+      "target_path": "logs/sprint16_tests_n1v3rzub/adapter_failure/nautobot_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_n1v3rzub/adapter_failure/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_n1v3rzub/adapter_failure/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_nfpgrj42/live_missing_env/live.env",
+      "target_path": "logs/sprint16_tests_nfpgrj42/live_missing_env/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_nfpgrj42/live_missing_env/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_nfpgrj42/live_missing_env/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_nl9crhqh/live_missing_env/live.env",
+      "target_path": "logs/sprint16_tests_nl9crhqh/live_missing_env/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_nl9crhqh/live_missing_env/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_nl9crhqh/live_missing_env/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_nxu_60or/health_fail/ansible_inventory.json",
+      "target_path": "logs/sprint16_tests_nxu_60or/health_fail/ansible_inventory.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_nxu_60or/health_fail/live.env",
+      "target_path": "logs/sprint16_tests_nxu_60or/health_fail/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_nxu_60or/health_fail/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_nxu_60or/health_fail/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_nxu_60or/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_nxu_60or/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_o6hnfn0r/mock_success/mock.env",
+      "target_path": "logs/sprint16_tests_o6hnfn0r/mock_success/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_o6hnfn0r/mock_success/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_o6hnfn0r/mock_success/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_o8uachca/adapter_failure/live.env",
+      "target_path": "logs/sprint16_tests_o8uachca/adapter_failure/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_o8uachca/adapter_failure/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_o8uachca/adapter_failure/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_o8uachca/adapter_failure/nautobot_payload.json",
+      "target_path": "logs/sprint16_tests_o8uachca/adapter_failure/nautobot_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_o8uachca/adapter_failure/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_o8uachca/adapter_failure/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_oo27o0mi/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_oo27o0mi/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_pe6fruud/deterministic/mock.env",
+      "target_path": "logs/sprint16_tests_pe6fruud/deterministic/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_pe6fruud/deterministic/ready_state.json",
+      "target_path": "logs/sprint16_tests_pe6fruud/deterministic/ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_pg2p3ocw/live_missing_env/live.env",
+      "target_path": "logs/sprint16_tests_pg2p3ocw/live_missing_env/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_pg2p3ocw/live_missing_env/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_pg2p3ocw/live_missing_env/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_pjcbo3jc/live_missing_env/live.env",
+      "target_path": "logs/sprint16_tests_pjcbo3jc/live_missing_env/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_pjcbo3jc/live_missing_env/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_pjcbo3jc/live_missing_env/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_qs93rh7s/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_qs93rh7s/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_quahwlgz/phase_mismatch/mock.env",
+      "target_path": "logs/sprint16_tests_quahwlgz/phase_mismatch/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_quahwlgz/phase_mismatch/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_quahwlgz/phase_mismatch/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_quahwlgz/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_quahwlgz/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/live.env",
+      "target_path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/nautobot_payload.json",
+      "target_path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/nautobot_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_r2ggqc8j/adapter_failure/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_r94d_7bc/phase_mismatch/mock.env",
+      "target_path": "logs/sprint16_tests_r94d_7bc/phase_mismatch/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_r94d_7bc/phase_mismatch/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_r94d_7bc/phase_mismatch/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_r94d_7bc/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_r94d_7bc/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_s4o85owd/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_s4o85owd/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_sfno4jy_/health_fail/ansible_inventory.json",
+      "target_path": "logs/sprint16_tests_sfno4jy_/health_fail/ansible_inventory.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_sfno4jy_/health_fail/live.env",
+      "target_path": "logs/sprint16_tests_sfno4jy_/health_fail/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_sfno4jy_/health_fail/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_sfno4jy_/health_fail/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_sfno4jy_/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_sfno4jy_/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_tvi0ai63/health_fail/ansible_inventory.json",
+      "target_path": "logs/sprint16_tests_tvi0ai63/health_fail/ansible_inventory.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_tvi0ai63/health_fail/live.env",
+      "target_path": "logs/sprint16_tests_tvi0ai63/health_fail/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_tvi0ai63/health_fail/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_tvi0ai63/health_fail/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_tvi0ai63/health_fail/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_tvi0ai63/health_fail/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_tzol7aox/adapter_failure/live.env",
+      "target_path": "logs/sprint16_tests_tzol7aox/adapter_failure/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_tzol7aox/adapter_failure/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_tzol7aox/adapter_failure/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_tzol7aox/adapter_failure/nautobot_payload.json",
+      "target_path": "logs/sprint16_tests_tzol7aox/adapter_failure/nautobot_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_tzol7aox/adapter_failure/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_tzol7aox/adapter_failure/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_v8px7e56/adapter_failure/live.env",
+      "target_path": "logs/sprint16_tests_v8px7e56/adapter_failure/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_v8px7e56/adapter_failure/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_v8px7e56/adapter_failure/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_v8px7e56/adapter_failure/nautobot_payload.json",
+      "target_path": "logs/sprint16_tests_v8px7e56/adapter_failure/nautobot_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_v8px7e56/adapter_failure/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_v8px7e56/adapter_failure/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_vof5t6z3/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_vof5t6z3/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_wmbxbifa/adapter_failure/live.env",
+      "target_path": "logs/sprint16_tests_wmbxbifa/adapter_failure/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_wmbxbifa/adapter_failure/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_wmbxbifa/adapter_failure/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_wmbxbifa/adapter_failure/nautobot_payload.json",
+      "target_path": "logs/sprint16_tests_wmbxbifa/adapter_failure/nautobot_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_wmbxbifa/adapter_failure/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_wmbxbifa/adapter_failure/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_xi04hbdx/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_xi04hbdx/missing_bootstrap/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_yh_cbreu/adapter_failure/live.env",
+      "target_path": "logs/sprint16_tests_yh_cbreu/adapter_failure/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_yh_cbreu/adapter_failure/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_yh_cbreu/adapter_failure/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_yh_cbreu/adapter_failure/nautobot_payload.json",
+      "target_path": "logs/sprint16_tests_yh_cbreu/adapter_failure/nautobot_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_yh_cbreu/adapter_failure/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_yh_cbreu/adapter_failure/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_z8mwod0v/adapter_failure/live.env",
+      "target_path": "logs/sprint16_tests_z8mwod0v/adapter_failure/live.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_z8mwod0v/adapter_failure/logicmonitor_payload.json",
+      "target_path": "logs/sprint16_tests_z8mwod0v/adapter_failure/logicmonitor_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_z8mwod0v/adapter_failure/nautobot_payload.json",
+      "target_path": "logs/sprint16_tests_z8mwod0v/adapter_failure/nautobot_payload.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_z8mwod0v/adapter_failure/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_z8mwod0v/adapter_failure/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_zjbf8jr4/phase_mismatch/mock.env",
+      "target_path": "logs/sprint16_tests_zjbf8jr4/phase_mismatch/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_zjbf8jr4/phase_mismatch/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint16_tests_zjbf8jr4/phase_mismatch/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_zjbf8jr4/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint16_tests_zjbf8jr4/phase_mismatch/run_audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_zr_dgef4/deterministic/mock.env",
+      "target_path": "logs/sprint16_tests_zr_dgef4/deterministic/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint16_tests_zr_dgef4/deterministic/ready_state.json",
+      "target_path": "logs/sprint16_tests_zr_dgef4/deterministic/ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_manual/audit/system_enforcement_audit.json",
+      "target_path": "logs/sprint17_manual/audit/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_manual/mock.env",
+      "target_path": "logs/sprint17_manual/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_manual/ready/runtime_ready_state.json",
+      "target_path": "logs/sprint17_manual/ready/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_1e4bs1ik/test.env",
+      "target_path": "logs/sprint17_tests_1e4bs1ik/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_1y7qw_78/test.env",
+      "target_path": "logs/sprint17_tests_1y7qw_78/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_2i_v6cvq/test.env",
+      "target_path": "logs/sprint17_tests_2i_v6cvq/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_718qxfmj/test.env",
+      "target_path": "logs/sprint17_tests_718qxfmj/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_8ipnosyt/test.env",
+      "target_path": "logs/sprint17_tests_8ipnosyt/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests__ui_pbyc/test.env",
+      "target_path": "logs/sprint17_tests__ui_pbyc/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_fr620_mv/test.env",
+      "target_path": "logs/sprint17_tests_fr620_mv/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_lc35ahfb/test.env",
+      "target_path": "logs/sprint17_tests_lc35ahfb/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_lwz0190v/test.env",
+      "target_path": "logs/sprint17_tests_lwz0190v/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_nadye7h1/test.env",
+      "target_path": "logs/sprint17_tests_nadye7h1/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_ofajd3tv/test.env",
+      "target_path": "logs/sprint17_tests_ofajd3tv/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_s_e6pvvz/test.env",
+      "target_path": "logs/sprint17_tests_s_e6pvvz/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_syz7czb5/test.env",
+      "target_path": "logs/sprint17_tests_syz7czb5/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_xmtmh8xc/test.env",
+      "target_path": "logs/sprint17_tests_xmtmh8xc/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint17_tests_ynt2ksz8/test.env",
+      "target_path": "logs/sprint17_tests_ynt2ksz8/test.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_5/module_architecture_map.json",
+      "target_path": "logs/sprint18_5/module_architecture_map.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_5/repo_audit_report.json",
+      "target_path": "logs/sprint18_5/repo_audit_report.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_5/repo_audit_summary.json",
+      "target_path": "logs/sprint18_5/repo_audit_summary.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_6/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_6/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_6/run/system_enforcement_audit.json",
+      "target_path": "logs/sprint18_6/run/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_6/runtime_context.json",
+      "target_path": "logs/sprint18_6/runtime_context.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_ops/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_ops/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_ops/events.jsonl",
+      "target_path": "logs/sprint18_ops/events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_ops/mock.env",
+      "target_path": "logs/sprint18_ops/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_ops/runs/20260502T022047Z/system_enforcement_audit.json",
+      "target_path": "logs/sprint18_ops/runs/20260502T022047Z/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_ops/state.json",
+      "target_path": "logs/sprint18_ops/state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_2s6wklwz/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_2s6wklwz/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_2s6wklwz/mock.env",
+      "target_path": "logs/sprint18_tests_2s6wklwz/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_2s6wklwz/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_2s6wklwz/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_2s6wklwz/operations_state.json",
+      "target_path": "logs/sprint18_tests_2s6wklwz/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_2s6wklwz/runs/20260502T110751Z/system_enforcement_audit.json",
+      "target_path": "logs/sprint18_tests_2s6wklwz/runs/20260502T110751Z/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_4vogb3my/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_4vogb3my/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_4vogb3my/mock.env",
+      "target_path": "logs/sprint18_tests_4vogb3my/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_4vogb3my/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_4vogb3my/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_4vogb3my/operations_state.json",
+      "target_path": "logs/sprint18_tests_4vogb3my/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_4vogb3my/runs/20260502T111533Z/system_enforcement_audit.json",
+      "target_path": "logs/sprint18_tests_4vogb3my/runs/20260502T111533Z/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_52ot_vyw/mock.env",
+      "target_path": "logs/sprint18_tests_52ot_vyw/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_661v6l_n/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_661v6l_n/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_661v6l_n/mock.env",
+      "target_path": "logs/sprint18_tests_661v6l_n/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_661v6l_n/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_661v6l_n/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_661v6l_n/operations_state.json",
+      "target_path": "logs/sprint18_tests_661v6l_n/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_68_9yojp/mock.env",
+      "target_path": "logs/sprint18_tests_68_9yojp/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_abvcxwv9/mock.env",
+      "target_path": "logs/sprint18_tests_abvcxwv9/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_h0hxn1cu/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_h0hxn1cu/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_h0hxn1cu/mock.env",
+      "target_path": "logs/sprint18_tests_h0hxn1cu/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_h0hxn1cu/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_h0hxn1cu/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_h0hxn1cu/operations_state.json",
+      "target_path": "logs/sprint18_tests_h0hxn1cu/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_hycwymi_/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_hycwymi_/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_hycwymi_/mock.env",
+      "target_path": "logs/sprint18_tests_hycwymi_/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_hycwymi_/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_hycwymi_/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_hycwymi_/operations_state.json",
+      "target_path": "logs/sprint18_tests_hycwymi_/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_i48ph2ie/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_i48ph2ie/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_i48ph2ie/mock.env",
+      "target_path": "logs/sprint18_tests_i48ph2ie/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_i48ph2ie/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_i48ph2ie/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_i48ph2ie/operations_state.json",
+      "target_path": "logs/sprint18_tests_i48ph2ie/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_i71zkmzz/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_i71zkmzz/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_i71zkmzz/mock.env",
+      "target_path": "logs/sprint18_tests_i71zkmzz/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_i71zkmzz/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_i71zkmzz/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_i71zkmzz/operations_state.json",
+      "target_path": "logs/sprint18_tests_i71zkmzz/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_i71zkmzz/runs/20260502T113438Z/system_enforcement_audit.json",
+      "target_path": "logs/sprint18_tests_i71zkmzz/runs/20260502T113438Z/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_j0rm69tq/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_j0rm69tq/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_j0rm69tq/mock.env",
+      "target_path": "logs/sprint18_tests_j0rm69tq/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_j0rm69tq/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_j0rm69tq/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_j0rm69tq/operations_state.json",
+      "target_path": "logs/sprint18_tests_j0rm69tq/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_j0rm69tq/runs/20260502T113309Z/system_enforcement_audit.json",
+      "target_path": "logs/sprint18_tests_j0rm69tq/runs/20260502T113309Z/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_j5zik6jz/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_j5zik6jz/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_j5zik6jz/mock.env",
+      "target_path": "logs/sprint18_tests_j5zik6jz/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_j5zik6jz/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_j5zik6jz/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_j5zik6jz/operations_state.json",
+      "target_path": "logs/sprint18_tests_j5zik6jz/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_jetok328/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_jetok328/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_jetok328/mock.env",
+      "target_path": "logs/sprint18_tests_jetok328/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_jetok328/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_jetok328/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_jetok328/operations_state.json",
+      "target_path": "logs/sprint18_tests_jetok328/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_lptt351k/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_lptt351k/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_lptt351k/mock.env",
+      "target_path": "logs/sprint18_tests_lptt351k/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_lptt351k/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_lptt351k/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_lptt351k/operations_state.json",
+      "target_path": "logs/sprint18_tests_lptt351k/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_mk7l5iyd/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_mk7l5iyd/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_mk7l5iyd/mock.env",
+      "target_path": "logs/sprint18_tests_mk7l5iyd/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_mk7l5iyd/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_mk7l5iyd/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_mk7l5iyd/operations_state.json",
+      "target_path": "logs/sprint18_tests_mk7l5iyd/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_mx_mrru_/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_mx_mrru_/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_mx_mrru_/mock.env",
+      "target_path": "logs/sprint18_tests_mx_mrru_/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_mx_mrru_/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_mx_mrru_/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_mx_mrru_/operations_state.json",
+      "target_path": "logs/sprint18_tests_mx_mrru_/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_mx_mrru_/runs/20260502T113832Z/system_enforcement_audit.json",
+      "target_path": "logs/sprint18_tests_mx_mrru_/runs/20260502T113832Z/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_n07dfc7n/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_n07dfc7n/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_n07dfc7n/mock.env",
+      "target_path": "logs/sprint18_tests_n07dfc7n/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_n07dfc7n/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_n07dfc7n/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_n07dfc7n/operations_state.json",
+      "target_path": "logs/sprint18_tests_n07dfc7n/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_p33s2wr3/mock.env",
+      "target_path": "logs/sprint18_tests_p33s2wr3/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_pyuuvzdc/mock.env",
+      "target_path": "logs/sprint18_tests_pyuuvzdc/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_skh53r5v/mock.env",
+      "target_path": "logs/sprint18_tests_skh53r5v/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_x7181m54/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_x7181m54/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_x7181m54/mock.env",
+      "target_path": "logs/sprint18_tests_x7181m54/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_x7181m54/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_x7181m54/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_x7181m54/operations_state.json",
+      "target_path": "logs/sprint18_tests_x7181m54/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_x7181m54/runs/20260502T022035Z/system_enforcement_audit.json",
+      "target_path": "logs/sprint18_tests_x7181m54/runs/20260502T022035Z/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_xdf2mhu0/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_xdf2mhu0/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_xdf2mhu0/mock.env",
+      "target_path": "logs/sprint18_tests_xdf2mhu0/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_xdf2mhu0/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_xdf2mhu0/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_xdf2mhu0/operations_state.json",
+      "target_path": "logs/sprint18_tests_xdf2mhu0/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_z56veew7/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_z56veew7/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_z56veew7/mock.env",
+      "target_path": "logs/sprint18_tests_z56veew7/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_z56veew7/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_z56veew7/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_z56veew7/operations_state.json",
+      "target_path": "logs/sprint18_tests_z56veew7/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_zww06_sp/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint18_tests_zww06_sp/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_zww06_sp/mock.env",
+      "target_path": "logs/sprint18_tests_zww06_sp/mock.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_zww06_sp/operations_events.jsonl",
+      "target_path": "logs/sprint18_tests_zww06_sp/operations_events.jsonl",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint18_tests_zww06_sp/operations_state.json",
+      "target_path": "logs/sprint18_tests_zww06_sp/operations_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint19_validation/bootstrap/runtime_ready_state.json",
+      "target_path": "logs/sprint19_validation/bootstrap/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint19_validation/bootstrap_phase3/runtime_ready_state.json",
+      "target_path": "logs/sprint19_validation/bootstrap_phase3/runtime_ready_state.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint19_validation/failure_mapping.json",
+      "target_path": "logs/sprint19_validation/failure_mapping.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint19_validation/live_validation.env",
+      "target_path": "logs/sprint19_validation/live_validation.env",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint19_validation/live_validation_report.json",
+      "target_path": "logs/sprint19_validation/live_validation_report.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint20/failure-http401/system_enforcement_audit.json",
+      "target_path": "logs/sprint20/failure-http401/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint20/failure-missing-credentials/system_enforcement_audit.json",
+      "target_path": "logs/sprint20/failure-missing-credentials/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint20/failure-timeout-v2/system_enforcement_audit.json",
+      "target_path": "logs/sprint20/failure-timeout-v2/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint20/failure-timeout/system_enforcement_audit.json",
+      "target_path": "logs/sprint20/failure-timeout/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/sprint20/mock-success/system_enforcement_audit.json",
+      "target_path": "logs/sprint20/mock-success/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/system.log",
+      "target_path": "logs/system.log",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "logs/system_enforcement_audit.json",
+      "target_path": "logs/system_enforcement_audit.json",
+      "source_type": "unknown",
+      "target_layer": "logs",
+      "status": "active"
+    },
+    {
+      "source_path": "observability/audit_logger.py",
+      "target_path": "observability/audit_logger.py",
+      "source_type": "observability",
+      "target_layer": "observability",
+      "status": "active"
+    },
+    {
+      "source_path": "observability/context.py",
+      "target_path": "observability/context.py",
+      "source_type": "observability",
+      "target_layer": "observability",
+      "status": "active"
+    },
+    {
+      "source_path": "observability/decision_recorder.py",
+      "target_path": "observability/decision_recorder.py",
+      "source_type": "observability",
+      "target_layer": "observability",
+      "status": "active"
+    },
+    {
+      "source_path": "observability/event_collector.py",
+      "target_path": "observability/event_collector.py",
+      "source_type": "observability",
+      "target_layer": "observability",
+      "status": "active"
+    },
+    {
+      "source_path": "observability/logger.py",
+      "target_path": "observability/logger.py",
+      "source_type": "observability",
+      "target_layer": "observability",
+      "status": "active"
+    },
+    {
+      "source_path": "observability/schema.py",
+      "target_path": "observability/schema.py",
+      "source_type": "observability",
+      "target_layer": "observability",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "observability/trace.py",
+      "target_path": "observability/trace.py",
+      "source_type": "observability",
+      "target_layer": "observability",
+      "status": "orphan"
+    },
+    {
+      "source_path": "observability/trace_context.py",
+      "target_path": "observability/trace_context.py",
+      "source_type": "observability",
+      "target_layer": "observability",
+      "status": "active"
+    },
+    {
+      "source_path": "operations/__init__.py",
+      "target_path": "operations/__init__.py",
+      "source_type": "operations",
+      "target_layer": "operations",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "operations/event_log.py",
+      "target_path": "operations/event_log.py",
+      "source_type": "operations",
+      "target_layer": "operations",
+      "status": "active"
+    },
+    {
+      "source_path": "operations/failure_classifier.py",
+      "target_path": "operations/failure_classifier.py",
+      "source_type": "operations",
+      "target_layer": "operations",
+      "status": "active"
+    },
+    {
+      "source_path": "operations/lifecycle.py",
+      "target_path": "operations/lifecycle.py",
+      "source_type": "operations",
+      "target_layer": "operations",
+      "status": "active"
+    },
+    {
+      "source_path": "operations/live_validation_runner.py",
+      "target_path": "operations/live_validation_runner.py",
+      "source_type": "operations",
+      "target_layer": "operations",
+      "status": "orphan"
+    },
+    {
+      "source_path": "operations/service_entrypoint.py",
+      "target_path": "operations/service_entrypoint.py",
+      "source_type": "operations",
+      "target_layer": "operations",
+      "status": "orphan"
+    },
+    {
+      "source_path": "operations/service_runtime.py",
+      "target_path": "operations/service_runtime.py",
+      "source_type": "operations",
+      "target_layer": "operations",
+      "status": "active"
+    },
+    {
+      "source_path": "operations/state_store.py",
+      "target_path": "operations/state_store.py",
+      "source_type": "operations",
+      "target_layer": "operations",
+      "status": "active"
+    },
+    {
+      "source_path": "operations_cli.py",
+      "target_path": "operations_cli.py",
+      "source_type": "operations",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "persistence/__init__.py",
+      "target_path": "legacy/persistence/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "persistence/contract_validator.py",
+      "target_path": "legacy/persistence/contract_validator.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "persistence/db_client.py",
+      "target_path": "legacy/persistence/db_client.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "persistence/ingest_validation.py",
+      "target_path": "legacy/persistence/ingest_validation.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "persistence/schema.sql",
+      "target_path": "legacy/persistence/schema.sql",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "persistence/test_ingest_validation.py",
+      "target_path": "legacy/persistence/test_ingest_validation.py",
+      "source_type": "tests",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "playbooks/.gitkeep",
+      "target_path": "playbooks/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "playbooks/sci_pre_task_gate_pattern.yml",
+      "target_path": "playbooks/sci_pre_task_gate_pattern.yml",
+      "source_type": "deploy",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "production_readiness_checklist.md",
+      "target_path": "docs/production_readiness_checklist.md",
+      "source_type": "docs",
+      "target_layer": "docs",
+      "status": "active"
+    },
+    {
+      "source_path": "query_layer/__init__.py",
+      "target_path": "legacy/query_layer/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "query_layer/query_client.py",
+      "target_path": "legacy/query_layer/query_client.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "query_layer/query_contracts.py",
+      "target_path": "legacy/query_layer/query_contracts.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "query_layer/query_service.py",
+      "target_path": "legacy/query_layer/query_service.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "query_layer/query_validator.py",
+      "target_path": "legacy/query_layer/query_validator.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "roles/.gitkeep",
+      "target_path": "roles/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "roles/aruba/.gitkeep",
+      "target_path": "roles/aruba/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "roles/cisco/.gitkeep",
+      "target_path": "roles/cisco/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "roles/fortinet/.gitkeep",
+      "target_path": "roles/fortinet/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "roles/juniper/.gitkeep",
+      "target_path": "roles/juniper/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "roles/meraki/.gitkeep",
+      "target_path": "roles/meraki/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "roles/sci_enforcement/tasks/main.yml",
+      "target_path": "roles/sci_enforcement/tasks/main.yml",
+      "source_type": "deploy",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "runtime/__init__.py",
+      "target_path": "runtime/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "runtime/mock/__init__.py",
+      "target_path": "runtime/mock/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "runtime/mock/fixtures.py",
+      "target_path": "runtime/mock/fixtures.py",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "orphan"
+    },
+    {
+      "source_path": "scripts/.gitkeep",
+      "target_path": "legacy/scripts/.gitkeep",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "scripts/run_cross_sprint_drift.py",
+      "target_path": "legacy/scripts/run_cross_sprint_drift.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "orphan"
+    },
+    {
+      "source_path": "scripts/run_integrity_certificate.py",
+      "target_path": "legacy/scripts/run_integrity_certificate.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "orphan"
+    },
+    {
+      "source_path": "scripts/run_unified_compliance.py",
+      "target_path": "legacy/scripts/run_unified_compliance.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "orphan"
+    },
+    {
+      "source_path": "scripts/sci_ci_gate.py",
+      "target_path": "legacy/scripts/sci_ci_gate.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "orphan"
+    },
+    {
+      "source_path": "sprint_10_pre_edit_baseline.json",
+      "target_path": "artifacts/baselines/sprint_10_pre_edit_baseline.json",
+      "source_type": "legacy",
+      "target_layer": "artifacts",
+      "status": "legacy"
+    },
+    {
+      "source_path": "sprint_11_pre_edit_baseline.json",
+      "target_path": "artifacts/baselines/sprint_11_pre_edit_baseline.json",
+      "source_type": "legacy",
+      "target_layer": "artifacts",
+      "status": "legacy"
+    },
+    {
+      "source_path": "sprint_12_pre_edit_baseline.json",
+      "target_path": "artifacts/baselines/sprint_12_pre_edit_baseline.json",
+      "source_type": "legacy",
+      "target_layer": "artifacts",
+      "status": "legacy"
+    },
+    {
+      "source_path": "sprint_8_pre_edit_baseline.json",
+      "target_path": "artifacts/baselines/sprint_8_pre_edit_baseline.json",
+      "source_type": "legacy",
+      "target_layer": "artifacts",
+      "status": "legacy"
+    },
+    {
+      "source_path": "sprint_9_pre_edit_baseline.json",
+      "target_path": "artifacts/baselines/sprint_9_pre_edit_baseline.json",
+      "source_type": "legacy",
+      "target_layer": "artifacts",
+      "status": "legacy"
+    },
+    {
+      "source_path": "stabilization_layer/__init__.py",
+      "target_path": "legacy/stabilization_layer/__init__.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "duplicate"
+    },
+    {
+      "source_path": "stabilization_layer/cross_sprint_drift_comparator.py",
+      "target_path": "legacy/stabilization_layer/cross_sprint_drift_comparator.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "stabilization_layer/determinism_certification_engine.py",
+      "target_path": "legacy/stabilization_layer/determinism_certification_engine.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "stabilization_layer/execution_replay_validator.py",
+      "target_path": "legacy/stabilization_layer/execution_replay_validator.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "stabilization_layer/integrity_certificate_generator.py",
+      "target_path": "legacy/stabilization_layer/integrity_certificate_generator.py",
+      "source_type": "unknown",
+      "target_layer": "legacy",
+      "status": "active"
+    },
+    {
+      "source_path": "system_integrity_certificate.json",
+      "target_path": "system_integrity_certificate.json",
+      "source_type": "unknown",
+      "target_layer": "unknown",
+      "status": "active"
+    },
+    {
+      "source_path": "system_kernel.py",
+      "target_path": "system_kernel.py",
+      "source_type": "kernel",
+      "target_layer": "kernel",
+      "status": "active"
+    },
+    {
+      "source_path": "test_api_layer.py",
+      "target_path": "tests/test_api_layer.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_auth_layer.py",
+      "target_path": "tests/test_auth_layer.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_baseline_comparison.py",
+      "target_path": "tests/test_baseline_comparison.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_bootstrap_runtime_layer.py",
+      "target_path": "tests/test_bootstrap_runtime_layer.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_cross_layer_orchestration.py",
+      "target_path": "tests/test_cross_layer_orchestration.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_cross_sprint_drift_comparator.py",
+      "target_path": "tests/test_cross_sprint_drift_comparator.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_determinism_certification.py",
+      "target_path": "tests/test_determinism_certification.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_drift_detection.py",
+      "target_path": "tests/test_drift_detection.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_execution_replay_validator.py",
+      "target_path": "tests/test_execution_replay_validator.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_export_layer.py",
+      "target_path": "tests/test_export_layer.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_failure_aggregation.py",
+      "target_path": "tests/test_failure_aggregation.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_gate_sequencing.py",
+      "target_path": "tests/test_gate_sequencing.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_governance_layer.py",
+      "target_path": "tests/test_governance_layer.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_immutability_checker.py",
+      "target_path": "tests/test_immutability_checker.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_integrity_certificate_generator.py",
+      "target_path": "tests/test_integrity_certificate_generator.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_live_validation_hardening.py",
+      "target_path": "tests/test_live_validation_hardening.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_observability_layer.py",
+      "target_path": "tests/test_observability_layer.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_operations_architecture_layer.py",
+      "target_path": "tests/test_operations_architecture_layer.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_query_layer.py",
+      "target_path": "tests/test_query_layer.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_sprint17_integration_layer.py",
+      "target_path": "tests/test_sprint17_integration_layer.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_system_integrity.py",
+      "target_path": "tests/test_system_integrity.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    },
+    {
+      "source_path": "test_unified_compliance_runner.py",
+      "target_path": "tests/test_unified_compliance_runner.py",
+      "source_type": "tests",
+      "target_layer": "tests",
+      "status": "active"
+    }
+  ]
+}

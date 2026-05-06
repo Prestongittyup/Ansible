@@ -1,0 +1,51 @@
+{
+  "adapters_failed": [],
+  "adapters_initialized": [
+    "AnsibleAdapter",
+    "LogicMonitorAdapter",
+    "PostgresAdapter"
+  ],
+  "boot_id": "system-boot-ba8799b2cf82",
+  "credential_injection": {
+    "ansible_inventory_path_present": false,
+    "logicmonitor_api_key_present": false,
+    "nautobot_token_present": false,
+    "postgres_connection_string_present": false,
+    "postgres_sqlite_path_present": false
+  },
+  "environment_valid": true,
+  "execution_status": "READY",
+  "fail_closed_triggered": false,
+  "health_status": {
+    "AnsibleAdapter": {
+      "adapter": "AnsibleAdapter",
+      "check": "dummy_inventory_pull",
+      "mode": "MOCK",
+      "phase": "PHASE_1",
+      "records": 3,
+      "status": "PASS"
+    },
+    "LogicMonitorAdapter": {
+      "adapter": "LogicMonitorAdapter",
+      "check": "dummy_inventory_pull",
+      "mode": "MOCK",
+      "phase": "PHASE_1",
+      "records": 3,
+      "status": "PASS"
+    },
+    "PostgresAdapter": {
+      "adapter": "PostgresAdapter",
+      "backend": "mock",
+      "check": "schema_validation",
+      "mode": "MOCK",
+      "phase": "PHASE_1",
+      "status": "PASS"
+    }
+  },
+  "mode": "MOCK",
+  "phase": "PHASE_1",
+  "runtime_lock_hash": "7513cc53c1a1f3ae404e34e5cdebc088add23b646121f1ad0b6a938bfffaec6a",
+  "schema_version": "1.0",
+  "sst_owner": "LOGICMONITOR",
+  "system_ready": true
+}

@@ -1,0 +1,129 @@
+{
+  "overall_status": "PASS",
+  "suites": [
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_export_layer.py",
+      "tests_run": 6
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_observability_layer.py",
+      "tests_run": 5
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_governance_layer.py",
+      "tests_run": 8
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_auth_layer.py",
+      "tests_run": 8
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_api_layer.py",
+      "tests_run": 7
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_query_layer.py",
+      "tests_run": 9
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "persistence/test_ingest_validation.py",
+      "tests_run": 7
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_drift_detection.py",
+      "tests_run": 4
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_system_integrity.py",
+      "tests_run": 4
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_baseline_comparison.py",
+      "tests_run": 2
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_immutability_checker.py",
+      "tests_run": 3
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_unified_compliance_runner.py",
+      "tests_run": 2
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_gate_sequencing.py",
+      "tests_run": 3
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_failure_aggregation.py",
+      "tests_run": 1
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "test_cross_layer_orchestration.py",
+      "tests_run": 3
+    }
+  ],
+  "total_errors": 0,
+  "total_failures": 0,
+  "total_skipped": 0,
+  "total_tests": 72
+}

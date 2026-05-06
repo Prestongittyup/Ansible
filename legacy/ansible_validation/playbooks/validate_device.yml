@@ -1,0 +1,24 @@
+---
+- name: Sprint 2 read-only device validation
+  hosts: validation_targets
+  gather_facts: false
+  any_errors_fatal: false
+
+  tasks:
+    - name: Validate SSH connectivity
+      ansible.builtin.wait_for_connection:
+        timeout: "{{ validation_timeout | default(20) | int }}"
+      register: connectivity_result
+
+    - name: Gather read-only facts
+      ansible.builtin.setup:
+        gather_subset:
+          - min
+      register: gathered_facts
+
+    - name: Emit validation summary
+      ansible.builtin.debug:
+        msg:
+          connectivity_status: "reachable"
+          facts_collected: true
+          fact_key_count: "{{ gathered_facts.ansible_facts | length }}"

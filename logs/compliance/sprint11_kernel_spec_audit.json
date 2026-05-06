@@ -1,0 +1,448 @@
+{
+  "authority_gate_result": {
+    "artifact_readability_violations": [],
+    "ci_kernel": {
+      "exit_code": 0,
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "emv": {
+      "exit_code": 0,
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "finished_at": "2026-05-01T23:57:51.957470+00:00",
+    "required_artifacts": [
+      "SYSTEM_CONTRACT_INDEX.md",
+      "EXECUTION_PRECEDENCE_CONTRACT.md",
+      "ci/science/SCI_RULE_REGISTRY.yaml",
+      "ci/meta/ci_enforcement_meta_validator.py",
+      "ci/run_ci_kernel.py"
+    ],
+    "started_at": "2026-05-01T23:57:49.835931+00:00",
+    "status": "PASS",
+    "step": "STEP_0_AUTHORITY_GATE"
+  },
+  "baseline_comparison_result": {
+    "baseline_path": "sprint_11_pre_edit_baseline.json",
+    "deterministic_runner_reference_hash": "b4fcda05fe4aab0da42c35af341ef93504d800f878fd10e1be7900c4f08cfee1",
+    "deterministic_runner_reference_source": "logs/compliance/unified_run_1.json",
+    "finished_at": "2026-05-01T23:57:51.959544+00:00",
+    "frozen_layers_required": [
+      "enforcement",
+      "persistence",
+      "query",
+      "api",
+      "auth",
+      "governance",
+      "observability",
+      "export",
+      "hardening"
+    ],
+    "issues": [],
+    "schema_consistency": {
+      "all_consistent": true,
+      "checks": {
+        "export_metrics_schema_version": "2.1",
+        "export_otel_schema_version": "2.1",
+        "export_siem_schema_version": "2.1",
+        "export_trace_schema_version": "2.1",
+        "input_metadata_schema_version": "2.1",
+        "input_schema_block_schema_version": "2.1",
+        "observability_schema_version": "2.1"
+      }
+    },
+    "schema_version": "2.1",
+    "started_at": "2026-05-01T23:57:51.957485+00:00",
+    "status": "PASS",
+    "step": "STEP_1_BASELINE_FREEZE_VALIDATION"
+  },
+  "compliance_verdict": {
+    "conditions": {
+      "ci_pass_zero_violations": true,
+      "dependency_violations_zero": true,
+      "deterministic_hash_match": true,
+      "documentation_compliance_pass": true,
+      "emv_pass_zero_violations": true,
+      "frozen_layer_drift_zero": true,
+      "full_test_suite_pass": true
+    },
+    "mode": "FAIL_CLOSED",
+    "one_line_contract": "Verify frozen system integrity, prove deterministic orchestration, enforce documentation compliance, and produce a fail-closed audit with zero tolerance for drift.",
+    "schema_consistency_current": {
+      "all_consistent": true,
+      "checks": {
+        "export_metrics_schema_version": "2.1",
+        "export_otel_schema_version": "2.1",
+        "export_siem_schema_version": "2.1",
+        "export_trace_schema_version": "2.1",
+        "input_metadata_schema_version": "2.1",
+        "input_schema_block_schema_version": "2.1",
+        "observability_schema_version": "2.1"
+      }
+    },
+    "status": "PASS"
+  },
+  "dependency_boundary_report": {
+    "finished_at": "2026-05-01T23:58:19.810856+00:00",
+    "forbidden_edge_rule_set": "system_integrity_auditor._FORBIDDEN_DEPENDENCY_EDGES",
+    "forbidden_edge_violation_count": 0,
+    "forbidden_edge_violations": [],
+    "orchestration_to_runtime_violations": [],
+    "runtime_to_orchestration_violations": [],
+    "started_at": "2026-05-01T23:58:18.331068+00:00",
+    "status": "PASS",
+    "step": "STEP_4_DEPENDENCY_BOUNDARY_CHECK"
+  },
+  "deterministic_runner_report": {
+    "finished_at": "2026-05-01T23:58:18.331053+00:00",
+    "hash_match": true,
+    "run_1": {
+      "compliance_status": "COMPLIANT",
+      "deterministic_hash": "b4fcda05fe4aab0da42c35af341ef93504d800f878fd10e1be7900c4f08cfee1",
+      "exit_code": 0,
+      "output": "logs/compliance/sprint11_kernel_spec_unified_1.json"
+    },
+    "run_2": {
+      "compliance_status": "COMPLIANT",
+      "deterministic_hash": "b4fcda05fe4aab0da42c35af341ef93504d800f878fd10e1be7900c4f08cfee1",
+      "exit_code": 0,
+      "output": "logs/compliance/sprint11_kernel_spec_unified_2.json"
+    },
+    "started_at": "2026-05-01T23:57:52.006144+00:00",
+    "status": "PASS",
+    "status_match": true,
+    "step": "STEP_3_DETERMINISM_VALIDATION"
+  },
+  "documentation_compliance_report": {
+    "checked_documents": {
+      "architecture": [
+        "docs/architecture.md"
+      ],
+      "execution_contract": [
+        "EXECUTION_PRECEDENCE_CONTRACT.md"
+      ],
+      "layer_map": [
+        "LAYER_MAP.md"
+      ],
+      "rfc": [
+        "RFC-001.md"
+      ],
+      "sei": [
+        "SYSTEM_CONTRACT_INDEX.md",
+        "ARCHITECTURAL_GUARDRAILS.md",
+        "NORMATIVE_RULES.md"
+      ],
+      "sprint_plan": [
+        "SPRINT_PLAN.md"
+      ]
+    },
+    "contradiction_signals": [],
+    "finished_at": "2026-05-01T23:58:19.812885+00:00",
+    "missing_documents": [],
+    "missing_required_markers": [],
+    "sequence_alignment_pass": true,
+    "started_at": "2026-05-01T23:58:19.810871+00:00",
+    "status": "PASS",
+    "step": "STEP_5_DOCUMENTATION_COMPLIANCE_GATE",
+    "unreadable_documents": []
+  },
+  "execution_trace_summary": {
+    "blocked": false,
+    "ordered_steps": [
+      "STEP_0_AUTHORITY_GATE",
+      "STEP_1_BASELINE_FREEZE_VALIDATION",
+      "STEP_2_DRIFT_ANALYSIS",
+      "STEP_3_DETERMINISM_VALIDATION",
+      "STEP_4_DEPENDENCY_BOUNDARY_CHECK",
+      "STEP_5_DOCUMENTATION_COMPLIANCE_GATE",
+      "STEP_6_TEST_EXECUTION",
+      "STEP_7_AUDIT_GENERATION",
+      "STEP_8_COMPLIANCE_VERDICT"
+    ],
+    "trace": [
+      {
+        "status": "PASS",
+        "step": "STEP_0_AUTHORITY_GATE"
+      },
+      {
+        "status": "PASS",
+        "step": "STEP_1_BASELINE_FREEZE_VALIDATION"
+      },
+      {
+        "status": "PASS",
+        "step": "STEP_2_DRIFT_ANALYSIS"
+      },
+      {
+        "status": "PASS",
+        "step": "STEP_3_DETERMINISM_VALIDATION"
+      },
+      {
+        "status": "PASS",
+        "step": "STEP_4_DEPENDENCY_BOUNDARY_CHECK"
+      },
+      {
+        "status": "PASS",
+        "step": "STEP_5_DOCUMENTATION_COMPLIANCE_GATE"
+      },
+      {
+        "status": "PASS",
+        "step": "STEP_6_TEST_EXECUTION"
+      }
+    ]
+  },
+  "frozen_layer_drift_report": {
+    "finished_at": "2026-05-01T23:57:52.006128+00:00",
+    "frozen_layers": [
+      "enforcement",
+      "persistence",
+      "query",
+      "api",
+      "auth",
+      "governance",
+      "observability",
+      "export",
+      "hardening"
+    ],
+    "layer_hash_mismatch_count": 0,
+    "layers": {
+      "api": {
+        "current_files": 6,
+        "current_layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2",
+        "expected_layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 6
+      },
+      "auth": {
+        "current_files": 6,
+        "current_layer_hash": "6486ceec29d9db3a912931c83e46f83b8f51828a01fbf839812ff8dcdb75d1a7",
+        "expected_layer_hash": "6486ceec29d9db3a912931c83e46f83b8f51828a01fbf839812ff8dcdb75d1a7",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 6
+      },
+      "enforcement": {
+        "current_files": 19,
+        "current_layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702",
+        "expected_layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 19
+      },
+      "export": {
+        "current_files": 5,
+        "current_layer_hash": "634fbff7f7d6a2a9b8bb4545ad6d0fbe257ee95ba35ead75cf0f28cd3336e1f7",
+        "expected_layer_hash": "634fbff7f7d6a2a9b8bb4545ad6d0fbe257ee95ba35ead75cf0f28cd3336e1f7",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 5
+      },
+      "governance": {
+        "current_files": 7,
+        "current_layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c",
+        "expected_layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 7
+      },
+      "hardening": {
+        "current_files": 9,
+        "current_layer_hash": "7f003bcab0b9b4afeaa40b4c6141bc6430c4752197c179fa36d9d612b9ff615c",
+        "expected_layer_hash": "7f003bcab0b9b4afeaa40b4c6141bc6430c4752197c179fa36d9d612b9ff615c",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 9
+      },
+      "observability": {
+        "current_files": 6,
+        "current_layer_hash": "d02fd1ca13a41fa8dccf9f2ab79351c2df38dc4438842bebe0ed636c793b9a1e",
+        "expected_layer_hash": "d02fd1ca13a41fa8dccf9f2ab79351c2df38dc4438842bebe0ed636c793b9a1e",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 6
+      },
+      "persistence": {
+        "current_files": 6,
+        "current_layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6",
+        "expected_layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 6
+      },
+      "query": {
+        "current_files": 5,
+        "current_layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d",
+        "expected_layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "tracked_files": 5
+      }
+    },
+    "started_at": "2026-05-01T23:57:51.959563+00:00",
+    "status": "PASS",
+    "step": "STEP_2_DRIFT_ANALYSIS",
+    "total_mismatch_count": 0
+  },
+  "full_test_suite_summary": {
+    "ci_kernel_suite": {
+      "exit_code": 0,
+      "pass": true,
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "emv_suite": {
+      "exit_code": 0,
+      "pass": true,
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "finished_at": "2026-05-01T23:58:26.091646+00:00",
+    "started_at": "2026-05-01T23:58:19.812895+00:00",
+    "status": "PASS",
+    "step": "STEP_6_TEST_EXECUTION",
+    "strict_coverage_pass": true,
+    "suites": [
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_export_layer.py",
+        "tests_run": 6
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_observability_layer.py",
+        "tests_run": 5
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_governance_layer.py",
+        "tests_run": 8
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_auth_layer.py",
+        "tests_run": 8
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_api_layer.py",
+        "tests_run": 7
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_query_layer.py",
+        "tests_run": 9
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "persistence/test_ingest_validation.py",
+        "tests_run": 7
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_drift_detection.py",
+        "tests_run": 4
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_system_integrity.py",
+        "tests_run": 4
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_baseline_comparison.py",
+        "tests_run": 2
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_immutability_checker.py",
+        "tests_run": 3
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_unified_compliance_runner.py",
+        "tests_run": 2
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_gate_sequencing.py",
+        "tests_run": 3
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_failure_aggregation.py",
+        "tests_run": 1
+      },
+      {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "status": "PASS",
+        "suite": "test_cross_layer_orchestration.py",
+        "tests_run": 3
+      }
+    ],
+    "totals": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests_run": 72
+    }
+  },
+  "generated_at": "2026-05-01T23:58:26.091974+00:00",
+  "risk_analysis": {
+    "eliminated_risks": [
+      "Frozen-layer drift not detected by ad hoc checks.",
+      "Nondeterministic gate ordering across validation surfaces.",
+      "Undocumented boundary regressions between orchestration and runtime layers."
+    ],
+    "introduced_risks": [
+      "Unified compliance runner remains a single orchestration choke-point for release gating."
+    ],
+    "residual_risks": [
+      "Determinism anchor is validated from runtime artifacts when not explicitly embedded in sprint_11_pre_edit_baseline.json."
+    ]
+  }
+}

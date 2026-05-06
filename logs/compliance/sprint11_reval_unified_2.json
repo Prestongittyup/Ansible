@@ -1,0 +1,309 @@
+{
+  "compliance_status": "COMPLIANT",
+  "deterministic_hash": "b4fcda05fe4aab0da42c35af341ef93504d800f878fd10e1be7900c4f08cfee1",
+  "execution_trace": [
+    {
+      "gate": "SCI_AUTHORITY",
+      "layer": "sci_authority",
+      "rule_id": "SCI-GATE-000",
+      "status": "PASS",
+      "step": 1
+    },
+    {
+      "gate": "EMV",
+      "layer": "enforcement",
+      "rule_id": "SCI-001",
+      "status": "PASS",
+      "step": 2
+    },
+    {
+      "gate": "CI_KERNEL",
+      "layer": "enforcement",
+      "rule_id": "SCI-006",
+      "status": "PASS",
+      "step": 3
+    },
+    {
+      "gate": "AUTH",
+      "layer": "auth",
+      "rule_id": "AUTH-GATE-001",
+      "status": "PASS",
+      "step": 4
+    },
+    {
+      "gate": "GOVERNANCE",
+      "layer": "governance",
+      "rule_id": "GOV-GATE-001",
+      "status": "PASS",
+      "step": 5
+    },
+    {
+      "gate": "API",
+      "layer": "api",
+      "rule_id": "API-GATE-001",
+      "status": "PASS",
+      "step": 6
+    },
+    {
+      "gate": "QUERY",
+      "layer": "query",
+      "rule_id": "QUERY-GATE-001",
+      "status": "PASS",
+      "step": 7
+    },
+    {
+      "gate": "PERSISTENCE",
+      "layer": "persistence",
+      "rule_id": "PERSIST-GATE-001",
+      "status": "PASS",
+      "step": 8
+    },
+    {
+      "gate": "OBSERVABILITY",
+      "layer": "observability",
+      "rule_id": "OBS-GATE-001",
+      "status": "PASS",
+      "step": 9
+    },
+    {
+      "gate": "EXPORT",
+      "layer": "export",
+      "rule_id": "EXPORT-GATE-001",
+      "status": "PASS",
+      "step": 10
+    },
+    {
+      "gate": "DRIFT_HARDENING",
+      "layer": "hardening",
+      "rule_id": "HARDENING-GATE-001",
+      "status": "PASS",
+      "step": 11
+    }
+  ],
+  "failing_gate": null,
+  "failing_layer": null,
+  "layer_results": {
+    "API": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "-m",
+        "unittest",
+        "test_api_layer.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:52.098672+00:00",
+      "layer": "api",
+      "note": "gate execution passed",
+      "output_hash": "70d96536f7c4939973e39f5af08898c9d19b8f655af469e3dab6fb4750e7ad33",
+      "rule_id": "API-GATE-001",
+      "started_at": "2026-05-01T23:45:49.591858+00:00",
+      "status": "PASS",
+      "stderr_excerpt": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.211s\n\nOK",
+      "stdout_excerpt": "",
+      "violation_count": 0,
+      "violations": []
+    },
+    "AUTH": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "-m",
+        "unittest",
+        "test_auth_layer.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:48.362376+00:00",
+      "layer": "auth",
+      "note": "gate execution passed",
+      "output_hash": "823ed5318897db55fefe9fc84b1a044f4ec2873ed7b46009a61042fcf64ce200",
+      "rule_id": "AUTH-GATE-001",
+      "started_at": "2026-05-01T23:45:47.049605+00:00",
+      "status": "PASS",
+      "stderr_excerpt": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.187s\n\nOK",
+      "stdout_excerpt": "",
+      "violation_count": 0,
+      "violations": []
+    },
+    "CI_KERNEL": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "ci/run_ci_kernel.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:47.049497+00:00",
+      "layer": "enforcement",
+      "note": "gate execution passed",
+      "output_hash": "df7b5be1f69034ec3bb81b0a4c09509c8988debc0635811ef669f097eb052ac4",
+      "rule_id": "SCI-006",
+      "started_at": "2026-05-01T23:45:45.915581+00:00",
+      "status": "PASS",
+      "stderr_excerpt": "",
+      "stdout_excerpt": "{\n  \"ci_status\": \"PASS\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-01T23:45:46.164776+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": []\n      },\n      \"violation_count\": 0\n    },\n    {\n      \"name\": \"Import Boundary Enforcement\",\n      \"rule_id\": \"SCI-002\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/import_guard.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-01T23:45:46.541183+00:00\",\n        \"validator\": \"import_guard\",\n        \"violations\": []\n      },\n      \"violation_count\": 0\n    },\n    {\n      \"name\": \"Bootstrap-Only Execution Enforcement\",\n      \"rule_id\": \"SCI-003\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/bootstrap_gate.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_vers",
+      "violation_count": 0,
+      "violations": []
+    },
+    "DRIFT_HARDENING": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "-m",
+        "unittest",
+        "test_drift_detection.py",
+        "test_system_integrity.py",
+        "test_baseline_comparison.py",
+        "test_immutability_checker.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:46:01.254495+00:00",
+      "layer": "hardening",
+      "note": "gate execution passed",
+      "output_hash": "e9ee36cb36109d0f54b63d6341e8a1bf5ee27ae9681086c963d479131682273b",
+      "rule_id": "HARDENING-GATE-001",
+      "started_at": "2026-05-01T23:45:56.489154+00:00",
+      "status": "PASS",
+      "stderr_excerpt": ".............\n----------------------------------------------------------------------\nRan 13 tests in 4.559s\n\nOK",
+      "stdout_excerpt": "",
+      "violation_count": 0,
+      "violations": []
+    },
+    "EMV": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "ci/meta/ci_enforcement_meta_validator.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:45.915451+00:00",
+      "layer": "enforcement",
+      "note": "gate execution passed",
+      "output_hash": "10c107cbd4e9ba88f6e885d441f3c78b6fa18baa49cb07d29f9de8928eeafee2",
+      "rule_id": "SCI-001",
+      "started_at": "2026-05-01T23:45:45.643129+00:00",
+      "status": "PASS",
+      "stderr_excerpt": "",
+      "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+      "violation_count": 0,
+      "violations": []
+    },
+    "EXPORT": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "-m",
+        "unittest",
+        "test_export_layer.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:56.489095+00:00",
+      "layer": "export",
+      "note": "gate execution passed",
+      "output_hash": "315ee05ba425d46d5fd49db7777904c150615467ad2ba01c57a6bc6af5c485ab",
+      "rule_id": "EXPORT-GATE-001",
+      "started_at": "2026-05-01T23:45:54.960973+00:00",
+      "status": "PASS",
+      "stderr_excerpt": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.200s\n\nOK",
+      "stdout_excerpt": "",
+      "violation_count": 0,
+      "violations": []
+    },
+    "GOVERNANCE": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "-m",
+        "unittest",
+        "test_governance_layer.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:49.591784+00:00",
+      "layer": "governance",
+      "note": "gate execution passed",
+      "output_hash": "d31419579d99c74eec75849f63c874c4327fd286129669b20b80fa90c9553bf2",
+      "rule_id": "GOV-GATE-001",
+      "started_at": "2026-05-01T23:45:48.362444+00:00",
+      "status": "PASS",
+      "stderr_excerpt": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.156s\n\nOK",
+      "stdout_excerpt": "",
+      "violation_count": 0,
+      "violations": []
+    },
+    "OBSERVABILITY": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "-m",
+        "unittest",
+        "test_observability_layer.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:54.960884+00:00",
+      "layer": "observability",
+      "note": "gate execution passed",
+      "output_hash": "b5dce2049b81431a1ee8e9015b1295b91e8e13578b929bcf438c87b9bd23f631",
+      "rule_id": "OBS-GATE-001",
+      "started_at": "2026-05-01T23:45:52.508895+00:00",
+      "status": "PASS",
+      "stderr_excerpt": ".Database write failure: PostgreSQL DSN is required\n.Unexpected event collector failure; event skipped\nTraceback (most recent call last):\n  File \"C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\observability\\event_collector.py\", line 33, in emit\n    self._audit_logger.append_event(normalized)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\test_observability_layer.py\", line 23, in append_event\n    raise RuntimeError(\"forced logger failure\")\nRuntimeError: forced logger failure\nUnexpected event collector failure; event skipped\nTraceback (most recent call last):\n  File \"C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\observability\\event_collector.py\", line 33, in emit\n    self._audit_logger.append_event(normalized)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\test_observability_layer.py\", line 23, in append_event\n    raise RuntimeError(\"forced logger failure\")\nRuntimeError: forced logger failure\nUnexpected event collector failure; event skipped\nTraceback (most recent call last):\n  File \"C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\observability\\event_collector.py\", line 33, in emit\n    self._audit_logger.append_event(normalized)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\test_observability_layer.py\", line 23, in append_event\n    raise RuntimeError(\"forced logger failure\")\nRuntimeError: forced logger failure\nUnexpected event collector failure; event skipped\nTraceback (most recent call last):\n  File \"C:\\Users\\fb002895\\Desktop\\Person",
+      "stdout_excerpt": "",
+      "violation_count": 0,
+      "violations": []
+    },
+    "PERSISTENCE": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "-m",
+        "unittest",
+        "persistence/test_ingest_validation.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:52.508837+00:00",
+      "layer": "persistence",
+      "note": "gate execution passed",
+      "output_hash": "39633f4b6bf7b2efefad78a3d8d69153066b819dbe02779f082d63f899f5f09b",
+      "rule_id": "PERSIST-GATE-001",
+      "started_at": "2026-05-01T23:45:52.300316+00:00",
+      "status": "PASS",
+      "stderr_excerpt": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.003s\n\nOK",
+      "stdout_excerpt": "",
+      "violation_count": 0,
+      "violations": []
+    },
+    "QUERY": {
+      "command": [
+        "C:/Program Files/Python313/python.exe",
+        "-m",
+        "unittest",
+        "test_query_layer.py"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:52.300239+00:00",
+      "layer": "query",
+      "note": "gate execution passed",
+      "output_hash": "85eae3feab326119f6b23e98a45f6de9d38185a89c13b2c3e0ad87698683a9c2",
+      "rule_id": "QUERY-GATE-001",
+      "started_at": "2026-05-01T23:45:52.098732+00:00",
+      "status": "PASS",
+      "stderr_excerpt": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.001s\n\nOK",
+      "stdout_excerpt": "",
+      "violation_count": 0,
+      "violations": []
+    },
+    "SCI_AUTHORITY": {
+      "command": [
+        "artifact_readability_check"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-05-01T23:45:45.643025+00:00",
+      "layer": "sci_authority",
+      "note": "SCI authority check passed",
+      "output_hash": "9777f8e6a2a8bb7129b04d049effefed0dd7c00d156033ffd6beecd631c29a56",
+      "rule_id": "SCI-GATE-000",
+      "started_at": "2026-05-01T23:45:45.641002+00:00",
+      "status": "PASS",
+      "stderr_excerpt": "",
+      "stdout_excerpt": "",
+      "violation_count": 0,
+      "violations": []
+    }
+  },
+  "partial_success_allowed": false,
+  "schema_version": "2.1",
+  "started_at": "2026-05-01T23:45:45.640959+00:00",
+  "timestamp": "2026-05-01T23:46:01.254551+00:00",
+  "violation_count": 0,
+  "violations": []
+}

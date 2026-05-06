@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  control-plane-ops:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.ops
+    env_file:
+      - .env.ops.example
+    environment:
+      LOGICMONITOR_API_KEY_FILE: /run/secrets/logicmonitor_api_key
+      NAUTOBOT_TOKEN_FILE: /run/secrets/nautobot_token
+      POSTGRES_CONNECTION_STRING_FILE: /run/secrets/postgres_connection_string
+      OPS_HEALTH_HOST: 0.0.0.0
+      OPS_HEALTH_PORT: 8088
+      SCHEDULER_ENABLED: "true"
+      SCHEDULER_INTERVAL_SECONDS: "300"
+    secrets:
+      - logicmonitor_api_key
+      - nautobot_token
+      - postgres_connection_string
+    ports:
+      - "8088:8088"
+    volumes:
+      - ../logs:/app/logs
+      - ../runtime:/app/runtime
+    restart: on-failure:3
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import json, urllib.request; data=json.loads(urllib.request.urlopen('http://127.0.0.1:8088/health', timeout=3).read().decode('utf-8')); raise SystemExit(0 if data.get('status') in {'READY','DEGRADED'} else 1)",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+secrets:
+  logicmonitor_api_key:
+    file: ./secrets/logicmonitor_api_key.txt
+  nautobot_token:
+    file: ./secrets/nautobot_token.txt
+  postgres_connection_string:
+    file: ./secrets/postgres_connection_string.txt

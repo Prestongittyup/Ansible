@@ -1,0 +1,246 @@
+{
+  "adapter_states": {},
+  "adapters_active": [
+    "AnsibleAdapter",
+    "PostgresAdapter"
+  ],
+  "data_stats": {
+    "adapter_activation_registry": {
+      "active": {
+        "AnsibleAdapter": true,
+        "LogicMonitorAdapter": false,
+        "NautobotAdapter": false,
+        "PostgresAdapter": true
+      },
+      "mode": "LIVE",
+      "phase": "PHASE_1",
+      "rules": {
+        "AnsibleAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": true,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "LogicMonitorAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "NautobotAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": false
+        },
+        "PostgresAdapter": {
+          "execute_mutation_allowed": false,
+          "execute_validation_allowed": false,
+          "read_allowed": true,
+          "write_allowed": true
+        }
+      },
+      "source": "mock",
+      "target": "mock"
+    },
+    "adapter_states": {},
+    "adapters_active": [
+      "AnsibleAdapter",
+      "PostgresAdapter"
+    ],
+    "command_model": {
+      "emit_audit": "logs/sprint15/live_sqlite_path_gap",
+      "parity_window": "30d",
+      "source": "mock",
+      "target": "mock"
+    },
+    "contract_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ],
+    "deterministic_signature": "d480b24df9500da0b120bd37068aaff29ade2b686e6a34a6007d2da2ea89a50a",
+    "execution_mode": "READ_ONLY",
+    "execution_status": "FAIL",
+    "fail_closed_triggered": true,
+    "kernel_mode": "LIVE",
+    "runtime_gate_sequence": [
+      "SCI",
+      "EMV",
+      "CI",
+      "AUTH",
+      "GOVERNANCE",
+      "API",
+      "QUERY",
+      "PERSISTENCE",
+      "OBSERVABILITY",
+      "EXPORT",
+      "DRIFT",
+      "PARITY"
+    ]
+  },
+  "decision_reason": "HARD_FAIL:POSTGRES_SQLITE_PATH is not configured",
+  "deterministic_signature": "d480b24df9500da0b120bd37068aaff29ade2b686e6a34a6007d2da2ea89a50a",
+  "drift_metrics": {
+    "compared_records_total": 0,
+    "deterministic_hash": "",
+    "drifted_records_total": 0,
+    "global_drift_pct": 0.0,
+    "hard_drift_count": 0,
+    "soft_drift_count": 0
+  },
+  "drift_percentage": 0.0,
+  "errors": [
+    "POSTGRES_SQLITE_PATH is not configured"
+  ],
+  "execution_status": "FAIL",
+  "exit_code": 30,
+  "exit_code_reason": "HARD_FAIL:POSTGRES_SQLITE_PATH is not configured",
+  "fail_closed_triggered": true,
+  "final_decision": "HARD_FAIL",
+  "gate_results": [
+    {
+      "details": {
+        "checked_files": [
+          "SYSTEM_CONTRACT_INDEX.md",
+          "EXECUTION_PRECEDENCE_CONTRACT.md",
+          "LAYER_MAP.md"
+        ]
+      },
+      "finished_at": "2026-05-02T01:26:01.046501+00:00",
+      "gate": "SCI",
+      "reason": "SCI_CONTRACT_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:26:01.045492+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\meta\\ci_enforcement_meta_validator.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "emv_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"emv_status\": \"PASS\",\n  \"execution_blocking\": false,\n  \"schema_version\": \"1.0\",\n  \"violation_count\": 0,\n  \"violations\": []\n}",
+        "violation_count": 0
+      },
+      "finished_at": "2026-05-02T01:26:01.189517+00:00",
+      "gate": "EMV",
+      "reason": "EXTERNAL_GATE_PASS",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:26:01.046501+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "command": [
+          "C:\\Users\\fb002895\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\ci\\run_ci_kernel.py"
+        ],
+        "exit_code": 0,
+        "status": "PASS",
+        "status_field": "ci_status",
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"ci_status\": \"PASS\",\n  \"emv_status\": \"PASS\",\n  \"emv_violation_count\": 0,\n  \"execution_mode\": \"CI_ENFORCEMENT_KERNEL\",\n  \"rule_results\": [\n    {\n      \"name\": \"SCI Presence Validation\",\n      \"rule_id\": \"SCI-001\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/sci_validator.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T01:26:01.331050+00:00\",\n        \"validator\": \"sci_validator\",\n        \"violations\": []\n      },\n      \"violation_count\": 0\n    },\n    {\n      \"name\": \"Import Boundary Enforcement\",\n      \"rule_id\": \"SCI-002\",\n      \"severity\": \"CRITICAL\",\n      \"status\": \"PASS\",\n      \"validator_binding\": {\n        \"file\": \"ci/import_guard.py\",\n        \"function\": \"run\"\n      },\n      \"validator_result\": {\n        \"file_path\": \"\",\n        \"rule_id\": \"\",\n        \"schema_version\": \"1.0\",\n        \"severity\": \"LOW\",\n        \"status\": \"PASS\",\n        \"timestamp\": \"2026-05-02T01:26:01.797287+00:00\",\n        \"validator\": \"import_guard\",\n        \"v",
+        "violation_count": 0
+      },
+      "finished_at": "2026-05-02T01:26:02.227402+00:00",
+      "gate": "CI",
+      "reason": "EXTERNAL_GATE_PASS",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:26:01.189517+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "phase": "PHASE_1",
+        "sst_source": "LOGICMONITOR",
+        "writable_systems": [
+          "LOGICMONITOR"
+        ]
+      },
+      "finished_at": "2026-05-02T01:26:02.227402+00:00",
+      "gate": "AUTH",
+      "reason": "AUTHORITY_MODEL_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:26:02.227402+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "execution_mode": "READ_ONLY",
+        "governance_approved": false,
+        "phase": "PHASE_1"
+      },
+      "finished_at": "2026-05-02T01:26:02.227402+00:00",
+      "gate": "GOVERNANCE",
+      "reason": "READ_ONLY_MODE_ENFORCED",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:26:02.227402+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "source_records": 3,
+        "source_selector": "mock",
+        "target_records": 3,
+        "target_selector": "mock"
+      },
+      "finished_at": "2026-05-02T01:26:02.227402+00:00",
+      "gate": "API",
+      "reason": "API_DATA_READY",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:26:02.227402+00:00",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "source_records": 3,
+        "target_records": 3
+      },
+      "finished_at": "2026-05-02T01:26:02.227402+00:00",
+      "gate": "QUERY",
+      "reason": "QUERY_NORMALIZATION_VALID",
+      "severity": "SOFT",
+      "started_at": "2026-05-02T01:26:02.227402+00:00",
+      "status": "PASS"
+    }
+  ],
+  "identity_conflict_count": 0,
+  "identity_conflicts": [],
+  "kernel_anchor": "SYSTEM_KERNEL_RUNTIME::v1.0::ANCHOR_HASH=3f2db198::FAIL_CLOSED=true",
+  "mode": "LIVE",
+  "parity_result": {
+    "deterministic_hash": "",
+    "reason": "HARD_FAIL:POSTGRES_SQLITE_PATH is not configured",
+    "status": "FAIL"
+  },
+  "phase": "PHASE_1",
+  "phase_source": "PHASE_1",
+  "phase_target": "PHASE_1",
+  "run_id": "system-enf-06788720d839",
+  "run_metadata": {
+    "execution_mode": "READ_ONLY",
+    "fail_closed": true,
+    "finished_at": "2026-05-02T01:26:02.267918+00:00",
+    "kernel_mode": "LIVE",
+    "run_id": "system-enf-06788720d839",
+    "started_at": "2026-05-02T01:26:01.044495+00:00"
+  },
+  "sst_owner": "LOGICMONITOR",
+  "sst_source": "LOGICMONITOR",
+  "sst_target": "LOGICMONITOR",
+  "tracker_summary": {}
+}

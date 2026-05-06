@@ -1,0 +1,10 @@
+{
+  "test_name": "execution_precedence_contract_marker_removed",
+  "input_state": {
+    "file": "EXECUTION_PRECEDENCE_CONTRACT.md",
+    "removed_marker": "Execution Order (Non-Negotiable)",
+    "expected_validator": "ci/execution_contract_integrity_guard.py"
+  },
+  "expected_result": "FAIL",
+  "expected_rule_id": "SCI-005"
+}

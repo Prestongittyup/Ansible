@@ -1,0 +1,24 @@
+---
+- name: SCI enforced execution pattern
+  hosts: all
+  gather_facts: false
+
+  vars:
+    run_id: "{{ run_id | default(lookup('pipe', 'date -u +%Y%m%dT%H%M%SZ')) }}"
+    device_ip: "{{ device_ip | default(ansible_host | default(inventory_hostname)) }}"
+    execution_mode: "{{ execution_mode | default('READ_ONLY') }}"
+    source_layer: "{{ source_layer | default('EXECUTION') }}"
+    target_action: "{{ target_action | default('SSH_VALIDATION') }}"
+    data_classification: "{{ data_classification | default('EVIDENCE') }}"
+    global_automation_guard: "{{ global_automation_guard | default('enabled') }}"
+    sci_permit: "{{ sci_permit | default(false) | bool }}"
+
+  pre_tasks:
+    - name: SCI gate | enforce before any task
+      ansible.builtin.include_role:
+        name: sci_enforcement
+
+  tasks:
+    - name: Validation task placeholder
+      ansible.builtin.debug:
+        msg: "SCI gate passed for {{ device_ip }} in mode {{ execution_mode }}"

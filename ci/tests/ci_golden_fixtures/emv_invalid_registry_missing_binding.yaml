@@ -1,0 +1,23 @@
+{
+  "registry_name": "SCI Enforcement Kernel Rule Registry",
+  "registry_version": "1.0",
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "rule_id": "SCI-001",
+      "name": "SCI Presence Validation",
+      "description": "Intentionally invalid fixture with missing validator binding.",
+      "severity": "CRITICAL",
+      "enforcement": {
+        "type": "CI_VALIDATION"
+      },
+      "fail_behavior": "FAIL_CLOSED",
+      "dependencies": [
+        "SCI",
+        "EXECUTION_PRECEDENCE_CONTRACT"
+      ],
+      "version": "1.0",
+      "execution_order": 1
+    }
+  ]
+}

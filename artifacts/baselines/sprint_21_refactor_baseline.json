@@ -1,0 +1,89 @@
+{
+  "baseline_name": "sprint_21_refactor_baseline",
+  "layers": {
+    "api": {
+      "file_count": 0,
+      "files": {},
+      "layer": "api",
+      "layer_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "auth": {
+      "file_count": 0,
+      "files": {},
+      "layer": "auth",
+      "layer_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "enforcement": {
+      "file_count": 13,
+      "files": {
+        ".github\\workflows\\sci_enforcement.yml": "e694bfe8a6b4637463205dde64f7444597961a7c7ec373e88db4935122f0372c",
+        "bootstrap.py": "e9c9930987ebcbc2182a6b2d72d7e24fed1c1f6309ff1f26548193fc30354bca",
+        "ci\\bootstrap_gate.py": "a8a5eb92ca5ca605d2aefdfe68b78278ddf1eff0f4dfd771a584c9d7db4017b3",
+        "ci\\ci_pipeline_order_guard.py": "95203e698e536cd86bc6c4889b6beb53e936c3c86874da63b0b0300b1ddfeacf",
+        "ci\\core\\ci_policy_engine.py": "feaa40e275e666e958f484e9cc1d437279d4a1010fa78d8335a41e023838e1d5",
+        "ci\\execution_contract_integrity_guard.py": "ec3f11fb5a98880ae29dc009b0dae7fa3acfd4c10b91a8c9f0372172bf7095de",
+        "ci\\import_guard.py": "3e37f29cf2a3810f9cc03af4e9d3dc0ef663d174a0ec8b50eb5d49ca648accf5",
+        "ci\\meta\\ci_enforcement_meta_validator.py": "e3cd13aeeeeed8da8effa799831ba3aa8f97bfed85f0acf83bfae8a72c23390a",
+        "ci\\run_ci_kernel.py": "7f4c2684ce26f0ea9bdfa1ada02b3afa8320f5f77666c32e6a1265d0ec9ca172",
+        "ci\\schema_version_guard.py": "eed47c476718df6bbbe2cdcf66210c380350e64778b30b6638b3c2ec1b5d9922",
+        "ci\\sci_validator.py": "327027178bbfdb937475779457379db3ba23b3aa7792513dfb0b9f24c120ae3e",
+        "ci\\science\\SCI_RULE_REGISTRY.yaml": "41956641b208f88761a9ba1d0ca9f21b5ce3634a9f45f6ecfb1eab7a136abdae",
+        "ci\\tests\\ci_golden_fixtures\\emv_invalid_registry_missing_binding.yaml": "7adee423fa611218a9dc41a2b036c71341be9a40c511210b1824b4278c1e7f4f"
+      },
+      "layer": "enforcement",
+      "layer_hash": "6d13884ef625d60a5402768bc8b9c2267a15d4f6958bcf413e239198caf3abe7"
+    },
+    "export": {
+      "file_count": 0,
+      "files": {},
+      "layer": "export",
+      "layer_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "governance": {
+      "file_count": 0,
+      "files": {},
+      "layer": "governance",
+      "layer_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "observability": {
+      "file_count": 8,
+      "files": {
+        "observability\\audit_logger.py": "5e5d16bd89ce943ff505cc7e680da76b97d9a53b8d22f64120ada3d8e25bab1b",
+        "observability\\context.py": "e475b3c00eb20e3150941654b2dae6433b041a16ed4e250cea6533a2c4082a4b",
+        "observability\\decision_recorder.py": "8970777061d59d84657c4fe94d2cbaee4ab1b10803d8a3b5a35eadd2f6c099c0",
+        "observability\\event_collector.py": "e46db4e52a0b82b7ce33d38ec7d65afa7889803a10ff168a88910542840d240f",
+        "observability\\logger.py": "8b5fd928ab845f502352ad8c7dfbae36072f9b8c00587e5ae5a423f015105e83",
+        "observability\\schema.py": "9efb13c8febbac20ed8f769d22fd50da0fc0e5203d64803e6d7932c02068e720",
+        "observability\\trace.py": "92c1c02abe57631390311ecb0517b7dc5d8a27eeceb723e505f555ea347264cf",
+        "observability\\trace_context.py": "d546405a237d6c6ef4f6d3b3ded0fb61ed2b4a7574460dde9f81b026a2d261fa"
+      },
+      "layer": "observability",
+      "layer_hash": "4f8299a75ae3f5f64210f8e7582b11c1c3522209981a1f64396176e2cc9eae0e"
+    },
+    "persistence": {
+      "file_count": 0,
+      "files": {},
+      "layer": "persistence",
+      "layer_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "query": {
+      "file_count": 0,
+      "files": {},
+      "layer": "query",
+      "layer_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "schema_consistency": {
+    "all_consistent": true,
+    "checks": {
+      "export_metrics_schema_version": "2.1",
+      "export_otel_schema_version": "2.1",
+      "export_siem_schema_version": "2.1",
+      "export_trace_schema_version": "2.1",
+      "input_metadata_schema_version": "2.1",
+      "input_schema_block_schema_version": "2.1",
+      "observability_schema_version": "2.1"
+    }
+  },
+  "schema_version": "2.1"
+}

@@ -1,0 +1,603 @@
+{
+  "authority_gate": {
+    "ci_kernel": {
+      "finished_at": "2026-05-01T23:07:21.258981+00:00",
+      "started_at": "2026-05-01T23:07:20.618975+00:00",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "emv": {
+      "finished_at": "2026-05-01T23:07:20.618929+00:00",
+      "started_at": "2026-05-01T23:07:20.449362+00:00",
+      "status": "PASS",
+      "violation_count": 0
+    }
+  },
+  "captured_at": "2026-05-01T23:07:43.642568+00:00",
+  "cross_sprint_drift_chain": {
+    "sprint10_to_sprint11": {
+      "has_changes": true,
+      "layer_diffs": {
+        "api": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 6,
+          "new_layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2",
+          "old_file_count": 6,
+          "old_layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2"
+        },
+        "auth": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 6,
+          "new_layer_hash": "6486ceec29d9db3a912931c83e46f83b8f51828a01fbf839812ff8dcdb75d1a7",
+          "old_file_count": 6,
+          "old_layer_hash": "6486ceec29d9db3a912931c83e46f83b8f51828a01fbf839812ff8dcdb75d1a7"
+        },
+        "enforcement": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 19,
+          "new_layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702",
+          "old_file_count": 19,
+          "old_layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702"
+        },
+        "export": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 5,
+          "new_layer_hash": "634fbff7f7d6a2a9b8bb4545ad6d0fbe257ee95ba35ead75cf0f28cd3336e1f7",
+          "old_file_count": 5,
+          "old_layer_hash": "634fbff7f7d6a2a9b8bb4545ad6d0fbe257ee95ba35ead75cf0f28cd3336e1f7"
+        },
+        "governance": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 7,
+          "new_layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c",
+          "old_file_count": 7,
+          "old_layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c"
+        },
+        "hardening": {
+          "file_diffs": {
+            "added": [
+              {
+                "new": "1765f1ef0f628e5a3256a230ba9adf62d717c99bf1ca88c191a665db367f2a5a",
+                "old": null,
+                "path": "hardening/__init__.py"
+              },
+              {
+                "new": "e8ce16664106af3cdd1ca6b620a38fdff4bc3cedf7fc2d286ef7d96d172354be",
+                "old": null,
+                "path": "hardening/baseline_comparison_toolkit.py"
+              },
+              {
+                "new": "c0e798e0b9b0984162d26e09c7597cd947dc0326f2ed7001bb328e08b501af98",
+                "old": null,
+                "path": "hardening/drift_detection_engine.py"
+              },
+              {
+                "new": "63e1825b9f0b606577ee322d5a29243d23e551c3a5e5974fa4af0a20e17537bb",
+                "old": null,
+                "path": "hardening/immutability_enforcement_checker.py"
+              },
+              {
+                "new": "9eb261c23fc9789d5be728ca025ad62fb2d41b2eb4cd71a103c76e1840850a36",
+                "old": null,
+                "path": "hardening/system_integrity_auditor.py"
+              },
+              {
+                "new": "64122c358e98b8eec83c3b7e77e90921f161e2fff45f9c64138382373d7c0a41",
+                "old": null,
+                "path": "test_baseline_comparison.py"
+              },
+              {
+                "new": "6ccf6db6d9647e76c9cc3e1853efbb159348cfc514feb13882503b16c8bf2a5e",
+                "old": null,
+                "path": "test_drift_detection.py"
+              },
+              {
+                "new": "732219383eaaf019a939cde830f0da4c43b5c227490e1a19711097981a6f1a47",
+                "old": null,
+                "path": "test_immutability_checker.py"
+              },
+              {
+                "new": "0ad9c5f90d37088102a8fca13e62d7b87da3260aed745c852a9b9b0682d060fd",
+                "old": null,
+                "path": "test_system_integrity.py"
+              }
+            ],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": true,
+          "new_file_count": 9,
+          "new_layer_hash": "7f003bcab0b9b4afeaa40b4c6141bc6430c4752197c179fa36d9d612b9ff615c",
+          "old_file_count": 0,
+          "old_layer_hash": null
+        },
+        "observability": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 6,
+          "new_layer_hash": "d02fd1ca13a41fa8dccf9f2ab79351c2df38dc4438842bebe0ed636c793b9a1e",
+          "old_file_count": 6,
+          "old_layer_hash": "d02fd1ca13a41fa8dccf9f2ab79351c2df38dc4438842bebe0ed636c793b9a1e"
+        },
+        "persistence": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 6,
+          "new_layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6",
+          "old_file_count": 6,
+          "old_layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6"
+        },
+        "query": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 5,
+          "new_layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d",
+          "old_file_count": 5,
+          "old_layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d"
+        }
+      },
+      "new_baseline": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\sprint_11_pre_edit_baseline.json",
+      "old_baseline": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\sprint_10_pre_edit_baseline.json"
+    },
+    "sprint11_to_sprint12": {
+      "has_changes": true,
+      "layer_diffs": {
+        "api": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 6,
+          "new_layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2",
+          "old_file_count": 6,
+          "old_layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2"
+        },
+        "auth": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 6,
+          "new_layer_hash": "6486ceec29d9db3a912931c83e46f83b8f51828a01fbf839812ff8dcdb75d1a7",
+          "old_file_count": 6,
+          "old_layer_hash": "6486ceec29d9db3a912931c83e46f83b8f51828a01fbf839812ff8dcdb75d1a7"
+        },
+        "enforcement": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 19,
+          "new_layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702",
+          "old_file_count": 19,
+          "old_layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702"
+        },
+        "export": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 5,
+          "new_layer_hash": "634fbff7f7d6a2a9b8bb4545ad6d0fbe257ee95ba35ead75cf0f28cd3336e1f7",
+          "old_file_count": 5,
+          "old_layer_hash": "634fbff7f7d6a2a9b8bb4545ad6d0fbe257ee95ba35ead75cf0f28cd3336e1f7"
+        },
+        "governance": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 7,
+          "new_layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c",
+          "old_file_count": 7,
+          "old_layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c"
+        },
+        "hardening": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 9,
+          "new_layer_hash": "7f003bcab0b9b4afeaa40b4c6141bc6430c4752197c179fa36d9d612b9ff615c",
+          "old_file_count": 9,
+          "old_layer_hash": "7f003bcab0b9b4afeaa40b4c6141bc6430c4752197c179fa36d9d612b9ff615c"
+        },
+        "observability": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 6,
+          "new_layer_hash": "d02fd1ca13a41fa8dccf9f2ab79351c2df38dc4438842bebe0ed636c793b9a1e",
+          "old_file_count": 6,
+          "old_layer_hash": "d02fd1ca13a41fa8dccf9f2ab79351c2df38dc4438842bebe0ed636c793b9a1e"
+        },
+        "orchestration": {
+          "file_diffs": {
+            "added": [
+              {
+                "new": "3dd3b1a4f7087fa9fdc95628783364a610cf2f04e8a7fd6b48913caca09df328",
+                "old": null,
+                "path": "compliance_layer/__init__.py"
+              },
+              {
+                "new": "32a64047e872febc93396f8afaea221d2046ef80cebd24931b36d9e4d56ab516",
+                "old": null,
+                "path": "compliance_layer/compliance_aggregation_engine.py"
+              },
+              {
+                "new": "06116b0248ae73d2f042ea734da17a75e6cac4040e88fb18620113ba0d3ded81",
+                "old": null,
+                "path": "compliance_layer/gate_sequencer.py"
+              },
+              {
+                "new": "1f83548d4972cbef92f17b58ebaaeee2788babb0c152ab61cee84cb9a416cdbe",
+                "old": null,
+                "path": "compliance_layer/unified_compliance_runner.py"
+              },
+              {
+                "new": "782b03ea9d0432233b65ed41e2457aaf1cb553e5387824974ef8493ddb075b48",
+                "old": null,
+                "path": "scripts/run_unified_compliance.py"
+              },
+              {
+                "new": "1c634728f1b62bd4bad898a80c47cc3ca9be8144df75b6bc119f03b43ab89b31",
+                "old": null,
+                "path": "test_cross_layer_orchestration.py"
+              },
+              {
+                "new": "9ede61a1e2f0dda0bca75f48abda32853fc5635a4e2149432311e75db02e353b",
+                "old": null,
+                "path": "test_failure_aggregation.py"
+              },
+              {
+                "new": "5278019325945bf446d038693fde1cd82a5ea38216a69c3db2b14ec98971068f",
+                "old": null,
+                "path": "test_gate_sequencing.py"
+              },
+              {
+                "new": "24ccdc7172564c13c42edb1311e10424d1910036ef1f587d4923092d3004147e",
+                "old": null,
+                "path": "test_unified_compliance_runner.py"
+              }
+            ],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": true,
+          "new_file_count": 9,
+          "new_layer_hash": "77eaef0638adcb4760c3e6c865d0de50699866d91a92e474bff8aa6decee21ad",
+          "old_file_count": 0,
+          "old_layer_hash": null
+        },
+        "persistence": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 6,
+          "new_layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6",
+          "old_file_count": 6,
+          "old_layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6"
+        },
+        "query": {
+          "file_diffs": {
+            "added": [],
+            "changed": [],
+            "removed": []
+          },
+          "layer_changed": false,
+          "new_file_count": 5,
+          "new_layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d",
+          "old_file_count": 5,
+          "old_layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d"
+        }
+      },
+      "new_baseline": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\sprint_12_pre_edit_baseline.json",
+      "old_baseline": "C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\sprint_11_pre_edit_baseline.json"
+    }
+  },
+  "determinism_baseline": {
+    "current_hash": "b4fcda05fe4aab0da42c35af341ef93504d800f878fd10e1be7900c4f08cfee1",
+    "reference_hash": "b4fcda05fe4aab0da42c35af341ef93504d800f878fd10e1be7900c4f08cfee1",
+    "run_count": 2,
+    "source": [
+      "logs/compliance/unified_run_1.json",
+      "logs/compliance/unified_run_2.json"
+    ],
+    "status": "MATCH"
+  },
+  "execution_timestamps": {
+    "ci_kernel": {
+      "finished_at": "2026-05-01T23:07:21.258981+00:00",
+      "started_at": "2026-05-01T23:07:20.618975+00:00",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "emv": {
+      "finished_at": "2026-05-01T23:07:20.618929+00:00",
+      "started_at": "2026-05-01T23:07:20.449362+00:00",
+      "status": "PASS",
+      "violation_count": 0
+    }
+  },
+  "integrity_gate": {
+    "api": {
+      "check_mode": "sprint_11_baseline",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "tracked_files": 6
+    },
+    "auth": {
+      "check_mode": "sprint_11_baseline",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "tracked_files": 6
+    },
+    "enforcement": {
+      "check_mode": "sprint_11_baseline",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "tracked_files": 19
+    },
+    "export": {
+      "check_mode": "sprint_11_baseline",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "tracked_files": 5
+    },
+    "governance": {
+      "check_mode": "sprint_11_baseline",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "tracked_files": 7
+    },
+    "hardening": {
+      "check_mode": "sprint_11_baseline",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "tracked_files": 9
+    },
+    "observability": {
+      "check_mode": "sprint_11_baseline",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "tracked_files": 6
+    },
+    "orchestration": {
+      "check_mode": "anchored_now_pre_edit",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "note": "Sprint 11 pre-edit baseline predates orchestration implementation completion; Sprint 12 anchors orchestration freeze from current pre-edit state.",
+      "tracked_files": 9
+    },
+    "persistence": {
+      "check_mode": "sprint_11_baseline",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "tracked_files": 6
+    },
+    "query": {
+      "check_mode": "sprint_11_baseline",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "tracked_files": 5
+    }
+  },
+  "layers": {
+    "api": {
+      "file_count": 6,
+      "files": {
+        "api_layer\\__init__.py": "f134d9ffede4ca0c07d9e5778e354296e75f523bca0ea23918b0e5537af6afec",
+        "api_layer\\api_contracts.py": "f5029a0397cf442dd5764aca5d97ad93819c03abe33ea5b5ab5527b6ddaa5007",
+        "api_layer\\api_routes.py": "0db12e4e8a27447aa6b082f78ecd57cfb56bdd56ddf9bdfe741bb69a44efdced",
+        "api_layer\\api_server.py": "4c716b4b9dbdc5e14bc87bfc0ae975c30eb3c4ce7c79fe8a68608a6c7e978dfc",
+        "api_layer\\api_validator.py": "96cf6e22d7b55e1ba6b805f23cb9d9b5708ed0e6f977910fa207c10bdc52318e",
+        "test_api_layer.py": "4c193bdffac593b81d7b52a350956f66acbbdbfe7c2162c65cddd6f636964aa0"
+      },
+      "layer": "api",
+      "layer_hash": "109db90f073b7f417674700412b7c6729f7b39ef032fbd553c9f5a87459a94f2"
+    },
+    "auth": {
+      "file_count": 6,
+      "files": {
+        "auth_layer\\__init__.py": "1e5643347005d83c91b1dbec4c9688a3bff7549357f53e5277f8b6803b918926",
+        "auth_layer\\auth_middleware.py": "35b6ff388ca6a408dc0b884f0bc5c9d5917fce506d7a5cc42dff5c6c6c0a3939",
+        "auth_layer\\auth_policies.py": "9c0244446a119aecd8f9bb8da3806f5309a23d9c7e5ec03a5de2ac6cbb04de0e",
+        "auth_layer\\auth_provider.py": "fa4120b4990527cfb9486bbc2b5bdddf4c701a40bb08dd18830e698019b5f58f",
+        "auth_layer\\auth_validator.py": "b4de86fd6fbe0d81b3672bb5cc74da0bd267ab99f5c9b3bf74f10ade5876f3e7",
+        "test_auth_layer.py": "899a430648696682fe3bb8f859a6856f4ac806a26eeeca45395c8ee582be05f3"
+      },
+      "layer": "auth",
+      "layer_hash": "6486ceec29d9db3a912931c83e46f83b8f51828a01fbf839812ff8dcdb75d1a7"
+    },
+    "enforcement": {
+      "file_count": 19,
+      "files": {
+        ".github\\workflows\\sci_enforcement.yml": "e694bfe8a6b4637463205dde64f7444597961a7c7ec373e88db4935122f0372c",
+        "bootstrap.py": "eef0bf47c3f840d91400edb04ed2cd7b7bc780539dc0766e8038a1dd965be7cc",
+        "ci\\bootstrap_gate.py": "d4cbe7243752fa16c6e2c84d829301fd450257f409dc1bad87e4eb0b4ebad6ce",
+        "ci\\ci_pipeline_order_guard.py": "95203e698e536cd86bc6c4889b6beb53e936c3c86874da63b0b0300b1ddfeacf",
+        "ci\\core\\ci_policy_engine.py": "feaa40e275e666e958f484e9cc1d437279d4a1010fa78d8335a41e023838e1d5",
+        "ci\\execution_contract_integrity_guard.py": "d9970c2b6cf9d6a953889c7a527e25dfbd34888191a721c76acd2059b769ce90",
+        "ci\\import_guard.py": "6f9fd07c8953a4fe8bd2cebb0d497badbb26ee70da7e8f5196aff7f6ff398d8a",
+        "ci\\meta\\ci_enforcement_meta_validator.py": "ec72db3b918ba6c0dcc01bebb895b65990d37c1a62eb1b02898db02de01a4866",
+        "ci\\run_ci_kernel.py": "7f4c2684ce26f0ea9bdfa1ada02b3afa8320f5f77666c32e6a1265d0ec9ca172",
+        "ci\\schema_version_guard.py": "421bfa36b4af77ee5bbc596ab29b93a30b4fbb6e646c798894bdcfebc7ede999",
+        "ci\\sci_validator.py": "0bbed1b787c81bd4fa6a0e43d61c96fece59df2f1685db40e3d4bdb6ac0081e1",
+        "ci\\science\\SCI_RULE_REGISTRY.yaml": "b4f65016620d01948894b99e1fd113383380907c3faa38d66c73deba181c43a2",
+        "ci\\tests\\ci_golden_fixtures\\emv_invalid_registry_missing_binding.yaml": "7adee423fa611218a9dc41a2b036c71341be9a40c511210b1824b4278c1e7f4f",
+        "execution_contract\\__init__.py": "f35684db82a87f75289d45b11dbfe1f1acec314c5d376e040c30c0ca8a5bd6af",
+        "execution_contract\\ansible_error_mapper.py": "df9dc91df1aca2f12816a293d2485a11bc52a61b8dbbe00e16d6b5ac2cfd911a",
+        "execution_contract\\execution_state.py": "41b0cf2ac4883fd4d96093a3a78f9d804a817d79c1ada23645af85cdd04e21e5",
+        "execution_contract\\failure_taxonomy.py": "fa7de2b20962325036ff332022e3615365d82b2a46ae4cc6c4ead1b487dcd10d",
+        "execution_contract\\runtime_guard.py": "d3a3332dfd4fd28899881795bcce2e737541374265b043200a115fff4df697cb",
+        "execution_contract\\schema.py": "66a775b29ba9733f39780a44352c5d162f3951dacefd979197133b467dfacc3e"
+      },
+      "layer": "enforcement",
+      "layer_hash": "b04e32ffb9e33f382ccea6332ce236a2e856d1d3115ece6a9825babf4b248702"
+    },
+    "export": {
+      "file_count": 5,
+      "files": {
+        "export\\metrics_exporter.py": "a66a93e75b0c4af333afb8096594e6f9cdab216d503d21a1a4daaefed3a4a0bb",
+        "export\\otel_mapper.py": "ed6824cf384eb33816498317bd8a59cdedb5e15816cd6ffebd41daa9efa8ff6d",
+        "export\\siem_exporter.py": "762da2a6263645124a4cc6198986cdc1754013d323ccd79c0bd6a480ecafd6df",
+        "export\\trace_exporter.py": "c73792f5c700f3cfc3667f138ab9d94cb63cf960bb622d80e0c4d627ab7e21d7",
+        "test_export_layer.py": "79f2a8a17c1ec969cf0c3280c4e1430068111f60516fec2f1c6053f506be5043"
+      },
+      "layer": "export",
+      "layer_hash": "634fbff7f7d6a2a9b8bb4545ad6d0fbe257ee95ba35ead75cf0f28cd3336e1f7"
+    },
+    "governance": {
+      "file_count": 7,
+      "files": {
+        "governance_layer\\__init__.py": "645a984330d5024967696344f80472472eb9c2e7232de55291d42e008cf65a7d",
+        "governance_layer\\governance_middleware.py": "8f261d5068b4e8ce22b826465a5ad8f0732db53641cffc4170b07c0fe763c5e1",
+        "governance_layer\\query_bounds_validator.py": "fcf13684244400b2d6ad21edc20ca60ae80745b8f86896ae1c7544325193d404",
+        "governance_layer\\quota_manager.py": "77cfbdeb5ea962ab2394d6c1408e41277ce92bac7de90c67f00c8befa9e724b2",
+        "governance_layer\\rate_limiter.py": "049c24f2d193b17276507ea00553ac6a08f45da60525994304393e8e1a6d64db",
+        "governance_layer\\request_policy_engine.py": "de684dcc9148ce876fc41c550299b09a2773ea716bd29754c22d4ef9aec2f5de",
+        "test_governance_layer.py": "62818813593302a754e2af6cea2781c8fab63c4cade4ff8cd48a054d7123b79d"
+      },
+      "layer": "governance",
+      "layer_hash": "92fe107450ed4dda7a243c8f01c6e2e99e1cb1b78c16ddb5b3a729fbd340956c"
+    },
+    "hardening": {
+      "file_count": 9,
+      "files": {
+        "hardening\\__init__.py": "1765f1ef0f628e5a3256a230ba9adf62d717c99bf1ca88c191a665db367f2a5a",
+        "hardening\\baseline_comparison_toolkit.py": "e8ce16664106af3cdd1ca6b620a38fdff4bc3cedf7fc2d286ef7d96d172354be",
+        "hardening\\drift_detection_engine.py": "c0e798e0b9b0984162d26e09c7597cd947dc0326f2ed7001bb328e08b501af98",
+        "hardening\\immutability_enforcement_checker.py": "63e1825b9f0b606577ee322d5a29243d23e551c3a5e5974fa4af0a20e17537bb",
+        "hardening\\system_integrity_auditor.py": "9eb261c23fc9789d5be728ca025ad62fb2d41b2eb4cd71a103c76e1840850a36",
+        "test_baseline_comparison.py": "64122c358e98b8eec83c3b7e77e90921f161e2fff45f9c64138382373d7c0a41",
+        "test_drift_detection.py": "6ccf6db6d9647e76c9cc3e1853efbb159348cfc514feb13882503b16c8bf2a5e",
+        "test_immutability_checker.py": "732219383eaaf019a939cde830f0da4c43b5c227490e1a19711097981a6f1a47",
+        "test_system_integrity.py": "0ad9c5f90d37088102a8fca13e62d7b87da3260aed745c852a9b9b0682d060fd"
+      },
+      "layer": "hardening",
+      "layer_hash": "7f003bcab0b9b4afeaa40b4c6141bc6430c4752197c179fa36d9d612b9ff615c"
+    },
+    "observability": {
+      "file_count": 6,
+      "files": {
+        "observability\\audit_logger.py": "5e5d16bd89ce943ff505cc7e680da76b97d9a53b8d22f64120ada3d8e25bab1b",
+        "observability\\decision_recorder.py": "d5a721ac5580e578582d4f43eab0b9635f3e3c367fabc64f9ae67d501df90c6b",
+        "observability\\event_collector.py": "e46db4e52a0b82b7ce33d38ec7d65afa7889803a10ff168a88910542840d240f",
+        "observability\\schema.py": "e692412042bb799a60ae382c4c16b8b8a8b401042a8dbc1f6abdda7b4205b111",
+        "observability\\trace_context.py": "d546405a237d6c6ef4f6d3b3ded0fb61ed2b4a7574460dde9f81b026a2d261fa",
+        "test_observability_layer.py": "a55f527a11efeca89f7b981d1f11d71ee57210cd9baabb048c7b55ff45ed51a5"
+      },
+      "layer": "observability",
+      "layer_hash": "d02fd1ca13a41fa8dccf9f2ab79351c2df38dc4438842bebe0ed636c793b9a1e"
+    },
+    "orchestration": {
+      "file_count": 9,
+      "files": {
+        "compliance_layer\\__init__.py": "3dd3b1a4f7087fa9fdc95628783364a610cf2f04e8a7fd6b48913caca09df328",
+        "compliance_layer\\compliance_aggregation_engine.py": "32a64047e872febc93396f8afaea221d2046ef80cebd24931b36d9e4d56ab516",
+        "compliance_layer\\gate_sequencer.py": "06116b0248ae73d2f042ea734da17a75e6cac4040e88fb18620113ba0d3ded81",
+        "compliance_layer\\unified_compliance_runner.py": "1f83548d4972cbef92f17b58ebaaeee2788babb0c152ab61cee84cb9a416cdbe",
+        "scripts\\run_unified_compliance.py": "782b03ea9d0432233b65ed41e2457aaf1cb553e5387824974ef8493ddb075b48",
+        "test_cross_layer_orchestration.py": "1c634728f1b62bd4bad898a80c47cc3ca9be8144df75b6bc119f03b43ab89b31",
+        "test_failure_aggregation.py": "9ede61a1e2f0dda0bca75f48abda32853fc5635a4e2149432311e75db02e353b",
+        "test_gate_sequencing.py": "5278019325945bf446d038693fde1cd82a5ea38216a69c3db2b14ec98971068f",
+        "test_unified_compliance_runner.py": "24ccdc7172564c13c42edb1311e10424d1910036ef1f587d4923092d3004147e"
+      },
+      "layer": "orchestration",
+      "layer_hash": "77eaef0638adcb4760c3e6c865d0de50699866d91a92e474bff8aa6decee21ad"
+    },
+    "persistence": {
+      "file_count": 6,
+      "files": {
+        "persistence\\__init__.py": "40424a494d503626ba40d2a6db1f519c9a5f0e92a58c4dea5e28b399c4a2bb4f",
+        "persistence\\contract_validator.py": "388011b308e1ea45dcf2839feadc07cd912c3690acad6e0d4bf67ecf8a5cb428",
+        "persistence\\db_client.py": "c173d4f481be9f20bf8ec61b804e6dcf602fed972567ea0e8b2357f374e2bf4b",
+        "persistence\\ingest_validation.py": "c0c70171a9bf6d28b21af3ec06a86817ef6c1b90de85462569e8d7dba45988e7",
+        "persistence\\schema.sql": "49021fc9e807932bcbee0ea8ebbd1a762bf61cecb696c86a5cb5173c7e1c75d8",
+        "persistence\\test_ingest_validation.py": "7deb297112dc25d13afe0ec9e7ef10bbd3c0adf693b4ccc71a625ae7a7534b83"
+      },
+      "layer": "persistence",
+      "layer_hash": "4a04aac60d2b28c6e5401430b90833a1646d15cbda9856122f3e1988853c02a6"
+    },
+    "query": {
+      "file_count": 5,
+      "files": {
+        "query_layer\\__init__.py": "9a1331b51ace2835165ace2b49fdc14b5d0e443a60df7c533e062b25bebe89c8",
+        "query_layer\\query_client.py": "56a4b916af9c54cbc5996f9737bf524cc096149a594231271de0958ab75d28df",
+        "query_layer\\query_contracts.py": "b330618a8af3896114ed0e3a1e3937240c0c2235c15cbbe14e768e1cc17f7c4c",
+        "query_layer\\query_service.py": "d8b7160934480ff21f5cf8f12b92e5eba32860eb4df2e4f8d9426e00617b804a",
+        "query_layer\\query_validator.py": "fd08c81c0ee103e5bd0836ac69c7f922be25cba8e48ea34728288f8ecc83c957"
+      },
+      "layer": "query",
+      "layer_hash": "7b508977bd8e756716fba831634f06a8fe970a86361b4bc9a6bcd24e1e83d47d"
+    }
+  },
+  "schema_consistency": {
+    "all_consistent": true,
+    "checks": {
+      "export_metrics_schema_version": "2.1",
+      "export_otel_schema_version": "2.1",
+      "export_siem_schema_version": "2.1",
+      "export_trace_schema_version": "2.1",
+      "input_metadata_schema_version": "2.1",
+      "input_schema_block_schema_version": "2.1",
+      "observability_schema_version": "2.1"
+    }
+  },
+  "schema_version": "2.1"
+}

@@ -1,0 +1,106 @@
+{
+  "adapters_failed": [
+    {
+      "adapter": "SYSTEM",
+      "reason": "INTEGRATION_DEPENDENCIES_NOT_READY"
+    }
+  ],
+  "adapters_initialized": [],
+  "boot_id": "system-boot-02b03486c89e",
+  "environment_valid": true,
+  "execution_status": "BLOCKED",
+  "external_dependencies_ready": false,
+  "fail_closed_triggered": true,
+  "health_status": {},
+  "integration_status": {
+    "AnsibleAdapter": {
+      "adapter": "AnsibleAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [
+          "ANSIBLE_RUNNER_PATH"
+        ],
+        "status": "PASS"
+      },
+      "dependency": "ansible_runner_path",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "mode": "LIVE",
+      "operation": "ansible_runner_bootstrap_probe",
+      "phase": "PHASE_1",
+      "reason": "Runner path missing: C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\sprint16_tests_z8mwod0v\\adapter_failure\\missing_runner",
+      "root_cause": "Runner path missing: C:\\Users\\fb002895\\Desktop\\Personal\\Ansible\\logs\\sprint16_tests_z8mwod0v\\adapter_failure\\missing_runner",
+      "status": "FAIL"
+    },
+    "LogicMonitorAdapter": {
+      "adapter": "LogicMonitorAdapter",
+      "credentials": {
+        "missing": [],
+        "present": [
+          "LOGICMONITOR_API_KEY",
+          "LOGICMONITOR_ACCOUNT"
+        ],
+        "status": "PASS"
+      },
+      "dependency": "logicmonitor_api",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "mode": "LIVE",
+      "operation": "logicmonitor_bootstrap_probe",
+      "phase": "PHASE_1",
+      "reason": "LogicMonitorAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+      "root_cause": "LogicMonitorAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+      "status": "FAIL"
+    },
+    "PostgresAdapter": {
+      "adapter": "PostgresAdapter",
+      "auth": {
+        "status": "FAIL"
+      },
+      "connectivity": {
+        "dns": {
+          "address": "127.0.0.1",
+          "host": "localhost",
+          "status": "PASS"
+        },
+        "status": "FAIL",
+        "tcp": {
+          "host": "localhost",
+          "port": 5432,
+          "reason": "[WinError 10061] No connection could be made because the target machine actively refused it",
+          "status": "FAIL"
+        }
+      },
+      "credentials": {
+        "missing": [],
+        "present": [
+          "POSTGRES_CONNECTION_STRING",
+          "POSTGRES_DB",
+          "POSTGRES_USER",
+          "POSTGRES_PASSWORD"
+        ],
+        "status": "PASS"
+      },
+      "dependency": "postgres",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "mode": "LIVE",
+      "operation": "postgres_bootstrap_probe",
+      "phase": "PHASE_1",
+      "reason": "{'status': 'FAIL', 'dns': {'status': 'PASS', 'host': 'localhost', 'address': '127.0.0.1'}, 'tcp': {'status': 'FAIL', 'host': 'localhost', 'port': 5432, 'reason': '[WinError 10061] No connection could be made because the target machine actively refused it'}}",
+      "root_cause": "{'status': 'FAIL', 'dns': {'status': 'PASS', 'host': 'localhost', 'address': '127.0.0.1'}, 'tcp': {'status': 'FAIL', 'host': 'localhost', 'port': 5432, 'reason': '[WinError 10061] No connection could be made because the target machine actively refused it'}}",
+      "schema_handshake": {
+        "status": "FAIL"
+      },
+      "status": "FAIL",
+      "transaction_handshake": {
+        "reason": "psycopg2 unavailable: No module named 'psycopg2'",
+        "status": "FAIL"
+      }
+    }
+  },
+  "live_execution_safe": false,
+  "mode": "LIVE",
+  "phase": "PHASE_1",
+  "reason": "INTEGRATION_DEPENDENCIES_NOT_READY",
+  "schema_version": "1.0",
+  "sst_owner": "LOGICMONITOR",
+  "system_ready": false
+}

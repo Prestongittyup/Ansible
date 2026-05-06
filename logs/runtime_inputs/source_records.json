@@ -1,0 +1,35 @@
+[
+  {
+    "authority_owner": "LOGICMONITOR",
+    "hostname": "edge-aruba-1",
+    "ip_address": "10.10.0.1",
+    "model": "AOS-CX",
+    "record_source": "source",
+    "serial_number": "ARUBA-0001",
+    "site": "dc1",
+    "status": "up",
+    "vendor": "Aruba"
+  },
+  {
+    "authority_owner": "LOGICMONITOR",
+    "hostname": "core-cisco-1",
+    "ip_address": "10.10.0.2",
+    "model": "IOS-XE",
+    "record_source": "source",
+    "serial_number": "CISCO-0002",
+    "site": "dc1",
+    "status": "up",
+    "vendor": "Cisco"
+  },
+  {
+    "authority_owner": "LOGICMONITOR",
+    "hostname": "fw-fortinet-1",
+    "ip_address": "10.10.0.3",
+    "model": "FortiGate",
+    "record_source": "source",
+    "serial_number": "FORTINET-0003",
+    "site": "dc2",
+    "status": "up",
+    "vendor": "Fortinet"
+  }
+]

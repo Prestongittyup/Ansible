@@ -1,0 +1,14 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY . /app
+
+ENV PYTHONUNBUFFERED=1
+ENV OPS_ROOT_PATH=/app
+ENV OPS_BASE_ENV_PATH=/app/deploy/.env.ops.example
+ENV OPS_RUNTIME_ENV_PATH=/tmp/ops_runtime.env
+
+EXPOSE 8088
+
+ENTRYPOINT ["python", "deploy/container_entrypoint.py"]

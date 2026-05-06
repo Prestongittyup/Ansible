@@ -1,0 +1,55 @@
+{
+  "phase2_failures": [
+    {
+      "adapter": "AnsibleAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "ansible_endpoint_bootstrap_probe",
+      "phase": "PHASE_2",
+      "root_cause": "AnsibleAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "adapter": "LogicMonitorAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "logicmonitor_bootstrap_probe",
+      "phase": "PHASE_2",
+      "root_cause": "LogicMonitorAdapter request failed: <urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "adapter": "PostgresAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "postgres_bootstrap_probe",
+      "phase": "PHASE_2",
+      "root_cause": "psycopg2 unavailable: No module named 'psycopg2'"
+    }
+  ],
+  "phase3_failures": [
+    {
+      "adapter": "AnsibleAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "ansible_endpoint_bootstrap_probe",
+      "phase": "PHASE_3",
+      "root_cause": "AnsibleAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "adapter": "LogicMonitorAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "logicmonitor_bootstrap_probe",
+      "phase": "PHASE_3",
+      "root_cause": "LogicMonitorAdapter request failed: <urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "adapter": "NautobotAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "nautobot_bootstrap_probe",
+      "phase": "PHASE_3",
+      "root_cause": "NautobotAdapter request failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "adapter": "PostgresAdapter",
+      "failure_class": "CONNECTIVITY_FAILURE",
+      "operation": "postgres_bootstrap_probe",
+      "phase": "PHASE_3",
+      "root_cause": "psycopg2 unavailable: No module named 'psycopg2'"
+    }
+  ]
+}

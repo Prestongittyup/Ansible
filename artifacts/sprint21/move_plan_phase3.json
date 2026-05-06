@@ -1,0 +1,368 @@
+{
+  "moves": [
+    {
+      "from": "ansible_validation",
+      "to": "legacy/ansible_validation",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "api_client",
+      "to": "legacy/api_client",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "api_layer",
+      "to": "legacy/api_layer",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "audit",
+      "to": "legacy/audit",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "auth_layer",
+      "to": "legacy/auth_layer",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "compliance_layer",
+      "to": "legacy/compliance_layer",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "execution_contract",
+      "to": "legacy/execution_contract",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "export",
+      "to": "legacy/export",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "governance_layer",
+      "to": "legacy/governance_layer",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "hardening",
+      "to": "legacy/hardening",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "inventory",
+      "to": "legacy/inventory",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "inventory_pipeline",
+      "to": "legacy/inventory_pipeline",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "persistence",
+      "to": "legacy/persistence",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "query_layer",
+      "to": "legacy/query_layer",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "scripts",
+      "to": "legacy/scripts",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "stabilization_layer",
+      "to": "legacy/stabilization_layer",
+      "reason": "Quarantine non-canonical sprint-era module tree as legacy.",
+      "risk": "medium",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_api_layer.py",
+      "to": "tests/test_api_layer.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_auth_layer.py",
+      "to": "tests/test_auth_layer.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_baseline_comparison.py",
+      "to": "tests/test_baseline_comparison.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_bootstrap_runtime_layer.py",
+      "to": "tests/test_bootstrap_runtime_layer.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_cross_layer_orchestration.py",
+      "to": "tests/test_cross_layer_orchestration.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_cross_sprint_drift_comparator.py",
+      "to": "tests/test_cross_sprint_drift_comparator.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_determinism_certification.py",
+      "to": "tests/test_determinism_certification.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_drift_detection.py",
+      "to": "tests/test_drift_detection.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_execution_replay_validator.py",
+      "to": "tests/test_execution_replay_validator.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_export_layer.py",
+      "to": "tests/test_export_layer.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_failure_aggregation.py",
+      "to": "tests/test_failure_aggregation.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_gate_sequencing.py",
+      "to": "tests/test_gate_sequencing.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_governance_layer.py",
+      "to": "tests/test_governance_layer.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_immutability_checker.py",
+      "to": "tests/test_immutability_checker.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_integrity_certificate_generator.py",
+      "to": "tests/test_integrity_certificate_generator.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_live_validation_hardening.py",
+      "to": "tests/test_live_validation_hardening.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_observability_layer.py",
+      "to": "tests/test_observability_layer.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_operations_architecture_layer.py",
+      "to": "tests/test_operations_architecture_layer.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_query_layer.py",
+      "to": "tests/test_query_layer.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_sprint17_integration_layer.py",
+      "to": "tests/test_sprint17_integration_layer.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_system_integrity.py",
+      "to": "tests/test_system_integrity.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "test_unified_compliance_runner.py",
+      "to": "tests/test_unified_compliance_runner.py",
+      "reason": "Move root-level tests into canonical tests layer.",
+      "risk": "low",
+      "depends_on_import_updates": true
+    },
+    {
+      "from": "ARCHITECTURAL_GUARDRAILS.md",
+      "to": "docs/ARCHITECTURAL_GUARDRAILS.md",
+      "reason": "Move architecture/policy docs into canonical docs layer.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "EVIDENCE_VS_STATE_MODEL.md",
+      "to": "docs/EVIDENCE_VS_STATE_MODEL.md",
+      "reason": "Move architecture/policy docs into canonical docs layer.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "NORMATIVE_RULES.md",
+      "to": "docs/NORMATIVE_RULES.md",
+      "reason": "Move architecture/policy docs into canonical docs layer.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "RFC-001.md",
+      "to": "docs/RFC-001.md",
+      "reason": "Move architecture/policy docs into canonical docs layer.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "RUNTIME_CONFLICT_POLICY.md",
+      "to": "docs/RUNTIME_CONFLICT_POLICY.md",
+      "reason": "Move architecture/policy docs into canonical docs layer.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "SCI_ENFORCEMENT_INTERFACE.md",
+      "to": "docs/SCI_ENFORCEMENT_INTERFACE.md",
+      "reason": "Move architecture/policy docs into canonical docs layer.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "SPRINT_PLAN.md",
+      "to": "docs/SPRINT_PLAN.md",
+      "reason": "Move architecture/policy docs into canonical docs layer.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "SYSTEM_OVERVIEW.md",
+      "to": "docs/SYSTEM_OVERVIEW.md",
+      "reason": "Move architecture/policy docs into canonical docs layer.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "production_readiness_checklist.md",
+      "to": "docs/production_readiness_checklist.md",
+      "reason": "Move architecture/policy docs into canonical docs layer.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "sprint_10_pre_edit_baseline.json",
+      "to": "artifacts/baselines/sprint_10_pre_edit_baseline.json",
+      "reason": "Move sprint baseline artifacts into artifacts/baselines.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "sprint_11_pre_edit_baseline.json",
+      "to": "artifacts/baselines/sprint_11_pre_edit_baseline.json",
+      "reason": "Move sprint baseline artifacts into artifacts/baselines.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "sprint_12_pre_edit_baseline.json",
+      "to": "artifacts/baselines/sprint_12_pre_edit_baseline.json",
+      "reason": "Move sprint baseline artifacts into artifacts/baselines.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "sprint_8_pre_edit_baseline.json",
+      "to": "artifacts/baselines/sprint_8_pre_edit_baseline.json",
+      "reason": "Move sprint baseline artifacts into artifacts/baselines.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    },
+    {
+      "from": "sprint_9_pre_edit_baseline.json",
+      "to": "artifacts/baselines/sprint_9_pre_edit_baseline.json",
+      "reason": "Move sprint baseline artifacts into artifacts/baselines.",
+      "risk": "low",
+      "depends_on_import_updates": false
+    }
+  ]
+}

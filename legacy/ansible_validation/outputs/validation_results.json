@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "aruba_targets": 1,
+    "execution_mode": "VALIDATION_ONLY",
+    "max_concurrency": 5,
+    "max_retries": 3,
+    "non_aruba_targets": 4,
+    "processed_targets": 5,
+    "python_runtime": "3.13.2",
+    "run_id": "validation-bootstrap-hardened-2-1",
+    "runtime_standard": "Python 3.11.x",
+    "schema_version": "2.1"
+  },
+  "results": [
+    {
+      "attempt_count": 0,
+      "connectivity_status": "NOT_EXECUTED",
+      "error": {
+        "code": "RUNTIME_VERSION_MISMATCH",
+        "details": {
+          "detected_runtime": "Python 3.13.2",
+          "required_runtime": "Python 3.11.x"
+        },
+        "message": "execution runtime mismatch: required Python 3.11.x, found Python 3.13.2",
+        "source": "runtime_guard"
+      },
+      "execution_state": "FAIL_RUNTIME",
+      "facts_collected": null,
+      "ip_address": "10.1.1.10",
+      "schema_version": "2.1",
+      "validation_status": "NOT_EXECUTED",
+      "vendor": "meraki"
+    },
+    {
+      "attempt_count": 0,
+      "connectivity_status": "NOT_EXECUTED",
+      "error": {
+        "code": "RUNTIME_VERSION_MISMATCH",
+        "details": {
+          "detected_runtime": "Python 3.13.2",
+          "required_runtime": "Python 3.11.x"
+        },
+        "message": "execution runtime mismatch: required Python 3.11.x, found Python 3.13.2",
+        "source": "runtime_guard"
+      },
+      "execution_state": "FAIL_RUNTIME",
+      "facts_collected": null,
+      "ip_address": "10.1.1.100",
+      "schema_version": "2.1",
+      "validation_status": "NOT_EXECUTED",
+      "vendor": "meraki"
+    },
+    {
+      "attempt_count": 0,
+      "connectivity_status": "NOT_EXECUTED",
+      "error": {
+        "code": "RUNTIME_VERSION_MISMATCH",
+        "details": {
+          "detected_runtime": "Python 3.13.2",
+          "required_runtime": "Python 3.11.x"
+        },
+        "message": "execution runtime mismatch: required Python 3.11.x, found Python 3.13.2",
+        "source": "runtime_guard"
+      },
+      "execution_state": "FAIL_RUNTIME",
+      "facts_collected": null,
+      "ip_address": "10.1.1.101",
+      "schema_version": "2.1",
+      "validation_status": "NOT_EXECUTED",
+      "vendor": "aruba"
+    },
+    {
+      "attempt_count": 0,
+      "connectivity_status": "NOT_EXECUTED",
+      "error": {
+        "code": "RUNTIME_VERSION_MISMATCH",
+        "details": {
+          "detected_runtime": "Python 3.13.2",
+          "required_runtime": "Python 3.11.x"
+        },
+        "message": "execution runtime mismatch: required Python 3.11.x, found Python 3.13.2",
+        "source": "runtime_guard"
+      },
+      "execution_state": "FAIL_RUNTIME",
+      "facts_collected": null,
+      "ip_address": "10.1.1.102",
+      "schema_version": "2.1",
+      "validation_status": "NOT_EXECUTED",
+      "vendor": "cisco"
+    },
+    {
+      "attempt_count": 0,
+      "connectivity_status": "NOT_EXECUTED",
+      "error": {
+        "code": "RUNTIME_VERSION_MISMATCH",
+        "details": {
+          "detected_runtime": "Python 3.13.2",
+          "required_runtime": "Python 3.11.x"
+        },
+        "message": "execution runtime mismatch: required Python 3.11.x, found Python 3.13.2",
+        "source": "runtime_guard"
+      },
+      "execution_state": "FAIL_RUNTIME",
+      "facts_collected": null,
+      "ip_address": "10.1.1.104",
+      "schema_version": "2.1",
+      "validation_status": "NOT_EXECUTED",
+      "vendor": "juniper"
+    }
+  ],
+  "schema": {
+    "attempt_count_type": "integer",
+    "connectivity_status_enum": [
+      "REACHABLE",
+      "UNREACHABLE",
+      "NOT_EXECUTED"
+    ],
+    "error_type": "object_or_null",
+    "execution_state_enum": [
+      "SUCCESS",
+      "FAIL_RUNTIME",
+      "FAIL_CONNECTIVITY",
+      "FAIL_VALIDATION",
+      "NOT_EXECUTED"
+    ],
+    "facts_collected_type": "object_or_null",
+    "required_fields": [
+      "ip_address",
+      "vendor",
+      "execution_state",
+      "connectivity_status",
+      "validation_status",
+      "facts_collected",
+      "error",
+      "attempt_count",
+      "schema_version"
+    ],
+    "schema_version": "2.1",
+    "validation_status_enum": [
+      "PASSED",
+      "FAILED",
+      "NOT_EXECUTED"
+    ],
+    "vendor_enum": [
+      "aruba",
+      "cisco",
+      "fortinet",
+      "juniper",
+      "meraki",
+      "unknown"
+    ]
+  }
+}

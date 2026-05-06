@@ -1,0 +1,35 @@
+[
+  {
+    "authority_owner": "ANSIBLE_POSTGRES",
+    "hostname": "edge-aruba-1",
+    "ip_address": "10.10.0.1",
+    "model": "AOS-CX",
+    "record_source": "target",
+    "serial_number": "ARUBA-0001",
+    "site": "dc1",
+    "status": "up",
+    "vendor": "Aruba"
+  },
+  {
+    "authority_owner": "ANSIBLE_POSTGRES",
+    "hostname": "core-cisco-1",
+    "ip_address": "10.10.0.2",
+    "model": "IOS-XE",
+    "record_source": "target",
+    "serial_number": "CISCO-0002",
+    "site": "dc1",
+    "status": "up",
+    "vendor": "Cisco"
+  },
+  {
+    "authority_owner": "ANSIBLE_POSTGRES",
+    "hostname": "fw-fortinet-1",
+    "ip_address": "10.10.0.3",
+    "model": "FortiGate",
+    "record_source": "target",
+    "serial_number": "FORTINET-0003",
+    "site": "dc2",
+    "status": "up",
+    "vendor": "Fortinet"
+  }
+]
